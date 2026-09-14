@@ -1,0 +1,47 @@
+name: Publish MiSTer downloader database
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blahm1d-downloader
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Validate artifacts and generate pinned database
+        run: python tools/build_db.py --revision "$GITHUB_SHA" --out "$RUNNER_TEMP/feed-db" --timestamp "$(git show -s --format=%ct "$GITHUB_SHA")"
+      - name: Publish database branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git ls-remote --exit-code --heads origin db >/dev/null 2>&1; then
+            git fetch origin db
+            git switch -C db FETCH_HEAD
+          else
+            git switch --orphan db
+          fi
+          cp "$RUNNER_TEMP/feed-db/db.json" .
+          cp "$RUNNER_TEMP/feed-db/db.json.zip" .
+          cp "$RUNNER_TEMP/feed-db/downloader_blahm1d.ini" .
+          cp "$RUNNER_TEMP/feed-db/downloader_blahm1d.zip" .
+          git add -- db.json db.json.zip downloader_blahm1d.ini downloader_blahm1d.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish downloader database for $GITHUB_SHA"
+            git push origin HEAD:db
+          fi

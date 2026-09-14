@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "core": "yunitadpcm",
+      "path": "config/nvram/Total Carnage (rev LA1 03-10-92).nvm",
+      "sha256": "72de568cde3dc9706d85cc30ad4e6b44e9f59d5c9e97694ad2d5c66c2f4bc134",
+      "overwrite": false,
+      "kind": "Generic factory/calibration default"
+    },
+    {
+      "core": "xunit",
+      "path": "config/nvram/RevX_09132026.nvm",
+      "sha256": "c732e09470a627aa4a1dba571e2bcc6cb955ac3fbf864fd8866504b711b7bd1e",
+      "overwrite": false,
+      "kind": "Generic factory/calibration default"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "schema": 1,
+  "released": "2026-09-14",
+  "roms_included": false,
+  "cores": [
+    {
+      "id": "gladiator",
+      "family": "Gladiator",
+      "version": "2026-07-29 release",
+      "date": "20260729",
+      "sha256": "1857e3ca16709c2031a67b0bac6e6d0d1f89f23a37f71d082ee3271807ee5d04",
+      "status": "Existing public release",
+      "notes": "Gladiator (US) and Ougon no Shiro (Japan). The newer OSD contract source draft has no new binary.",
+      "binary": "_Arcade/cores/blahm1d_gladiator_20260729.rbf",
+      "binding": "blahm1d_gladiator",
+      "games": [
+        {
+          "name": "Gladiator (US) [DIP CRT Guard 20260729]",
+          "setname": "gladiatr",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Gladiator/Gladiator (US).mra",
+          "sha256": "3e2655d79fe7861794c7882b8c3545d4cfdb3ebec737deda353ae4e31701fdfe",
+          "original_sha256": "5050b0f0fe4c4fb78e411859bf97d146e32b805a4463f39725893e580bb99ee9",
+          "rom_archives": [
+            "gladiatr.zip"
+          ]
+        },
+        {
+          "name": "Ougon no Shiro (Japan)",
+          "setname": "ogonsiro",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Gladiator/Ougon no Shiro (Japan).mra",
+          "sha256": "873e62495f0e6a9a22fc7ac9616009be72e7ced3a2bcc7e14d052c53beb73923",
+          "original_sha256": "2fdfc73c5799627d588c2049a49cc26cd89bb952750c7c782e4a5d633ea638bd",
+          "rom_archives": [
+            "ogonsiro.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": null
+    },
+    {
+      "id": "legendofkage",
+      "family": "The Legend of Kage",
+      "version": "Water priority r2",
+      "date": "20260830",
+      "sha256": "896a574d681f16d59e38fb2a163a40d7b3b1d3648e0af35ef64a17a6dc4ccb4e",
+      "status": "Beta; four-corner timing passed",
+      "notes": "Bootleg set 1. Water/sprite priority fix; cabinet verification pending. The later CRT geometry source draft is not in this binary.",
+      "binary": "_Arcade/cores/blahm1d_legendofkage_20260830.rbf",
+      "binding": "blahm1d_legendofkage",
+      "games": [
+        {
+          "name": "The Legend of Kage (bootleg set 1)",
+          "setname": "lkagebl1",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/The Legend of Kage/The Legend of Kage (bootleg set 1).mra",
+          "sha256": "12063310ab3b700b45bce36db06042e669902d4bb0f3381f2e84ff9c56155613",
+          "original_sha256": "f00b3e482c7c7d28f388ec5be5bada84f7e805f66f8082bc4b1d7d32200730c1",
+          "rom_archives": [
+            "lkage.zip",
+            "lkagebl1.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    },
+    {
+      "id": "wolfunit",
+      "family": "Wolf Unit",
+      "version": "Flip window master",
+      "date": "20260803",
+      "sha256": "c3433178eb3bf9125b7342eab69f075f8e0a3f9649ce10040fc174a0eff26a6d",
+      "status": "Beta; recorded timing pass",
+      "notes": "Seven original Wolf Unit games. Wider page-flip window; MK3 HUD flashing is not confirmed fixed. Community hacks requiring separate ROM sources are not installed by this feed.",
+      "binary": "_Arcade/cores/blahm1d_wolfunit_20260803.rbf",
+      "binding": "blahm1d_wolfunit",
+      "games": [
+        {
+          "name": "Mortal Kombat 3 (rev 2.1)",
+          "setname": "mk3",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Wolf Unit/Mortal Kombat 3 (rev 2.1).mra",
+          "sha256": "d6b5d635e9ac12ba111cee1aedf3a3cdc24e7b99d912071b4f5ebb280901ae86",
+          "original_sha256": "21c8779981e1f3787bd60b106c35fbf8db418827525c405dd474ee5424b03ba7",
+          "rom_archives": [
+            "mk3.zip"
+          ]
+        },
+        {
+          "name": "NBA Hangtime (L1.3 10/10/96)",
+          "setname": "nbahangt",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Wolf Unit/NBA Hangtime (L1.3).mra",
+          "sha256": "1725ac920e9a40d7510d6019a49568db62154ae9e8466f1eab3bfbcfc7ec997d",
+          "original_sha256": "17c91523b54da24addc102577524b9bf39d2e007a357201fa5018c7450222f66",
+          "rom_archives": [
+            "nbahangt.zip"
+          ]
+        },
+        {
+          "name": "NBA Maximum Hangtime (L1.03 06/09/97)",
+          "setname": "nbamht",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Wolf Unit/NBA Maximum Hangtime (L1.03 06-09-97).mra",
+          "sha256": "d552cf00e7e5318f4e2bc8d3931c866b1fa4dae5a177d0752cd82f5a3b5313b4",
+          "original_sha256": "e73cbb9d6e4309dee60ae2bb1100177fa2c17ed47ffc7fff059e23513e7a9d0c",
+          "rom_archives": [
+            "nbamht.zip"
+          ]
+        },
+        {
+          "name": "NHL Open Ice: 2 on 2 Challenge (rev 1.21)",
+          "setname": "openice",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Wolf Unit/NHL Open Ice - 2 on 2 Challenge (rev 1.21).mra",
+          "sha256": "abeeb2dcdd8a5b23d332da28f6835373eb3a3f7a4f6e7015a240392bec856861",
+          "original_sha256": "239f11b57832b81f2fa063ec8bcce235782e94107ca97331d2b62e0e27f235db",
+          "rom_archives": [
+            "openice.zip"
+          ]
+        },
+        {
+          "name": "Rampage: World Tour (rev 1.3)",
+          "setname": "rmpgwt",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Wolf Unit/Rampage World Tour.mra",
+          "sha256": "80bd4b82bf412107388e39ec8eeb774393a81d77b2fb6de08a3ab5e1774e60d9",
+          "original_sha256": "9cf9bdf86f4a93b790cad32b65148fde6c8791adf61af36cff14b616f926e2f5",
+          "rom_archives": [
+            "rmpgwt.zip"
+          ]
+        },
+        {
+          "name": "Ultimate Mortal Kombat 3 (rev 1.2)",
+          "setname": "umk3",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Wolf Unit/Ultimate Mortal Kombat 3.mra",
+          "sha256": "0f113af28054ec68ef7e8be6636f03d4e9b2e8bdff9dd50fefcd42a2479bfd2b",
+          "original_sha256": "1be1a78ecc80f7b09d2b4db116a72bbd7e4d85c9b8cc721d2340a134ea5ed767",
+          "rom_archives": [
+            "umk3.zip"
+          ]
+        },
+        {
+          "name": "WWF: WrestleMania (rev 1.30 08/10/95)",
+          "setname": "wwfmania",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Wolf Unit/WWF WrestleMania (rev 1.30 08-10-95).mra",
+          "sha256": "63338ec06e1f08e55de1a4a57c42d2f40e90e34552eb2e9ecbdc6b4c49f89932",
+          "original_sha256": "c5bae9cc40ede093d0d197c59e7c908a87b4ee44bf478b45b2b7a57f90586f3b",
+          "rom_archives": [
+            "wwfmania.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    },
+    {
+      "id": "yunit",
+      "family": "Y Unit",
+      "version": "Family r36",
+      "date": "20260904",
+      "sha256": "c58d851299b633d2c4d19d3e907627eb500e0130442e21f0bd983bf3303c7418",
+      "status": "Beta; four-corner timing passed",
+      "notes": "Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Background/erase and Smash TV sound-memory changes; cabinet confirmation pending.",
+      "binary": "_Arcade/cores/blahm1d_yunit_20260904.rbf",
+      "binding": "blahm1d_yunit",
+      "games": [
+        {
+          "name": "High Impact Football (rev LA5 02/15/91)",
+          "setname": "hiimpact",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/High Impact Football (rev LA5 02-15-91).mra",
+          "sha256": "fd1e5799c72c2817c4575e8d8e73246b5c2cded34bea74f1b37f7c32b3a69dbf",
+          "original_sha256": "34e0859fe60f9d2317a3619578346ff3363b34e4eeaebeac524138acedcb5915",
+          "rom_archives": [
+            "hiimpact.zip"
+          ]
+        },
+        {
+          "name": "Saurian Front (proto v5.0 08/07/90)",
+          "setname": "saurnfrnt",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/Saurian Front (proto v5.0 08-07-90).mra",
+          "sha256": "243dd3aad7d0aac9da5fd0b3fc55d15d7033f98aa7c6ae653f050714e804a91a",
+          "original_sha256": "d60d153adf9b6631b4e425e1eda7e55cc32eae7bf4c17b472b45b2cdb0759715",
+          "rom_archives": [
+            "strkforc.zip"
+          ]
+        },
+        {
+          "name": "Smash T.V. (rev 8.00)",
+          "setname": "smashtv",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/Smash T.V. (rev 8.00).mra",
+          "sha256": "0cd026d18720ca7c768aaf044cddd5343471e206506b7578b0a6e3b871053364",
+          "original_sha256": "9606483a02cfb141a9e3bb6a8a83bd5d1780a9ac9c6917ee41f8916ae2c4d213",
+          "rom_archives": [
+            "smashtv.zip"
+          ]
+        },
+        {
+          "name": "Strike Force (rev 1 02/25/91)",
+          "setname": "strkforc",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/Strike Force (rev 1 02-25-91).mra",
+          "sha256": "3e8bba2a65571a661fdd47641d11e53cda2bed9983c32e99a10ac74fbec3fdb8",
+          "original_sha256": "ce6daafc78fd403c4f473e28b6eaa223eb8da0aaa6a1608e8fd179f93f4ff775",
+          "rom_archives": [
+            "strkforc.zip"
+          ]
+        },
+        {
+          "name": "Super High Impact (rev LA2 10/22/91)",
+          "setname": "shimpact",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/Super High Impact (rev LA2 10-22-91).mra",
+          "sha256": "1d0dfce775c9ac278b7d77583eaa11ee036ca707ff17c4b09a7694d1f921c67c",
+          "original_sha256": "aa0c9f79071e7b3f9bb16320008156ddbaa13d4f625ea465a24e9728ff673174",
+          "rom_archives": [
+            "shimpact.zip"
+          ]
+        },
+        {
+          "name": "Trog (rev LA5 3/29/91)",
+          "setname": "trog",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/Trog (rev LA5 3-29-91).mra",
+          "sha256": "82352609e4392281dc46d0747a1c9cf99e678b1977231b1eefd2514d38918d8c",
+          "original_sha256": "cc15276454abea6b3e464034e461bc932fb1fbb1c63b2417d1a17244671e72d8",
+          "rom_archives": [
+            "trog.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    },
+    {
+      "id": "yunitadpcm",
+      "family": "Y Unit",
+      "version": "ADPCM / T2 guns r41",
+      "date": "20260905",
+      "sha256": "2061a3031fbf5d3878a79eccb912b84336ad976dfabc80d2cddb84f931745b41",
+      "status": "Beta; four-corner timing passed",
+      "notes": "Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Per-player guns, Sinden border and crosshair controls; cabinet verification pending.",
+      "binary": "_Arcade/cores/blahm1d_yunitadpcm_20260905.rbf",
+      "binding": "blahm1d_yunitadpcm",
+      "games": [
+        {
+          "name": "Mortal Kombat (rev 4.0 09/28/92, Y-Unit)",
+          "setname": "mk",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/Mortal Kombat (rev 4.0 09-28-92, Y-Unit).mra",
+          "sha256": "91cc45031e36ede27705c5f517217b9a8bce3d876501b18a22531a623be3efdc",
+          "original_sha256": "d2cb2a2baf53784eafe81706f57b7b4fea184677d23d3911a712d5a49822d881",
+          "rom_archives": [
+            "mk.zip"
+          ]
+        },
+        {
+          "name": "Terminator 2 - Judgment Day (rev LA4 08/03/92)",
+          "setname": "term2",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/Terminator 2 - Judgment Day (rev LA4 08-03-92).mra",
+          "sha256": "43fb9513d10979eb61e056b36df9c5f407424b22dfb2ef562fceca0bc1e4271d",
+          "original_sha256": "375d9ea3316ad35ee05602e1d3ff3817ffad91dacc6eadaddcc50b9197536dbb",
+          "rom_archives": [
+            "term2.zip"
+          ]
+        },
+        {
+          "name": "Total Carnage (rev LA1 03/10/92)",
+          "setname": "totcarn",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/Y Unit/Total Carnage (rev LA1 03-10-92).mra",
+          "sha256": "4abc2d873cbf93f374307156aa392e9bfb9feebc3c9df6d7e8e8f274a9460f5b",
+          "original_sha256": "0cc46ecdb59ac314838c862b64f7ab93353e208708d25bcda7751bd54da85d51",
+          "rom_archives": [
+            "totcarn.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    },
+    {
+      "id": "xunit",
+      "family": "X Unit",
+      "version": "Revolution X clean audio/performance",
+      "date": "20260914",
+      "sha256": "1e8b5ed7ad312649ae04fb1669557dc1d1ebc15ff65dc1830012b4aa647fb67e",
+      "status": "Beta; physical signoff passed",
+      "notes": "Revolution X. Separate Music/SFX volume controls and DMA performance changes. No diagnostic overlay; latest whole-core gameplay and cabinet verification remain pending.",
+      "binary": "_Arcade/cores/blahm1d_xunit_20260914.rbf",
+      "binding": "blahm1d_xunit",
+      "games": [
+        {
+          "name": "Revolution X",
+          "setname": "revx",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/X Unit/RevX_09132026.mra",
+          "sha256": "1b6fe1fac934f3878f859c5443d729f9cb2a97ea82ce30e9983e0e092cf0130a",
+          "original_sha256": "082f0f7e6a755cab672f911faba2900c04035ef3f4ca9f41bf85a9e3338b1283",
+          "rom_archives": [
+            "revx.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    },
+    {
+      "id": "exidy440",
+      "family": "Exidy cores",
+      "version": "Exidy 440 r6",
+      "date": "20260907",
+      "sha256": "b56e3467b5863e48cd89a8256a3ab134f3df60c6f94b201f0663ae988da5e116",
+      "status": "Beta; four-corner timing passed",
+      "notes": "Eleven Exidy 440 games. Core family bring-up; first cabinet validation pending.",
+      "binary": "_Arcade/cores/blahm1d_exidy440_20260907.rbf",
+      "binding": "blahm1d_exidy440",
+      "games": [
+        {
+          "name": "Catch-22",
+          "setname": "catch22",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Catch-22.mra",
+          "sha256": "18f634852424a8b34c00c9badc2ad2130a4f60a77ad382fca2b74f060a0f2307",
+          "original_sha256": "18bf927bc6a4c4f5b01144ce9ead835b6e38a19afe0ac9a90aae6c34e09d009e",
+          "rom_archives": [
+            "catch22.zip",
+            "combat.zip"
+          ]
+        },
+        {
+          "name": "Cheyenne",
+          "setname": "cheyenne",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Cheyenne.mra",
+          "sha256": "b29e35b553e72e5f7df0b79f4492ed5761837148ca400a24308c59550e52ae0b",
+          "original_sha256": "72b3a9c95ce87ab8d4f541e24145be58c319d2bae2bb425b64aa3f465b409a29",
+          "rom_archives": [
+            "cheyenne.zip"
+          ]
+        },
+        {
+          "name": "Chiller",
+          "setname": "chiller",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Chiller.mra",
+          "sha256": "ebd216439b6bed3d12f75c119d43bb6ac85107b2c3401eb4c07018052fe6a5c4",
+          "original_sha256": "f5bc94d91fee9cce4600c772e07a631d78519780e94dcb51f7211fd44196e8fc",
+          "rom_archives": [
+            "chiller.zip"
+          ]
+        },
+        {
+          "name": "Clay Pigeon",
+          "setname": "claypign",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Clay Pigeon.mra",
+          "sha256": "34d0603f2acbbfc3f74725c8d0bf968bc9845643551931a32bbcb32867f785b2",
+          "original_sha256": "2f575c128bfb6e7c3ca13c3c750d39df1e5848b23b04b0e69841ee89f2c223a5",
+          "rom_archives": [
+            "claypign.zip"
+          ]
+        },
+        {
+          "name": "Combat",
+          "setname": "combat",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Combat.mra",
+          "sha256": "dfd3b91a6b9a26e46132ebeea324ff6ba44dbe8b7f849f0bd77c8776c1a429fb",
+          "original_sha256": "40a7917e99fe5fe00ce3b767246a2c4ef6acf44f2524b1bd5624c68b4e206824",
+          "rom_archives": [
+            "combat.zip"
+          ]
+        },
+        {
+          "name": "Crackshot",
+          "setname": "cracksht",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Crackshot.mra",
+          "sha256": "84a4f88598cb3ef1a3dc1b1542dcd8aa6a62f7f89931b432d1f161b102f48fef",
+          "original_sha256": "9d75420a331b64f6118221981d1fb75d5ee2c7924b76c77341468844e75ef579",
+          "rom_archives": [
+            "cracksht.zip"
+          ]
+        },
+        {
+          "name": "Crossbow",
+          "setname": "crossbow",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Crossbow.mra",
+          "sha256": "42168ce8292207d903675b78e7e555ea9e90a8da52606c7fd6569614af1e1009",
+          "original_sha256": "354cfbc27e8b3e85e5e9f09f4614af0c13543296108b5fa69ccc958b7bc4232e",
+          "rom_archives": [
+            "crossbow.zip"
+          ]
+        },
+        {
+          "name": "Hit 'n Miss",
+          "setname": "hitnmiss",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Hit 'n Miss.mra",
+          "sha256": "76109069c6fb7a5d02a9c6fd20e8c2d3f4725e51d90056025ef543198bede15a",
+          "original_sha256": "0c082b6bd0080ed19e5b854ebf216285164a968498738fbcdee4f724b85fb5c8",
+          "rom_archives": [
+            "hitnmiss.zip"
+          ]
+        },
+        {
+          "name": "Showdown",
+          "setname": "showdown",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Showdown.mra",
+          "sha256": "e07d09e41878b0564856732766d8d78580f30bf517774bd1b40d49df61dcbf9c",
+          "original_sha256": "4e7dd9163224421582a02a023cb0239e37f3e1f35f46786b7410d047a1fdc93c",
+          "rom_archives": [
+            "showdown.zip"
+          ]
+        },
+        {
+          "name": "Top Secret",
+          "setname": "topsecex",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Top Secret.mra",
+          "sha256": "4355b8f2336db3d22d45d67b9107895bec84cfa2a87afe7873806c60d3115a10",
+          "original_sha256": "8dc9cdee5c2d936ebff1c469337fc555fdf45f6be5cc124756a8ca0cec4b4870",
+          "rom_archives": [
+            "topsecex.zip"
+          ]
+        },
+        {
+          "name": "Who Dunit",
+          "setname": "whodunit",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Exidy cores/Who Dunit.mra",
+          "sha256": "68d0224b953dfc8c834eb2b70b76fc6bc52cb2d1d3d4437a3bddcd12eea8c6b8",
+          "original_sha256": "e136781c4f29e42638655c0ea17269959f02dbda6c68a445e8a5a6b90e0f7c96",
+          "rom_archives": [
+            "whodunit.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    },
+    {
+      "id": "narc",
+      "family": "NARC",
+      "version": "v22 erase row",
+      "date": "20260803",
+      "sha256": "40d52e01e5ee955520125302d8938bee080630829534cb3e56f0161908c59fd5",
+      "status": "Beta; retained cabinet candidate",
+      "notes": "NARC rev 7.00. Erase-band/refill-tag update; final HUD-row cabinet acceptance is not recorded.",
+      "binary": "_Arcade/cores/blahm1d_narc_20260803.rbf",
+      "binding": "blahm1d_narc",
+      "games": [
+        {
+          "name": "Narc (rev 7.00)",
+          "setname": "narc",
+          "mameversion": "0280",
+          "path": "_Arcade/_blahm1d/NARC/Narc (rev 7.00) [v22 erase row].mra",
+          "sha256": "922ccf3c539382248060174ecde2d63c16b8f8c5ef1b4182992b9c7eb36df4f2",
+          "original_sha256": "46d8354b7ad3b5530ecdec123590b66bfd0467f1adb2ff401eff5e89f2bcceaf",
+          "rom_archives": [
+            "narc.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    },
+    {
+      "id": "tunit",
+      "family": "T Unit",
+      "version": "ADPCM S12 baseline",
+      "date": "20260826",
+      "sha256": "868825b1578997257b89cfa16e6d86a138f117219a969995e3a8eee0c7206bd0",
+      "status": "Beta; retained S12 baseline",
+      "notes": "NBA/TE scaling repair. Popup flashing, ADPCM sound/cold-boot issues and save persistence are unresolved. Newer S20/S22 cabinet-rejected builds are excluded.",
+      "binary": "_Arcade/cores/blahm1d_tunit_20260826.rbf",
+      "binding": "blahm1d_tunit",
+      "games": [
+        {
+          "name": "Judge Dredd (rev TA1 7/12/92, location test)",
+          "setname": "jdreddp",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/T Unit/Judge Dredd (rev TA1 7-12-92, location test).mra",
+          "sha256": "c4c3c5fcf03c04b988b8624f402aa9f860db827d0a11f9df17c6b7f355899c43",
+          "original_sha256": "05d8fe5f77dba01a25b5f8652b9b297acfd05d84af55aedbae0f12525c89bb0f",
+          "rom_archives": [
+            "jdreddp.zip"
+          ]
+        },
+        {
+          "name": "Mortal Kombat (rev 5.0 T-Unit 03/19/93)",
+          "setname": "mk",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/T Unit/Mortal Kombat (rev 5.0 T-Unit 03-19-93).mra",
+          "sha256": "02692441802e11707b61eaf84237be646c13ab302814d8c9dbabce35c7741cbe",
+          "original_sha256": "452ee6c4cbf2684cc535092698dd2a55972d19313f7102ffb1b1c78106f008e0",
+          "rom_archives": [
+            "mk.zip"
+          ]
+        },
+        {
+          "name": "NBA Jam (rev 3.01 4/07/93)",
+          "setname": "nbajam",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/T Unit/NBA Jam (rev 3.01 4-07-93).mra",
+          "sha256": "b444e7898c371167c25e649ac5e70c96c326c08f7b23350dca1ed97d72f2d496",
+          "original_sha256": "c553f5cc2316332f24369448475ae62fd8985426a23a4e503bd72cbc1b505596",
+          "rom_archives": [
+            "nbajam.zip"
+          ]
+        },
+        {
+          "name": "NBA Jam Tournament Edition (rev 4.0 3/23/94)",
+          "setname": "nbajamte",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/T Unit/NBA Jam Tournament Edition (rev 4.0 3-23-94).mra",
+          "sha256": "34985c78bc33e1ae4f0b559e7866f4124aec825e58240bf7e944ff66ae38835d",
+          "original_sha256": "29766784e3b9a2e6c4978957317468b55b303afe4bfb0093cbe4869abb40e569",
+          "rom_archives": [
+            "nbajamte.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    },
+    {
+      "id": "tunitdcs",
+      "family": "T Unit",
+      "version": "DCS S12 baseline",
+      "date": "20260826",
+      "sha256": "fdcc772686781e201df519dc81d00de01ec7897cb33aee6b434799218c8023f6",
+      "status": "Beta; timing-clean S12 baseline",
+      "notes": "Mortal Kombat II. The later S19 timing-waived cabinet-only build is excluded. Audio reconstruction and save behavior remain under development.",
+      "binary": "_Arcade/cores/blahm1d_tunitdcs_20260826.rbf",
+      "binding": "blahm1d_tunitdcs",
+      "games": [
+        {
+          "name": "Mortal Kombat II (rev L3.1)",
+          "setname": "mk2",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/T Unit/Mortal Kombat II (rev L3.1).mra",
+          "sha256": "d779df493aec2d984659eda6167238887e87645783fca354ce1f22653dddbb58",
+          "original_sha256": "68c195ab39f343241a494b05b2e6aaa4c46168999371bd1c8b2e82cb64add1b6",
+          "rom_archives": [
+            "mk2.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
+    }
+  ]
+}
