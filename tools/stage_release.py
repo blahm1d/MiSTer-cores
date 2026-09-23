@@ -4,7 +4,8 @@
 Takes the SD-card style `_Arcade` folder a core build produces and:
   * copies the RBF to `_Arcade/cores/<binding>_<date>.rbf` and removes the old one,
   * copies each matching MRA (matched by <setname>) and points its <rbf> at the binding,
-  * rebuilds the core's source archive from the build's project folder,
+  * rebuilds the core's source archive from the build's project folder, adding
+    only new files the build itself references (Quartus project, QIPs, sv2v list),
   * updates catalog/releases.json and catalog/sources.json with the new hashes,
   * runs the same validation the publish workflow runs.
 
@@ -26,10 +27,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 import build_db  # noqa: E402
 
-SKIP_DIRS = {'output_files', 'db', 'incremental_db', 'greybox_tmp', 'work', 'simulation',
-             'build', 'build_syn', 'releases', '__pycache__', '.git'}
-NEW_FILE_DIRS = ('rtl/', 'sys/')
-NEW_FILE_EXTS = {'.sv', '.v', '.vhd', '.vh', '.svh', '.qip', '.sdc', '.tcl', '.hex', '.mif'}
+# Generated build output; never part of a source archive.
+GENERATED_DIRS = {'output_files', 'db', 'incremental_db', 'greybox_tmp', 'build_syn'}
+# Plain-text lists of synthesis sources, one project-relative path per line.
+SOURCE_LISTS = ('tools/quartus_sv2v_files.txt',)
+QUARTUS_FILE_REF = re.compile(
+    r'-name\s+\w*FILE\s+(?:\[file\s+join\s+\$::quartus\(qip_path\)\s+"?([^\]"]+?)"?\s*\]|"([^"]+)"|(\S+))')
+MEM_INIT_REF = re.compile(r'\$readmem[hb]\s*\(\s*"([^"]+)"')
+HDL_EXTS = {'.sv', '.v', '.vhd', '.vh', '.svh'}
 ZIP_TIME = (2026, 9, 14, 0, 0, 0)
 
 
@@ -87,6 +92,58 @@ def default_source_dir(sd_dir):
     return None
 
 
+def build_references(source_dir, seed):
+    """Files the build actually uses: the synthesis source lists, everything the
+    Quartus project and QIP files name (recursively), and memory-init files the
+    HDL loads with $readmemh/$readmemb. Test benches and unrelated cores in the
+    same folder are left out because nothing in the build refers to them."""
+    root = source_dir.resolve()
+
+    def rel(path):
+        try:
+            r = path.resolve().relative_to(root)
+        except ValueError:
+            return None
+        if not path.is_file() or GENERATED_DIRS.intersection(r.parts[:-1]):
+            return None
+        return r.as_posix()
+
+    queue = [p for p in seed if p.endswith(('.qsf', '.qip'))] + list(SOURCE_LISTS)
+    queue += [p.relative_to(root).as_posix() for p in root.glob('*.qsf')]
+    found, seen = set(), set()
+    while queue:
+        name = queue.pop()
+        if name in seen:
+            continue
+        seen.add(name)
+        path = root / name
+        if not path.is_file():
+            continue
+        found.add(name)
+        text = path.read_text(encoding='utf-8', errors='replace')
+        refs = []
+        if name in SOURCE_LISTS:
+            refs = [(root / line.strip()) for line in text.splitlines()
+                    if line.strip() and not line.strip().startswith('#')]
+        elif name.endswith(('.qsf', '.qip')):
+            base = root if name.endswith('.qsf') else path.parent
+            for line in text.splitlines():
+                if line.lstrip().startswith('#'):
+                    continue
+                m = QUARTUS_FILE_REF.search(line)
+                if m:
+                    qip_rel, quoted, bare = m.groups()
+                    refs.append(path.parent / qip_rel.strip() if qip_rel else base / (quoted or bare))
+        elif path.suffix.lower() in HDL_EXTS:
+            for m in MEM_INIT_REF.finditer(text):
+                refs += [path.parent / m.group(1), root / m.group(1)]
+        for ref in refs:
+            r = rel(ref)
+            if r and r not in seen:
+                queue.append(r)
+    return found
+
+
 def build_source_archive(core_id, version, rbf_hash, source_dir, old_archive):
     with zipfile.ZipFile(old_archive) as z:
         old_manifest = json.loads(z.read('SOURCE-MANIFEST.json'))
@@ -96,13 +153,7 @@ def build_source_archive(core_id, version, rbf_hash, source_dir, old_archive):
     if missing:
         fail(f'{len(missing)} source files from the previous archive are missing in {source_dir}, '
              f'for example {missing[:5]}. Check --source-dir.')
-    added = []
-    for p in sorted(source_dir.rglob('*')):
-        rel = p.relative_to(source_dir).as_posix()
-        if (p.is_file() and rel.startswith(NEW_FILE_DIRS) and p.suffix.lower() in NEW_FILE_EXTS
-                and rel not in old_manifest['files_sha256']
-                and not SKIP_DIRS.intersection(p.relative_to(source_dir).parts[:-1])):
-            added.append(rel)
+    added = sorted(build_references(source_dir, listed) - set(listed))
     files = {rel: (source_dir / rel).read_bytes() for rel in listed + added}
     manifest = dict(old_manifest, core=core_id, version=version, rbf_sha256=rbf_hash,
                     source_commit=None, snapshot=source_dir.name,
