@@ -1,7 +1,7 @@
 Simple download method
 
-Download downloader_blahm1d.ini:
-https://github.com/blahm1d/MiSTer-cores/releases/latest/download/downloader_blahm1d.ini
+Download downloader_blahm1d.ini (right-click, Save link as):
+https://raw.githubusercontent.com/blahm1d/MiSTer-cores/db/downloader_blahm1d.ini
 
 Place it in your MiSTer's SD card root, then run Update_All.
 You'll find my cores under Arcade → blahm1d.
