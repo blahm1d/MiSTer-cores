@@ -1,8 +1,8 @@
 # blahm1d MiSTer cores
 
-**[Download downloader_blahm1d.ini](https://github.com/blahm1d/MiSTer-cores/releases/latest/download/downloader_blahm1d.ini)**
+**[Download downloader_blahm1d.ini](https://raw.githubusercontent.com/blahm1d/MiSTer-cores/db/downloader_blahm1d.ini)** (right-click the link and choose *Save link as*)
 
-[ZIP download](https://github.com/blahm1d/MiSTer-cores/releases/latest/download/downloader_blahm1d.zip) (extract the INI first).
+[ZIP download](https://raw.githubusercontent.com/blahm1d/MiSTer-cores/db/downloader_blahm1d.zip) (extract the INI first).
 
 1. Place `downloader_blahm1d.ini` in your MiSTer's SD card root (`/media/fat/`).
 2. Run **Update_All**.
