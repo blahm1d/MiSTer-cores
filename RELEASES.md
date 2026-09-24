@@ -34,7 +34,7 @@ Games: Mortal Kombat 3 (rev 2.1); NBA Hangtime (L1.3 10/10/96); NBA Maximum Hang
 
 ## Y Unit - Family RC3
 
-Beta; timing waiver (misses only the slow -40C corner by 0.018 ns). Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Fixes silent sound at power-on (6809 sound CPU cold reset) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs); blitter bit-exact against MAME. Cabinet confirmation not yet recorded.
+Beta; cabinet verified; timing waiver (misses only the slow -40C corner by 0.018 ns). Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Fixes silent sound at power-on (6809 sound CPU cold reset) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs); blitter bit-exact against MAME.
 
 RBF: `blahm1d_yunit_20260922.rbf`
 
@@ -44,7 +44,7 @@ Games: High Impact Football (rev LA5 02/15/91); Saurian Front (proto v5.0 08/07/
 
 ## Y Unit - ADPCM / T2 guns RC3
 
-Beta; timing passed at all corners. Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Fixes silent sound at power-on, crackly sampled speech (OKI ADPCM now matches MAME) and the CMOS INVALID hang on a blank save. Per-player guns, Sinden border and crosshair controls. Cabinet confirmation not yet recorded.
+Beta; cabinet verified; timing passed at all corners. Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Fixes silent sound at power-on, crackly sampled speech (OKI ADPCM now matches MAME) and the CMOS INVALID hang on a blank save. Per-player guns, Sinden border and crosshair controls.
 
 RBF: `blahm1d_yunitadpcm_20260922.rbf`
 
@@ -84,7 +84,7 @@ Games: Narc (rev 7.00).
 
 ## T Unit - ADPCM R7E announcer fix
 
-Beta; timing passed at all corners. OKI ADPCM sound now matches MAME, fixing the NBA Jam announcer crackle. NBA/TE scaling repair retained. Popup flashing, cold-boot sound and save persistence issues from the S12 baseline may remain. Cabinet confirmation not yet recorded.
+Beta; cabinet verified; timing passed at all corners. OKI ADPCM sound now matches MAME, fixing the NBA Jam announcer crackle. NBA/TE scaling repair retained. Popup flashing, cold-boot sound and save persistence issues from the S12 baseline may remain.
 
 RBF: `blahm1d_tunit_20260922.rbf`
 
@@ -108,7 +108,7 @@ T Unit ADPCM moved from the S12 baseline to the September 22 R7E announcer-fix b
 
 ## Cruis'n USA - r26
 
-Beta; timing passed at all corners. Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed. Cabinet confirmation of this USA build not yet recorded.
+Beta; cabinet verified; timing passed at all corners. Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed.
 
 RBF: `blahm1d_cruisinusa_20260924.rbf`
 

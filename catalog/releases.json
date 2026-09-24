@@ -164,8 +164,8 @@
       "version": "RC3 sound + CMOS fixes",
       "date": "20260922",
       "sha256": "7a1f6d03ae6f7a7dcb11bf8882ef065f72bab5e077eae830a5f4ba653d232213",
-      "status": "Beta; timing waiver (slow -40C corner)",
-      "notes": "Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Fixes silent sound at power-on (6809 sound CPU cold reset) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs); blitter bit-exact against MAME. Timing misses only the slow -40C corner by 0.018 ns. Cabinet confirmation not yet recorded.",
+      "status": "Beta; cabinet verified; timing waiver (slow -40C corner)",
+      "notes": "Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Fixes silent sound at power-on (6809 sound CPU cold reset) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs); blitter bit-exact against MAME. Timing misses only the slow -40C corner by 0.018 ns.",
       "binary": "_Arcade/cores/blahm1d_yunit_20260922.rbf",
       "binding": "blahm1d_yunit",
       "games": [
@@ -236,7 +236,7 @@
           ]
         }
       ],
-      "cabinet_verified": false
+      "cabinet_verified": true
     },
     {
       "id": "yunitadpcm",
@@ -244,8 +244,8 @@
       "version": "RC3 sound + CMOS fixes",
       "date": "20260922",
       "sha256": "1487bdb1a7f5a9b1d55920d746921c87faa0d1db5ecf7a26db505d888bc5b7d6",
-      "status": "Beta; timing passed (all corners)",
-      "notes": "Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Fixes silent sound at power-on (6809 sound CPU cold reset), crackly sampled speech (OKI ADPCM now matches MAME) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs). Per-player guns, Sinden border and crosshair controls. Cabinet confirmation not yet recorded.",
+      "status": "Beta; cabinet verified; timing passed (all corners)",
+      "notes": "Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Fixes silent sound at power-on (6809 sound CPU cold reset), crackly sampled speech (OKI ADPCM now matches MAME) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs). Per-player guns, Sinden border and crosshair controls.",
       "binary": "_Arcade/cores/blahm1d_yunitadpcm_20260922.rbf",
       "binding": "blahm1d_yunitadpcm",
       "games": [
@@ -283,7 +283,7 @@
           ]
         }
       ],
-      "cabinet_verified": false
+      "cabinet_verified": true
     },
     {
       "id": "xunit",
@@ -477,8 +477,8 @@
       "version": "R7E announcer fix",
       "date": "20260922",
       "sha256": "a7724b6be160853a4edc2762faf37c9877465c13bbcee26b50bc8cb1e6ff4c9c",
-      "status": "Beta; timing passed (all corners)",
-      "notes": "Judge Dredd, Mortal Kombat T Unit, NBA Jam and NBA Jam TE. OKI ADPCM sound now matches MAME, fixing the NBA Jam announcer crackle. NBA/TE scaling repair retained. Popup flashing, cold-boot sound and save persistence issues from the S12 baseline may remain. Cabinet confirmation not yet recorded.",
+      "status": "Beta; cabinet verified; timing passed (all corners)",
+      "notes": "Judge Dredd, Mortal Kombat T Unit, NBA Jam and NBA Jam TE. OKI ADPCM sound now matches MAME, fixing the NBA Jam announcer crackle. NBA/TE scaling repair retained. Popup flashing, cold-boot sound and save persistence issues from the S12 baseline may remain.",
       "binary": "_Arcade/cores/blahm1d_tunit_20260922.rbf",
       "binding": "blahm1d_tunit",
       "games": [
@@ -527,7 +527,7 @@
           ]
         }
       ],
-      "cabinet_verified": false
+      "cabinet_verified": true
     },
     {
       "id": "tunitdcs",
@@ -609,8 +609,8 @@
       "version": "r26 (whole game in FPGA)",
       "date": "20260924",
       "sha256": "56d70e253a245ba22237c53a557d976dfa09763225ee6cb853eea34f714a0b2f",
-      "status": "Beta; timing passed (all corners)",
-      "notes": "Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed. Cabinet confirmation of this USA build not yet recorded.",
+      "status": "Beta; cabinet verified; timing passed (all corners)",
+      "notes": "Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed.",
       "binary": "_Arcade/cores/blahm1d_cruisinusa_20260924.rbf",
       "binding": "blahm1d_cruisinusa",
       "games": [
@@ -627,7 +627,7 @@
           ]
         }
       ],
-      "cabinet_verified": false
+      "cabinet_verified": true
     }
   ]
 }
