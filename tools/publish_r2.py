@@ -47,12 +47,24 @@ def exists(url, size):
         return False  # host not serving yet (first publish): upload everything
 
 
+def wrangler_cmd():
+    """Run wrangler's JS entry with node directly: on Windows the npm .cmd shim goes through
+    cmd.exe, which mangles or crashes on some argument characters."""
+    exe = shutil.which('wrangler')
+    if exe and sys.platform == 'win32':
+        js = Path(exe).parent / 'node_modules' / 'wrangler' / 'bin' / 'wrangler.js'
+        node = shutil.which('node')
+        if js.is_file() and node:
+            return [node, str(js)]
+    return [exe] if exe else None
+
+
 def put(wrangler, bucket, key, path, cache, dry):
     ctype = TYPES.get(path.suffix.lower(), 'application/octet-stream')
     print(f'  put {key}  ({path.stat().st_size:,} bytes)')
     if dry:
         return
-    subprocess.run([wrangler, 'r2', 'object', 'put', f'{bucket}/{key}', '--file', str(path),
+    subprocess.run([*wrangler, 'r2', 'object', 'put', f'{bucket}/{key}', '--file', str(path),
                     '--content-type', ctype, '--cache-control', cache, '--remote'],
                    cwd=ROOT, check=True)
 
@@ -62,13 +74,15 @@ def main():
     ap.add_argument('--bucket', required=True)
     ap.add_argument('--base-url', required=True, help='public HTTPS URL the bucket is served at')
     ap.add_argument('--dry-run', action='store_true', help='build and list uploads without writing')
+    ap.add_argument('--payloads-only', action='store_true',
+                    help='upload payloads and source archives but not the database (payload keys do not depend on the URL)')
     args = ap.parse_args()
     base = args.base_url.rstrip('/')
     if not base.startswith('https://'):
         sys.exit('--base-url must be https://')
     if git('status', '--porcelain', '--', '_Arcade', 'catalog', 'sources'):
         sys.exit('Release files have uncommitted changes; commit first so the database pins a real commit.')
-    wrangler = shutil.which('wrangler') or shutil.which('wrangler.cmd')
+    wrangler = wrangler_cmd()
     if not wrangler and not args.dry_run:
         sys.exit('wrangler not found on PATH')
 
@@ -87,6 +101,9 @@ def main():
             continue
         put(wrangler, args.bucket, key, path, IMMUTABLE, args.dry_run)
     print(f'  {skipped} already on the mirror')
+    if args.payloads_only:
+        print('Payloads only: database not uploaded.')
+        return
 
     print('Database:')
     for name in ('db.json.zip', 'db.json', 'downloader_blahm1d.ini', 'downloader_blahm1d.zip'):

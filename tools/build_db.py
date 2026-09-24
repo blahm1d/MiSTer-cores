@@ -69,7 +69,8 @@ def make_zip(path, contents):
 def object_key(path,data):
     """Content-addressed key used by mirrors other than GitHub: a changed file gets a new URL,
     so a database can never pair new metadata with an old cached payload."""
-    return f'files/{digest(data)}/{quote(PurePosixPath(path).name)}'
+    safe=re.sub(r'[^A-Za-z0-9._-]+','_',PurePosixPath(path).name)  # URL-safe as-is; Downloader saves by db path
+    return f'files/{digest(data)}/{safe}'
 
 def build(revision,out,timestamp,base_url=None):
     assert re.fullmatch(r'[0-9a-f]{40}',revision),'Artifact URLs must pin a full Git commit'
