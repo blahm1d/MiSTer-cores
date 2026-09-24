@@ -13,6 +13,12 @@
    release files and push to `main`. Check the **Publish MiSTer downloader database**
    Actions run. A failed validation leaves the previously published feed in place.
 
+5. Publish the mirror users download from (`https://mister.blahm1d.com`, the
+   `blahm1d-mister` R2 bucket) after committing:
+   `python tools/publish_r2.py --bucket blahm1d-mister --base-url https://mister.blahm1d.com`
+   It uploads new payloads and source archives first, then the database and INI.
+   Requires `wrangler login` on the publishing machine.
+
 The workflow publishes `db.json.zip` and the downloadable INI to the `db` branch.
 Every payload URL pins the source commit, so a database cannot silently mix old
 metadata with new file contents. The database ID is permanently `blahm1d`.
