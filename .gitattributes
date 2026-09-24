@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.mra -text whitespace=-blank-at-eol,cr-at-eol
+*.rbf -text
+*.zip -text
+*.nvm -text
+*.ini text eol=lf
+*.py text eol=lf
+*.yml text eol=lf

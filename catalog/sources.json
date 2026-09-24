@@ -1,0 +1,81 @@
+{
+  "sources": [
+    {
+      "id": "gladiator",
+      "archive": "sources/gladiator-20260729.zip",
+      "sha256": "426b73f04fbc8074bcbcefd2401e1c18c302ba3c1ee6c7c6384ebacafa002db1",
+      "file_count": 178,
+      "bytes": 463978
+    },
+    {
+      "id": "legendofkage",
+      "archive": "sources/legendofkage-20260830.zip",
+      "sha256": "e9f68d84e526c51ae8e6dc5bf093b27829038bda05ba4d8244db3a13a55f2374",
+      "file_count": 181,
+      "bytes": 486350
+    },
+    {
+      "id": "wolfunit",
+      "archive": "sources/wolfunit-20260924.zip",
+      "sha256": "b2cea107f5878445ce478fee13b8aac5f318721c3ec17ba3a34f96ef34dbe69b",
+      "file_count": 525,
+      "bytes": 1460864
+    },
+    {
+      "id": "yunit",
+      "archive": "sources/yunit-20260904.zip",
+      "sha256": "13162282b43e3ecb655565bfdfe04cb650e670fbdd913d43587a530b46270ef4",
+      "file_count": 535,
+      "bytes": 1826769
+    },
+    {
+      "id": "yunitadpcm",
+      "archive": "sources/yunitadpcm-20260905.zip",
+      "sha256": "1255405d92984edaad3097336efe202e066e0fc0a6a67800d56ad77e97acdea8",
+      "file_count": 538,
+      "bytes": 1833560
+    },
+    {
+      "id": "xunit",
+      "archive": "sources/xunit-20260918.zip",
+      "sha256": "52c3b62905d9ee792a5784362dd3863c0597d301ed8e7fba84b9427884a8403c",
+      "file_count": 151,
+      "bytes": 794253
+    },
+    {
+      "id": "exidy440",
+      "archive": "sources/exidy440-20260907.zip",
+      "sha256": "ef9aaaf89b768b391e0d9510c07ad057389b898cb7a5fcc3642ba377cd7e2e5b",
+      "file_count": 96,
+      "bytes": 260930
+    },
+    {
+      "id": "narc",
+      "archive": "sources/narc-20260923.zip",
+      "sha256": "aff39bc7323da3e062d90ec690f7cab5f6dbbd2a07b868c1117df9ccb879a3e3",
+      "file_count": 435,
+      "bytes": 1416615
+    },
+    {
+      "id": "tunit",
+      "archive": "sources/tunit-20260826.zip",
+      "sha256": "83fe368f00e4adee81817dee7db9078fef58bb979b7a0c6a4215a9f4e4a0ab67",
+      "file_count": 218,
+      "bytes": 804935
+    },
+    {
+      "id": "tunitdcs",
+      "archive": "sources/tunitdcs-20260923.zip",
+      "sha256": "afe0dc1ebb3997a052b95c3a276aea294532f786165abd4a5d02d385c6f75a2e",
+      "file_count": 219,
+      "bytes": 835748
+    },
+    {
+      "id": "nightslashers",
+      "archive": "sources/nightslashers-20260712.zip",
+      "sha256": "ffbf67673ee2cadb5ea12f8ef64af20a5dadb84fe0ea20863dced62ac434c5d6",
+      "file_count": 373,
+      "bytes": 752999
+    }
+  ]
+}
