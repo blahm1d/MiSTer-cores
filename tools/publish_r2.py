@@ -16,6 +16,7 @@ import json
 import shutil
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -35,6 +36,9 @@ def git(*args):
 
 
 def exists(url, size):
+    # Query string keeps this probe off the real URL's cache entry: a HEAD before upload would
+    # otherwise leave a cached 404 at the edge for the very URL users are about to download.
+    url = f'{url}?probe={time.time_ns()}'
     req = urllib.request.Request(url, method='HEAD', headers={'User-Agent': 'blahm1d-publish'})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:

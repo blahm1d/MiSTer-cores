@@ -11,6 +11,7 @@ import re
 import sys
 import urllib.request
 import zipfile
+from pathlib import Path
 
 
 def get(url):
@@ -35,7 +36,17 @@ def main():
         if not ok:
             bad += 1
             print('  FAIL', path, f['url'])
-    print('PASS: every file downloads and matches its size and MD5' if not bad else f'{bad} FAILED')
+    base = db_url.rsplit('/', 1)[0]
+    catalog = Path(__file__).resolve().parents[1] / 'catalog/sources.json'
+    for s in json.loads(catalog.read_text(encoding='utf-8'))['sources']:
+        try:
+            ok = hashlib.sha256(get(f'{base}/{s["archive"]}')).hexdigest() == s['sha256']
+        except Exception:
+            ok = False
+        if not ok:
+            bad += 1
+            print('  FAIL source', s['archive'])
+    print('PASS: every file and source archive downloads and matches' if not bad else f'{bad} FAILED')
     sys.exit(1 if bad else 0)
 
 
