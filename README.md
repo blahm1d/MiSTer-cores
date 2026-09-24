@@ -22,12 +22,13 @@ up drop-in files, update it or add the INI's two lines to your existing
 | Gladiator | July 29 release; US and Japan |
 | The Legend of Kage | August 30 water-priority fix; bootleg set 1 |
 | Wolf Unit | September 24 flip fence + DCS sound fix (cabinet verified); seven original games |
-| Y Unit | r36 family and r41 ADPCM/T2 lightgun builds; nine games |
-| X Unit | September 14 clean Revolution X performance/audio build |
-| T Unit | S12 ADPCM baseline; September 23 DCS sound fix (Mortal Kombat II); five games |
+| Y Unit | RC3 sound and CMOS fixes (family and ADPCM/T2 lightgun builds); nine games |
+| X Unit | September 18 Revolution X mouse + sprite-cache build |
+| T Unit | September 22 announcer fix (ADPCM); September 23 DCS sound fix (Mortal Kombat II); five games |
 | Exidy 440 | r6 family; eleven games |
 | NARC | v23 HUD-row fix (cabinet verified) |
 | Night Slashers | July 12 v1.4 sprite-fade fix; Japan, Korea and Over Sea |
+| Cruis'n USA | r26, the whole game in the FPGA at arcade speed |
 
 **These releases include beta cores.** Read [release status and known issues](RELEASES.md)
 before reporting a game issue. Most of the newer binaries still need cabinet

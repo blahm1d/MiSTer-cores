@@ -161,12 +161,12 @@
     {
       "id": "yunit",
       "family": "Y Unit",
-      "version": "Family r36",
-      "date": "20260904",
-      "sha256": "c58d851299b633d2c4d19d3e907627eb500e0130442e21f0bd983bf3303c7418",
-      "status": "Beta; four-corner timing passed",
-      "notes": "Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Background/erase and Smash TV sound-memory changes; cabinet confirmation pending.",
-      "binary": "_Arcade/cores/blahm1d_yunit_20260904.rbf",
+      "version": "RC3 sound + CMOS fixes",
+      "date": "20260922",
+      "sha256": "7a1f6d03ae6f7a7dcb11bf8882ef065f72bab5e077eae830a5f4ba653d232213",
+      "status": "Beta; timing waiver (slow -40C corner)",
+      "notes": "Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Fixes silent sound at power-on (6809 sound CPU cold reset) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs); blitter bit-exact against MAME. Timing misses only the slow -40C corner by 0.018 ns. Cabinet confirmation not yet recorded.",
+      "binary": "_Arcade/cores/blahm1d_yunit_20260922.rbf",
       "binding": "blahm1d_yunit",
       "games": [
         {
@@ -174,8 +174,8 @@
           "setname": "hiimpact",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/High Impact Football (rev LA5 02-15-91).mra",
-          "sha256": "70ce44aedb1eab4793b7e78e76c2fca1d1ed152618657cfa7d64ad961b3cce95",
-          "original_sha256": "34e0859fe60f9d2317a3619578346ff3363b34e4eeaebeac524138acedcb5915",
+          "sha256": "e631379e902ec9ecda271525ca00eb922255db8fbb8f48224af9432dd0b73a9f",
+          "original_sha256": "36049a8fe396e2233746dacacfefa48db1de49179ebccfb1df533fc9fc4f0f80",
           "rom_archives": [
             "hiimpact.zip"
           ]
@@ -185,8 +185,8 @@
           "setname": "saurnfrnt",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/Saurian Front (proto v5.0 08-07-90).mra",
-          "sha256": "9ea5d9e6ec12ea111db7f911e253103fe79515cc6f062a15628b0a14221f914b",
-          "original_sha256": "d60d153adf9b6631b4e425e1eda7e55cc32eae7bf4c17b472b45b2cdb0759715",
+          "sha256": "0844d35473de97781300492b101bcf60044aea19119c9989795c694694019689",
+          "original_sha256": "e13b882b85a61a1f9b9727b0a899905038e91cc9e310eb5a83096ceba964e922",
           "rom_archives": [
             "strkforc.zip"
           ]
@@ -196,8 +196,8 @@
           "setname": "smashtv",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/Smash T.V. (rev 8.00).mra",
-          "sha256": "1b4fe77dc801daf3ae0121c6ee54a8f1c31b0d907c8dbf02dc92663815d81c27",
-          "original_sha256": "9606483a02cfb141a9e3bb6a8a83bd5d1780a9ac9c6917ee41f8916ae2c4d213",
+          "sha256": "35520f4f5121eb2168717b80d126c5f86c08ae9149910dc7f7565badc2ea2e4d",
+          "original_sha256": "36b268ee3afe6a4a14838f9652c130bb2f1956765e5055b7a339f0decb33170a",
           "rom_archives": [
             "smashtv.zip"
           ]
@@ -207,8 +207,8 @@
           "setname": "strkforc",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/Strike Force (rev 1 02-25-91).mra",
-          "sha256": "29995582a4afef61f76591b19b814d474f593f7a9209a3f13bc1d7ee24673a84",
-          "original_sha256": "ce6daafc78fd403c4f473e28b6eaa223eb8da0aaa6a1608e8fd179f93f4ff775",
+          "sha256": "87abdab30a651700071105e58071eae10f6b3ac0afcebfa228d4c5f7552232bb",
+          "original_sha256": "c12962cc6633385f21a5e3155927fd551d82b63a1114bbb2723725bab3b29614",
           "rom_archives": [
             "strkforc.zip"
           ]
@@ -218,8 +218,8 @@
           "setname": "shimpact",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/Super High Impact (rev LA2 10-22-91).mra",
-          "sha256": "ddfbc5abe3d9aff7eefa65577d29f571a93e53338360fe5593543c12c005c71a",
-          "original_sha256": "aa0c9f79071e7b3f9bb16320008156ddbaa13d4f625ea465a24e9728ff673174",
+          "sha256": "b6cf3f8180106e9d7e9bc53735889bf55106895acc152c6d5e711896282dd014",
+          "original_sha256": "db2033836735950379aa8b2827275e9d3c55b826173f3e995540026701a73ffb",
           "rom_archives": [
             "shimpact.zip"
           ]
@@ -229,8 +229,8 @@
           "setname": "trog",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/Trog (rev LA5 3-29-91).mra",
-          "sha256": "bdf4ab096e2f6f98b83574e04fd0be722cf5458700e1043d734604ffeeed9804",
-          "original_sha256": "cc15276454abea6b3e464034e461bc932fb1fbb1c63b2417d1a17244671e72d8",
+          "sha256": "cded5dbad1b229b6fd6339048468f60346b71d750e5ef8c22d37c6bc897813d5",
+          "original_sha256": "a22735122a9c84008d8b8fbf77ce41b3d30e47d62a4d4b2f77aea3e7d51264f3",
           "rom_archives": [
             "trog.zip"
           ]
@@ -241,12 +241,12 @@
     {
       "id": "yunitadpcm",
       "family": "Y Unit",
-      "version": "ADPCM / T2 guns r41",
-      "date": "20260905",
-      "sha256": "2061a3031fbf5d3878a79eccb912b84336ad976dfabc80d2cddb84f931745b41",
-      "status": "Beta; four-corner timing passed",
-      "notes": "Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Per-player guns, Sinden border and crosshair controls; cabinet verification pending.",
-      "binary": "_Arcade/cores/blahm1d_yunitadpcm_20260905.rbf",
+      "version": "RC3 sound + CMOS fixes",
+      "date": "20260922",
+      "sha256": "1487bdb1a7f5a9b1d55920d746921c87faa0d1db5ecf7a26db505d888bc5b7d6",
+      "status": "Beta; timing passed (all corners)",
+      "notes": "Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Fixes silent sound at power-on (6809 sound CPU cold reset), crackly sampled speech (OKI ADPCM now matches MAME) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs). Per-player guns, Sinden border and crosshair controls. Cabinet confirmation not yet recorded.",
+      "binary": "_Arcade/cores/blahm1d_yunitadpcm_20260922.rbf",
       "binding": "blahm1d_yunitadpcm",
       "games": [
         {
@@ -254,8 +254,8 @@
           "setname": "mk",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/Mortal Kombat (rev 4.0 09-28-92, Y-Unit).mra",
-          "sha256": "f28cd0c0fae1dd76410bfd9019f6a378db6372402f1bc7ee64d9c8a98286b50f",
-          "original_sha256": "d2cb2a2baf53784eafe81706f57b7b4fea184677d23d3911a712d5a49822d881",
+          "sha256": "9eca38e435bd97bc8b680987735232c67c15cded78b578690f36ffa9f6f5044c",
+          "original_sha256": "da950154dcba9c6f6fa19e14ff65d57da546f7199f2a4e80e2dbf9ed54903d22",
           "rom_archives": [
             "mk.zip"
           ]
@@ -265,8 +265,8 @@
           "setname": "term2",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/Terminator 2 - Judgment Day (rev LA4 08-03-92).mra",
-          "sha256": "7afce0cbb289dc4b1a8892ef07953e0f26098dce2a82c2f217227afddba922d9",
-          "original_sha256": "375d9ea3316ad35ee05602e1d3ff3817ffad91dacc6eadaddcc50b9197536dbb",
+          "sha256": "c2ba15df05bd44175012a9bd47913b4edfd326285429668ffcac2bd437d98ed0",
+          "original_sha256": "43e0c0d9a60b1a8864afca1c8865cfd5e1cca2d5df44bd673e4940425ca314ac",
           "rom_archives": [
             "term2.zip"
           ]
@@ -276,8 +276,8 @@
           "setname": "totcarn",
           "mameversion": "0280",
           "path": "_Arcade/_blahm1d/Y Unit/Total Carnage (rev LA1 03-10-92).mra",
-          "sha256": "95561f199492b3329746ccf4a241e352aff926507169a5abe3d935decb3ddd56",
-          "original_sha256": "0cc46ecdb59ac314838c862b64f7ab93353e208708d25bcda7751bd54da85d51",
+          "sha256": "d6250dfd49090587cdad21ba460db06a8f4605a9fbab010b255580ae1d8a637f",
+          "original_sha256": "68b5543e0b8061287204fb6a29b5bfb9983e1716ed867abbf8398df80bc40420",
           "rom_archives": [
             "totcarn.zip"
           ]
@@ -474,12 +474,12 @@
     {
       "id": "tunit",
       "family": "T Unit",
-      "version": "ADPCM S12 baseline",
-      "date": "20260826",
-      "sha256": "868825b1578997257b89cfa16e6d86a138f117219a969995e3a8eee0c7206bd0",
-      "status": "Beta; retained S12 baseline",
-      "notes": "NBA/TE scaling repair. Popup flashing, ADPCM sound/cold-boot issues and save persistence are unresolved. Newer S20/S22 cabinet-rejected builds are excluded.",
-      "binary": "_Arcade/cores/blahm1d_tunit_20260826.rbf",
+      "version": "R7E announcer fix",
+      "date": "20260922",
+      "sha256": "a7724b6be160853a4edc2762faf37c9877465c13bbcee26b50bc8cb1e6ff4c9c",
+      "status": "Beta; timing passed (all corners)",
+      "notes": "Judge Dredd, Mortal Kombat T Unit, NBA Jam and NBA Jam TE. OKI ADPCM sound now matches MAME, fixing the NBA Jam announcer crackle. NBA/TE scaling repair retained. Popup flashing, cold-boot sound and save persistence issues from the S12 baseline may remain. Cabinet confirmation not yet recorded.",
+      "binary": "_Arcade/cores/blahm1d_tunit_20260922.rbf",
       "binding": "blahm1d_tunit",
       "games": [
         {
@@ -488,7 +488,7 @@
           "mameversion": "0289",
           "path": "_Arcade/_blahm1d/T Unit/Judge Dredd (rev TA1 7-12-92, location test).mra",
           "sha256": "edba290b8f8c82d69f96918fc356d770e9998d0f4bb072a1cd3dcf998f2e3b2d",
-          "original_sha256": "05d8fe5f77dba01a25b5f8652b9b297acfd05d84af55aedbae0f12525c89bb0f",
+          "original_sha256": "5e60c31a10fac98ec1d8cc813651cbf3878799da5dbef7b59e2451fb27764efc",
           "rom_archives": [
             "jdreddp.zip"
           ]
@@ -499,7 +499,7 @@
           "mameversion": "0289",
           "path": "_Arcade/_blahm1d/T Unit/Mortal Kombat (rev 5.0 T-Unit 03-19-93).mra",
           "sha256": "178e21dbc2be279803e369f7926cad93d038b637d31ad591ecc91f128d705b0b",
-          "original_sha256": "452ee6c4cbf2684cc535092698dd2a55972d19313f7102ffb1b1c78106f008e0",
+          "original_sha256": "91f39394636e4e9acb5d51daff84d3279dce9c655aeedb964ca1088996723220",
           "rom_archives": [
             "mk.zip"
           ]
@@ -510,7 +510,7 @@
           "mameversion": "0289",
           "path": "_Arcade/_blahm1d/T Unit/NBA Jam (rev 3.01 4-07-93).mra",
           "sha256": "d2a2869eab74e04e2b5d058cb53a3e7d8a879ce002022e44ec8f9337f393cb79",
-          "original_sha256": "c553f5cc2316332f24369448475ae62fd8985426a23a4e503bd72cbc1b505596",
+          "original_sha256": "017afba7bf64ca97d562cd7e02a1545ff92848abca264aff3fcc88239dfbe893",
           "rom_archives": [
             "nbajam.zip"
           ]
@@ -521,7 +521,7 @@
           "mameversion": "0289",
           "path": "_Arcade/_blahm1d/T Unit/NBA Jam Tournament Edition (rev 4.0 3-23-94).mra",
           "sha256": "f67c2173d5aab88274a44f6dcd8e541d7049a21ba71e6c409022e2daf8257ae3",
-          "original_sha256": "29766784e3b9a2e6c4978957317468b55b303afe4bfb0093cbe4869abb40e569",
+          "original_sha256": "ba5c583612be97b08915166804c9aab0d7abf27a18690dff305a28c461c53ced",
           "rom_archives": [
             "nbajamte.zip"
           ]
@@ -602,6 +602,32 @@
         }
       ],
       "cabinet_verified": null
+    },
+    {
+      "id": "cruisinusa",
+      "family": "Cruis'n USA",
+      "version": "r26 (whole game in FPGA)",
+      "date": "20260924",
+      "sha256": "56d70e253a245ba22237c53a557d976dfa09763225ee6cb853eea34f714a0b2f",
+      "status": "Beta; timing passed (all corners)",
+      "notes": "Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed. Cabinet confirmation of this USA build not yet recorded.",
+      "binary": "_Arcade/cores/blahm1d_cruisinusa_20260924.rbf",
+      "binding": "blahm1d_cruisinusa",
+      "games": [
+        {
+          "name": "Cruis'n USA (rev L4.4)",
+          "setname": "crusnusa44",
+          "mameversion": "0289",
+          "path": "_Arcade/_blahm1d/Cruis'n/Cruis'n USA (rev L4.4).mra",
+          "sha256": "f7b91e94079f7874fe14a20de9c8fac4673a21aef1ac74126394b5e31cff580f",
+          "original_sha256": "e88d38ebc12d5736f6f6904f4b7bc05359ec1af115315c72acf8705c07d0dd25",
+          "rom_archives": [
+            "crusnusa.zip",
+            "crusnusa44.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
     }
   ]
 }

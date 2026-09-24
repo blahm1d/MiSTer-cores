@@ -23,17 +23,17 @@
     },
     {
       "id": "yunit",
-      "archive": "sources/yunit-20260904.zip",
-      "sha256": "13162282b43e3ecb655565bfdfe04cb650e670fbdd913d43587a530b46270ef4",
-      "file_count": 535,
-      "bytes": 1826769
+      "archive": "sources/yunit-20260922.zip",
+      "sha256": "b430a9a1d8bf70b5233aa0eb61b8b395c9b20050d8b580206bf9ea6e18bc5edc",
+      "file_count": 541,
+      "bytes": 1832333
     },
     {
       "id": "yunitadpcm",
-      "archive": "sources/yunitadpcm-20260905.zip",
-      "sha256": "1255405d92984edaad3097336efe202e066e0fc0a6a67800d56ad77e97acdea8",
-      "file_count": 538,
-      "bytes": 1833560
+      "archive": "sources/yunitadpcm-20260922.zip",
+      "sha256": "71cdfb6b0803c216cb4c001830baf1ec9b57f5806c907e8eaf01204e09800102",
+      "file_count": 544,
+      "bytes": 1841872
     },
     {
       "id": "xunit",
@@ -58,10 +58,10 @@
     },
     {
       "id": "tunit",
-      "archive": "sources/tunit-20260826.zip",
-      "sha256": "83fe368f00e4adee81817dee7db9078fef58bb979b7a0c6a4215a9f4e4a0ab67",
-      "file_count": 218,
-      "bytes": 804935
+      "archive": "sources/tunit-20260922.zip",
+      "sha256": "4e90806b9ef841639344f5112c9effc333d616155973c2ea6ed3e70bffaf1ce2",
+      "file_count": 219,
+      "bytes": 832638
     },
     {
       "id": "tunitdcs",
@@ -76,6 +76,13 @@
       "sha256": "ffbf67673ee2cadb5ea12f8ef64af20a5dadb84fe0ea20863dced62ac434c5d6",
       "file_count": 373,
       "bytes": 752999
+    },
+    {
+      "id": "cruisinusa",
+      "archive": "sources/cruisinusa-20260924.zip",
+      "sha256": "bda029e90e4b62922334a7140e79dcf1bfc6bf4fe0af4352935efad2db3fc385",
+      "file_count": 143,
+      "bytes": 476424
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Release status - 2026-09-24
 
-11 RBFs and 40 MRAs. September 23-24 updates: Wolf Unit, NARC and T Unit DCS.
+12 RBFs and 41 MRAs. September 22-24 updates: Wolf Unit, NARC, T Unit (ADPCM and DCS), Y Unit (both builds), and the new Cruis'n USA core.
 
 ## Gladiator - 2026-07-29 release
 
@@ -32,33 +32,33 @@ SHA-256: `024cc539ac9810545017268b9e75df81cb9706b0ab55e5a92304f64e9cc1d226`
 
 Games: Mortal Kombat 3 (rev 2.1); NBA Hangtime (L1.3 10/10/96); NBA Maximum Hangtime (L1.03 06/09/97); NHL Open Ice: 2 on 2 Challenge (rev 1.21); Rampage: World Tour (rev 1.3); Ultimate Mortal Kombat 3 (rev 1.2); WWF: WrestleMania (rev 1.30 08/10/95).
 
-## Y Unit - Family r36
+## Y Unit - Family RC3
 
-Beta; four-corner timing passed. Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Background/erase and Smash TV sound-memory changes; cabinet confirmation pending.
+Beta; timing waiver (misses only the slow -40C corner by 0.018 ns). Smash TV, Trog, High Impact, Super High Impact, Strike Force and Saurian Front. Fixes silent sound at power-on (6809 sound CPU cold reset) and the CMOS INVALID hang on a blank save (factory CMOS built into the MRAs); blitter bit-exact against MAME. Cabinet confirmation not yet recorded.
 
-RBF: `blahm1d_yunit_20260904.rbf`
+RBF: `blahm1d_yunit_20260922.rbf`
 
-SHA-256: `c58d851299b633d2c4d19d3e907627eb500e0130442e21f0bd983bf3303c7418`
+SHA-256: `7a1f6d03ae6f7a7dcb11bf8882ef065f72bab5e077eae830a5f4ba653d232213`
 
 Games: High Impact Football (rev LA5 02/15/91); Saurian Front (proto v5.0 08/07/90); Smash T.V. (rev 8.00); Strike Force (rev 1 02/25/91); Super High Impact (rev LA2 10/22/91); Trog (rev LA5 3/29/91).
 
-## Y Unit - ADPCM / T2 guns r41
+## Y Unit - ADPCM / T2 guns RC3
 
-Beta; four-corner timing passed. Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Per-player guns, Sinden border and crosshair controls; cabinet verification pending.
+Beta; timing passed at all corners. Mortal Kombat Y Unit, Terminator 2 and Total Carnage. Fixes silent sound at power-on, crackly sampled speech (OKI ADPCM now matches MAME) and the CMOS INVALID hang on a blank save. Per-player guns, Sinden border and crosshair controls. Cabinet confirmation not yet recorded.
 
-RBF: `blahm1d_yunitadpcm_20260905.rbf`
+RBF: `blahm1d_yunitadpcm_20260922.rbf`
 
-SHA-256: `2061a3031fbf5d3878a79eccb912b84336ad976dfabc80d2cddb84f931745b41`
+SHA-256: `1487bdb1a7f5a9b1d55920d746921c87faa0d1db5ecf7a26db505d888bc5b7d6`
 
 Games: Mortal Kombat (rev 4.0 09/28/92, Y-Unit); Terminator 2 - Judgment Day (rev LA4 08/03/92); Total Carnage (rev LA1 03/10/92).
 
-## X Unit - Revolution X clean audio/performance
+## X Unit - Revolution X mouse + sprite cache
 
-Beta; physical signoff passed. Revolution X. Separate Music/SFX volume controls and DMA performance changes. No diagnostic overlay; latest whole-core gameplay and cabinet verification remain pending.
+Beta; slow-corner setup waiver (-0.195/-0.171 ns), fast corners and hold pass. Revolution X. OSD Gun = Mouse now works (left Trigger, right Action). 128 KB sprite cache for the post-helicopter pan-down slowdown. Keeps Music/SFX volume controls. Cabinet verification pending.
 
-RBF: `blahm1d_xunit_20260914.rbf`
+RBF: `blahm1d_xunit_20260918.rbf`
 
-SHA-256: `1e8b5ed7ad312649ae04fb1669557dc1d1ebc15ff65dc1830012b4aa647fb67e`
+SHA-256: `8bd67839b1070c556eaaa331253daddc4c5c34d1753d70439ccbcceb2337d15c`
 
 Games: Revolution X.
 
@@ -82,13 +82,13 @@ SHA-256: `887cd88ed3175ebf3ca680130179ff664a3b260b903459b1d604177c1f19dccb`
 
 Games: Narc (rev 7.00).
 
-## T Unit - ADPCM S12 baseline
+## T Unit - ADPCM R7E announcer fix
 
-Beta; retained S12 baseline. NBA/TE scaling repair. Popup flashing, ADPCM sound/cold-boot issues and save persistence are unresolved. Newer S20/S22 cabinet-rejected builds are excluded.
+Beta; timing passed at all corners. OKI ADPCM sound now matches MAME, fixing the NBA Jam announcer crackle. NBA/TE scaling repair retained. Popup flashing, cold-boot sound and save persistence issues from the S12 baseline may remain. Cabinet confirmation not yet recorded.
 
-RBF: `blahm1d_tunit_20260826.rbf`
+RBF: `blahm1d_tunit_20260922.rbf`
 
-SHA-256: `868825b1578997257b89cfa16e6d86a138f117219a969995e3a8eee0c7206bd0`
+SHA-256: `a7724b6be160853a4edc2762faf37c9877465c13bbcee26b50bc8cb1e6ff4c9c`
 
 Games: Judge Dredd (rev TA1 7/12/92, location test); Mortal Kombat (rev 5.0 T-Unit 03/19/93); NBA Jam (rev 3.01 4/07/93); NBA Jam Tournament Edition (rev 4.0 3/23/94).
 
@@ -104,7 +104,17 @@ Games: Mortal Kombat II (rev L3.1).
 
 ## Selection notes
 
-T Unit ADPCM uses the retained S12 baseline because the later S20/S22 handoff rejects those builds for cabinet video/audio defects. T Unit DCS moved from the S12 baseline to the September 23 sound-fix build. These builds still have documented limitations.
+T Unit ADPCM moved from the S12 baseline to the September 22 R7E announcer-fix build; the S20/S22 builds rejected on the cabinet stay excluded. T Unit DCS moved to the September 23 sound-fix build. These builds still have documented limitations.
+
+## Cruis'n USA - r26
+
+Beta; timing passed at all corners. Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed. Cabinet confirmation of this USA build not yet recorded.
+
+RBF: `blahm1d_cruisinusa_20260924.rbf`
+
+SHA-256: `56d70e253a245ba22237c53a557d976dfa09763225ee6cb853eea34f714a0b2f`
+
+Games: Cruis'n USA (rev L4.4).
 
 The newer Gladiator OSD and Legend of Kage CRT drafts have no corresponding binary; they are not represented as delivered features. Diagnostic Y Unit test-ROM and Wolf HUD-counter images are excluded. Wolf community-hack MRAs are excluded because their ROM sources are separate from the original MAME game sets.
 
