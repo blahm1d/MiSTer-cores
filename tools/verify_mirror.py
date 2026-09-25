@@ -15,7 +15,8 @@ from pathlib import Path
 
 
 def get(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'blahm1d-verify'})
+    # MiSTer Downloader's own user agent: the check sees exactly what players' MiSTers get.
+    req = urllib.request.Request(url, headers={'User-Agent': 'Downloader/2.X (Linux; theypsilon@gmail.com)'})
     with urllib.request.urlopen(req, timeout=60) as r:
         return r.read()
 
