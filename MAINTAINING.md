@@ -5,6 +5,8 @@
 2. Put the RBF in `_Arcade/cores/` using its existing `blahm1d_<id>` prefix and a
    new `_YYYYMMDD.rbf` suffix. Update the corresponding MRAs under
    `_Arcade/_blahm1d/`. Keep the MRA game/profile/ROM layout matched to the core.
+   Every folder name there starts with `_` (e.g. `_Y Unit`): MiSTer's menu hides
+   `_Arcade` subfolders without it. Validation enforces this.
 3. Update `catalog/releases.json` with the exact SHA-256 hashes, paths, build
    version, game list and status. Replace that core's previous downloadable RBF;
    Git history retains it for rollback. Update the matching source archive and

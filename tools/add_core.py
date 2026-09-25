@@ -62,6 +62,8 @@ def main():
         sr.fail(f'{a.id} already exists; use stage_release.py')
     if not re.fullmatch(r'\d{8}', a.date):
         sr.fail('--date must be YYYYMMDD')
+    if not a.folder.startswith('_'):
+        a.folder = '_' + a.folder  # MiSTer's menu hides _Arcade subfolders without a leading _
     binding = f'blahm1d_{a.id}'
     rbf = a.rbf.read_bytes()
     binary = f'_Arcade/cores/{binding}_{a.date}.rbf'

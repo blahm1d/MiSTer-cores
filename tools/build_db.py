@@ -33,6 +33,8 @@ def validate():
         for g in c['games']:
             p=g['path']
             assert p.startswith('_Arcade/_blahm1d/') and p.endswith('.mra')
+            # MiSTer's menu hides _Arcade subfolders whose names do not start with '_'.
+            assert all(d.startswith('_') for d in PurePosixPath(p).parts[1:-1]),p+': every folder needs a leading _'
             assert p.casefold() not in paths,p
             paths.add(p.casefold())
             mra=ET.fromstring((ROOT/p).read_bytes())

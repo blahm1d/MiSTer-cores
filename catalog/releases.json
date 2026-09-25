@@ -18,7 +18,7 @@
           "name": "Gladiator (US) [DIP CRT Guard 20260729]",
           "setname": "gladiatr",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Gladiator/Gladiator (US).mra",
+          "path": "_Arcade/_blahm1d/_Gladiator/Gladiator (US).mra",
           "sha256": "3e2655d79fe7861794c7882b8c3545d4cfdb3ebec737deda353ae4e31701fdfe",
           "original_sha256": "5050b0f0fe4c4fb78e411859bf97d146e32b805a4463f39725893e580bb99ee9",
           "rom_archives": [
@@ -29,7 +29,7 @@
           "name": "Ougon no Shiro (Japan)",
           "setname": "ogonsiro",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Gladiator/Ougon no Shiro (Japan).mra",
+          "path": "_Arcade/_blahm1d/_Gladiator/Ougon no Shiro (Japan).mra",
           "sha256": "d77598087c30308f53fa56eda8b993471b853a3fe6b697d64668cf69dff0e35e",
           "original_sha256": "2fdfc73c5799627d588c2049a49cc26cd89bb952750c7c782e4a5d633ea638bd",
           "rom_archives": [
@@ -55,7 +55,7 @@
           "name": "The Legend of Kage (bootleg set 1)",
           "setname": "lkagebl1",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/The Legend of Kage/The Legend of Kage (bootleg set 1).mra",
+          "path": "_Arcade/_blahm1d/_The Legend of Kage/The Legend of Kage (bootleg set 1).mra",
           "sha256": "12063310ab3b700b45bce36db06042e669902d4bb0f3381f2e84ff9c56155613",
           "original_sha256": "f00b3e482c7c7d28f388ec5be5bada84f7e805f66f8082bc4b1d7d32200730c1",
           "rom_archives": [
@@ -81,7 +81,7 @@
           "name": "Mortal Kombat 3 (rev 2.1)",
           "setname": "mk3",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Wolf Unit/Mortal Kombat 3 (rev 2.1).mra",
+          "path": "_Arcade/_blahm1d/_Wolf Unit/Mortal Kombat 3 (rev 2.1).mra",
           "sha256": "45fbc81eaeb578a460b8321313c8fbd6bc75ad17eaed977b4597837ef128b341",
           "original_sha256": "21c8779981e1f3787bd60b106c35fbf8db418827525c405dd474ee5424b03ba7",
           "rom_archives": [
@@ -92,7 +92,7 @@
           "name": "NBA Hangtime (L1.3 10/10/96)",
           "setname": "nbahangt",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Wolf Unit/NBA Hangtime (L1.3).mra",
+          "path": "_Arcade/_blahm1d/_Wolf Unit/NBA Hangtime (L1.3).mra",
           "sha256": "a592e57885855d94b29fe46f409176183b834bc324bc300bc7ee36e5d08de3b6",
           "original_sha256": "17c91523b54da24addc102577524b9bf39d2e007a357201fa5018c7450222f66",
           "rom_archives": [
@@ -103,7 +103,7 @@
           "name": "NBA Maximum Hangtime (L1.03 06/09/97)",
           "setname": "nbamht",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Wolf Unit/NBA Maximum Hangtime (L1.03 06-09-97).mra",
+          "path": "_Arcade/_blahm1d/_Wolf Unit/NBA Maximum Hangtime (L1.03 06-09-97).mra",
           "sha256": "5b32d42ab2683a5ce160cb85f36d9b96fb0e49db149d2051720a5a3a32722b1b",
           "original_sha256": "e73cbb9d6e4309dee60ae2bb1100177fa2c17ed47ffc7fff059e23513e7a9d0c",
           "rom_archives": [
@@ -115,7 +115,7 @@
           "name": "NHL Open Ice: 2 on 2 Challenge (rev 1.21)",
           "setname": "openice",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Wolf Unit/NHL Open Ice - 2 on 2 Challenge (rev 1.21).mra",
+          "path": "_Arcade/_blahm1d/_Wolf Unit/NHL Open Ice - 2 on 2 Challenge (rev 1.21).mra",
           "sha256": "ad305e81c2008e7d140cf421ecf43ffc65ea37ac2072b17b7660b14b4a19e1f2",
           "original_sha256": "239f11b57832b81f2fa063ec8bcce235782e94107ca97331d2b62e0e27f235db",
           "rom_archives": [
@@ -126,7 +126,7 @@
           "name": "Rampage: World Tour (rev 1.3)",
           "setname": "rmpgwt",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Wolf Unit/Rampage World Tour.mra",
+          "path": "_Arcade/_blahm1d/_Wolf Unit/Rampage World Tour.mra",
           "sha256": "802c1be0fc2d5f92c856aefb55c5aa723ef5c40265ae783bbd17d36072059d7c",
           "original_sha256": "9cf9bdf86f4a93b790cad32b65148fde6c8791adf61af36cff14b616f926e2f5",
           "rom_archives": [
@@ -137,7 +137,7 @@
           "name": "Ultimate Mortal Kombat 3 (rev 1.2)",
           "setname": "umk3",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Wolf Unit/Ultimate Mortal Kombat 3.mra",
+          "path": "_Arcade/_blahm1d/_Wolf Unit/Ultimate Mortal Kombat 3.mra",
           "sha256": "64140f69380836854294ffa7a3f0920aaa1eff5f9d9874be55f7a8da00d3f560",
           "original_sha256": "1be1a78ecc80f7b09d2b4db116a72bbd7e4d85c9b8cc721d2340a134ea5ed767",
           "rom_archives": [
@@ -148,7 +148,7 @@
           "name": "WWF: WrestleMania (rev 1.30 08/10/95)",
           "setname": "wwfmania",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Wolf Unit/WWF WrestleMania (rev 1.30 08-10-95).mra",
+          "path": "_Arcade/_blahm1d/_Wolf Unit/WWF WrestleMania (rev 1.30 08-10-95).mra",
           "sha256": "a8c7fca764b85f4cfb6958a285d7917d5beb5f354d4e9b3fd21927313a1465ac",
           "original_sha256": "c5bae9cc40ede093d0d197c59e7c908a87b4ee44bf478b45b2b7a57f90586f3b",
           "rom_archives": [
@@ -173,7 +173,7 @@
           "name": "High Impact Football (rev LA5 02/15/91)",
           "setname": "hiimpact",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/High Impact Football (rev LA5 02-15-91).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/High Impact Football (rev LA5 02-15-91).mra",
           "sha256": "e631379e902ec9ecda271525ca00eb922255db8fbb8f48224af9432dd0b73a9f",
           "original_sha256": "36049a8fe396e2233746dacacfefa48db1de49179ebccfb1df533fc9fc4f0f80",
           "rom_archives": [
@@ -184,7 +184,7 @@
           "name": "Saurian Front (proto v5.0 08/07/90)",
           "setname": "saurnfrnt",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/Saurian Front (proto v5.0 08-07-90).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/Saurian Front (proto v5.0 08-07-90).mra",
           "sha256": "0844d35473de97781300492b101bcf60044aea19119c9989795c694694019689",
           "original_sha256": "e13b882b85a61a1f9b9727b0a899905038e91cc9e310eb5a83096ceba964e922",
           "rom_archives": [
@@ -195,7 +195,7 @@
           "name": "Smash T.V. (rev 8.00)",
           "setname": "smashtv",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/Smash T.V. (rev 8.00).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/Smash T.V. (rev 8.00).mra",
           "sha256": "35520f4f5121eb2168717b80d126c5f86c08ae9149910dc7f7565badc2ea2e4d",
           "original_sha256": "36b268ee3afe6a4a14838f9652c130bb2f1956765e5055b7a339f0decb33170a",
           "rom_archives": [
@@ -206,7 +206,7 @@
           "name": "Strike Force (rev 1 02/25/91)",
           "setname": "strkforc",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/Strike Force (rev 1 02-25-91).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/Strike Force (rev 1 02-25-91).mra",
           "sha256": "87abdab30a651700071105e58071eae10f6b3ac0afcebfa228d4c5f7552232bb",
           "original_sha256": "c12962cc6633385f21a5e3155927fd551d82b63a1114bbb2723725bab3b29614",
           "rom_archives": [
@@ -217,7 +217,7 @@
           "name": "Super High Impact (rev LA2 10/22/91)",
           "setname": "shimpact",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/Super High Impact (rev LA2 10-22-91).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/Super High Impact (rev LA2 10-22-91).mra",
           "sha256": "b6cf3f8180106e9d7e9bc53735889bf55106895acc152c6d5e711896282dd014",
           "original_sha256": "db2033836735950379aa8b2827275e9d3c55b826173f3e995540026701a73ffb",
           "rom_archives": [
@@ -228,7 +228,7 @@
           "name": "Trog (rev LA5 3/29/91)",
           "setname": "trog",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/Trog (rev LA5 3-29-91).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/Trog (rev LA5 3-29-91).mra",
           "sha256": "cded5dbad1b229b6fd6339048468f60346b71d750e5ef8c22d37c6bc897813d5",
           "original_sha256": "a22735122a9c84008d8b8fbf77ce41b3d30e47d62a4d4b2f77aea3e7d51264f3",
           "rom_archives": [
@@ -253,7 +253,7 @@
           "name": "Mortal Kombat (rev 4.0 09/28/92, Y-Unit)",
           "setname": "mk",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/Mortal Kombat (rev 4.0 09-28-92, Y-Unit).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/Mortal Kombat (rev 4.0 09-28-92, Y-Unit).mra",
           "sha256": "9eca38e435bd97bc8b680987735232c67c15cded78b578690f36ffa9f6f5044c",
           "original_sha256": "da950154dcba9c6f6fa19e14ff65d57da546f7199f2a4e80e2dbf9ed54903d22",
           "rom_archives": [
@@ -264,7 +264,7 @@
           "name": "Terminator 2 - Judgment Day (rev LA4 08/03/92)",
           "setname": "term2",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/Terminator 2 - Judgment Day (rev LA4 08-03-92).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/Terminator 2 - Judgment Day (rev LA4 08-03-92).mra",
           "sha256": "c2ba15df05bd44175012a9bd47913b4edfd326285429668ffcac2bd437d98ed0",
           "original_sha256": "43e0c0d9a60b1a8864afca1c8865cfd5e1cca2d5df44bd673e4940425ca314ac",
           "rom_archives": [
@@ -275,7 +275,7 @@
           "name": "Total Carnage (rev LA1 03/10/92)",
           "setname": "totcarn",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/Y Unit/Total Carnage (rev LA1 03-10-92).mra",
+          "path": "_Arcade/_blahm1d/_Y Unit/Total Carnage (rev LA1 03-10-92).mra",
           "sha256": "d6250dfd49090587cdad21ba460db06a8f4605a9fbab010b255580ae1d8a637f",
           "original_sha256": "68b5543e0b8061287204fb6a29b5bfb9983e1716ed867abbf8398df80bc40420",
           "rom_archives": [
@@ -300,7 +300,7 @@
           "name": "Revolution X",
           "setname": "revx",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/X Unit/RevX_09132026.mra",
+          "path": "_Arcade/_blahm1d/_X Unit/RevX_09132026.mra",
           "sha256": "1b6fe1fac934f3878f859c5443d729f9cb2a97ea82ce30e9983e0e092cf0130a",
           "original_sha256": "082f0f7e6a755cab672f911faba2900c04035ef3f4ca9f41bf85a9e3338b1283",
           "rom_archives": [
@@ -325,7 +325,7 @@
           "name": "Catch-22",
           "setname": "catch22",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Catch-22.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Catch-22.mra",
           "sha256": "18f634852424a8b34c00c9badc2ad2130a4f60a77ad382fca2b74f060a0f2307",
           "original_sha256": "18bf927bc6a4c4f5b01144ce9ead835b6e38a19afe0ac9a90aae6c34e09d009e",
           "rom_archives": [
@@ -337,7 +337,7 @@
           "name": "Cheyenne",
           "setname": "cheyenne",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Cheyenne.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Cheyenne.mra",
           "sha256": "b29e35b553e72e5f7df0b79f4492ed5761837148ca400a24308c59550e52ae0b",
           "original_sha256": "72b3a9c95ce87ab8d4f541e24145be58c319d2bae2bb425b64aa3f465b409a29",
           "rom_archives": [
@@ -348,7 +348,7 @@
           "name": "Chiller",
           "setname": "chiller",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Chiller.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Chiller.mra",
           "sha256": "ebd216439b6bed3d12f75c119d43bb6ac85107b2c3401eb4c07018052fe6a5c4",
           "original_sha256": "f5bc94d91fee9cce4600c772e07a631d78519780e94dcb51f7211fd44196e8fc",
           "rom_archives": [
@@ -359,7 +359,7 @@
           "name": "Clay Pigeon",
           "setname": "claypign",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Clay Pigeon.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Clay Pigeon.mra",
           "sha256": "34d0603f2acbbfc3f74725c8d0bf968bc9845643551931a32bbcb32867f785b2",
           "original_sha256": "2f575c128bfb6e7c3ca13c3c750d39df1e5848b23b04b0e69841ee89f2c223a5",
           "rom_archives": [
@@ -370,7 +370,7 @@
           "name": "Combat",
           "setname": "combat",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Combat.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Combat.mra",
           "sha256": "dfd3b91a6b9a26e46132ebeea324ff6ba44dbe8b7f849f0bd77c8776c1a429fb",
           "original_sha256": "40a7917e99fe5fe00ce3b767246a2c4ef6acf44f2524b1bd5624c68b4e206824",
           "rom_archives": [
@@ -381,7 +381,7 @@
           "name": "Crackshot",
           "setname": "cracksht",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Crackshot.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Crackshot.mra",
           "sha256": "84a4f88598cb3ef1a3dc1b1542dcd8aa6a62f7f89931b432d1f161b102f48fef",
           "original_sha256": "9d75420a331b64f6118221981d1fb75d5ee2c7924b76c77341468844e75ef579",
           "rom_archives": [
@@ -392,7 +392,7 @@
           "name": "Crossbow",
           "setname": "crossbow",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Crossbow.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Crossbow.mra",
           "sha256": "42168ce8292207d903675b78e7e555ea9e90a8da52606c7fd6569614af1e1009",
           "original_sha256": "354cfbc27e8b3e85e5e9f09f4614af0c13543296108b5fa69ccc958b7bc4232e",
           "rom_archives": [
@@ -403,7 +403,7 @@
           "name": "Hit 'n Miss",
           "setname": "hitnmiss",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Hit 'n Miss.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Hit 'n Miss.mra",
           "sha256": "76109069c6fb7a5d02a9c6fd20e8c2d3f4725e51d90056025ef543198bede15a",
           "original_sha256": "0c082b6bd0080ed19e5b854ebf216285164a968498738fbcdee4f724b85fb5c8",
           "rom_archives": [
@@ -414,7 +414,7 @@
           "name": "Showdown",
           "setname": "showdown",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Showdown.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Showdown.mra",
           "sha256": "e07d09e41878b0564856732766d8d78580f30bf517774bd1b40d49df61dcbf9c",
           "original_sha256": "4e7dd9163224421582a02a023cb0239e37f3e1f35f46786b7410d047a1fdc93c",
           "rom_archives": [
@@ -425,7 +425,7 @@
           "name": "Top Secret",
           "setname": "topsecex",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Top Secret.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Top Secret.mra",
           "sha256": "4355b8f2336db3d22d45d67b9107895bec84cfa2a87afe7873806c60d3115a10",
           "original_sha256": "8dc9cdee5c2d936ebff1c469337fc555fdf45f6be5cc124756a8ca0cec4b4870",
           "rom_archives": [
@@ -436,7 +436,7 @@
           "name": "Who Dunit",
           "setname": "whodunit",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Exidy cores/Who Dunit.mra",
+          "path": "_Arcade/_blahm1d/_Exidy cores/Who Dunit.mra",
           "sha256": "68d0224b953dfc8c834eb2b70b76fc6bc52cb2d1d3d4437a3bddcd12eea8c6b8",
           "original_sha256": "e136781c4f29e42638655c0ea17269959f02dbda6c68a445e8a5a6b90e0f7c96",
           "rom_archives": [
@@ -461,7 +461,7 @@
           "name": "Narc (rev 7.00)",
           "setname": "narc",
           "mameversion": "0280",
-          "path": "_Arcade/_blahm1d/NARC/Narc (rev 7.00).mra",
+          "path": "_Arcade/_blahm1d/_NARC/Narc (rev 7.00).mra",
           "sha256": "eb3ac1ca8c3e5647da65cdfc986a4349db27170f1d0ee5e4b8413405cf8b2d5c",
           "original_sha256": "db52761f5fe132a59843393e777ac5c235677d9feec80d860658dedf0cea1935",
           "rom_archives": [
@@ -486,7 +486,7 @@
           "name": "Judge Dredd (rev TA1 7/12/92, location test)",
           "setname": "jdreddp",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/T Unit/Judge Dredd (rev TA1 7-12-92, location test).mra",
+          "path": "_Arcade/_blahm1d/_T Unit/Judge Dredd (rev TA1 7-12-92, location test).mra",
           "sha256": "edba290b8f8c82d69f96918fc356d770e9998d0f4bb072a1cd3dcf998f2e3b2d",
           "original_sha256": "5e60c31a10fac98ec1d8cc813651cbf3878799da5dbef7b59e2451fb27764efc",
           "rom_archives": [
@@ -497,7 +497,7 @@
           "name": "Mortal Kombat (rev 5.0 T-Unit 03/19/93)",
           "setname": "mk",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/T Unit/Mortal Kombat (rev 5.0 T-Unit 03-19-93).mra",
+          "path": "_Arcade/_blahm1d/_T Unit/Mortal Kombat (rev 5.0 T-Unit 03-19-93).mra",
           "sha256": "178e21dbc2be279803e369f7926cad93d038b637d31ad591ecc91f128d705b0b",
           "original_sha256": "91f39394636e4e9acb5d51daff84d3279dce9c655aeedb964ca1088996723220",
           "rom_archives": [
@@ -508,7 +508,7 @@
           "name": "NBA Jam (rev 3.01 4/07/93)",
           "setname": "nbajam",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/T Unit/NBA Jam (rev 3.01 4-07-93).mra",
+          "path": "_Arcade/_blahm1d/_T Unit/NBA Jam (rev 3.01 4-07-93).mra",
           "sha256": "d2a2869eab74e04e2b5d058cb53a3e7d8a879ce002022e44ec8f9337f393cb79",
           "original_sha256": "017afba7bf64ca97d562cd7e02a1545ff92848abca264aff3fcc88239dfbe893",
           "rom_archives": [
@@ -519,7 +519,7 @@
           "name": "NBA Jam Tournament Edition (rev 4.0 3/23/94)",
           "setname": "nbajamte",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/T Unit/NBA Jam Tournament Edition (rev 4.0 3-23-94).mra",
+          "path": "_Arcade/_blahm1d/_T Unit/NBA Jam Tournament Edition (rev 4.0 3-23-94).mra",
           "sha256": "f67c2173d5aab88274a44f6dcd8e541d7049a21ba71e6c409022e2daf8257ae3",
           "original_sha256": "ba5c583612be97b08915166804c9aab0d7abf27a18690dff305a28c461c53ced",
           "rom_archives": [
@@ -544,7 +544,7 @@
           "name": "Mortal Kombat II (rev L3.1)",
           "setname": "mk2",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/T Unit/Mortal Kombat II (rev L3.1).mra",
+          "path": "_Arcade/_blahm1d/_T Unit/Mortal Kombat II (rev L3.1).mra",
           "sha256": "bfa057398eac7f3b16ebdeb2c27cfb94ae6578819dd6d1c760f585cd33385519",
           "original_sha256": "be82272e98f20cd8928d2e34df29dadacb7a6a620f4a7b05cbe1415c851131bb",
           "rom_archives": [
@@ -569,7 +569,7 @@
           "name": "Night Slashers (Japan Rev 1.2)",
           "setname": "nslasherj",
           "mameversion": "0284",
-          "path": "_Arcade/_blahm1d/Night Slashers/Night Slashers (Japan Rev 1.2, DE-0397-0 PCB).mra",
+          "path": "_Arcade/_blahm1d/_Night Slashers/Night Slashers (Japan Rev 1.2, DE-0397-0 PCB).mra",
           "sha256": "af9f4abea597dbd6c62811ff1b3c1ccf76a02287612085348a044ece8f3a885c",
           "original_sha256": "e9afc5d2638a2f8665e32f444c7ab21b580c66004e3eb7b76943ebc0c86718ae",
           "rom_archives": [
@@ -581,7 +581,7 @@
           "name": "Night Slashers (Korea Rev 1.3)",
           "setname": "nslasher",
           "mameversion": "0284",
-          "path": "_Arcade/_blahm1d/Night Slashers/Night Slashers (Korea Rev 1.3, DE-0397-0 PCB).mra",
+          "path": "_Arcade/_blahm1d/_Night Slashers/Night Slashers (Korea Rev 1.3, DE-0397-0 PCB).mra",
           "sha256": "e76bd16943d8d3f882fcc1d47f576e3da330980ad93d607509632dec6c6cf775",
           "original_sha256": "568c680966e415c26edb12dccd01fdadd4f9dd6d84afe24b87b7e53eca0ef3c9",
           "rom_archives": [
@@ -592,7 +592,7 @@
           "name": "Night Slashers (Over Sea Rev 1.2)",
           "setname": "nslashers",
           "mameversion": "0284",
-          "path": "_Arcade/_blahm1d/Night Slashers/Night Slashers (Over Sea Rev 1.2, DE-0397-0 PCB).mra",
+          "path": "_Arcade/_blahm1d/_Night Slashers/Night Slashers (Over Sea Rev 1.2, DE-0397-0 PCB).mra",
           "sha256": "b29e0aea1ba7717894c6192154dbf49eb1fd87594017de74bd39325f3be1d4f7",
           "original_sha256": "5647492dc20731209ce2ab1c7a77db4e7ad67368d07db5f087c278eecee8c696",
           "rom_archives": [
@@ -618,7 +618,7 @@
           "name": "Cruis'n USA (rev L4.4)",
           "setname": "crusnusa44",
           "mameversion": "0289",
-          "path": "_Arcade/_blahm1d/Cruis'n/Cruis'n USA (rev L4.4).mra",
+          "path": "_Arcade/_blahm1d/_Cruis'n/Cruis'n USA (rev L4.4).mra",
           "sha256": "f7b91e94079f7874fe14a20de9c8fac4673a21aef1ac74126394b5e31cff580f",
           "original_sha256": "e88d38ebc12d5736f6f6904f4b7bc05359ec1af115315c72acf8705c07d0dd25",
           "rom_archives": [

@@ -6,7 +6,7 @@
 
 1. Place `downloader_blahm1d.ini` in your MiSTer's SD card root (`/media/fat/`).
 2. Run **Update_All**.
-3. Find the games under **Arcade → blahm1d**.
+3. Find the games under **Arcade → blahm1d**, one folder per board family.
 
 Run Update_All again whenever you want the latest published cores and updates.
 Keep Update_All's Arcade ROMs option enabled for ROM downloads. This feed supplies
