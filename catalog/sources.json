@@ -79,10 +79,10 @@
     },
     {
       "id": "cruisinusa",
-      "archive": "sources/cruisinusa-20260924.zip",
-      "sha256": "bda029e90e4b62922334a7140e79dcf1bfc6bf4fe0af4352935efad2db3fc385",
-      "file_count": 143,
-      "bytes": 476424
+      "archive": "sources/cruisinusa-20260925.zip",
+      "sha256": "0311f0a3d78f2973fd9c4cfe69be1b12595ba5faa609907d0aedccc78177c526",
+      "file_count": 144,
+      "bytes": 481820
     }
   ]
 }

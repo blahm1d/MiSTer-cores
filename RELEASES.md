@@ -1,6 +1,6 @@
-# Release status - 2026-09-24
+# Release status - 2026-09-25
 
-12 RBFs and 41 MRAs. September 22-24 updates: Wolf Unit, NARC, T Unit (ADPCM and DCS), Y Unit (both builds), and the new Cruis'n USA core.
+12 RBFs and 41 MRAs. September 22-25 updates: Wolf Unit, NARC, T Unit (ADPCM and DCS), Y Unit (both builds), and Cruis'n USA (new core; September 25 release).
 
 ## Gladiator - 2026-07-29 release
 
@@ -106,13 +106,13 @@ Games: Mortal Kombat II (rev L3.1).
 
 T Unit ADPCM moved from the S12 baseline to the September 22 R7E announcer-fix build; the S20/S22 builds rejected on the cabinet stay excluded. T Unit DCS moved to the September 23 sound-fix build. These builds still have documented limitations.
 
-## Cruis'n USA - r26
+## Cruis'n USA - September 25 release
 
-Beta; cabinet verified; timing passed at all corners. Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed.
+Beta; timing passed at all corners. Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Fixes the repeating buzz during races (sound CPU at full speed) and a CPU instruction-timing bug; new default gamepad layout. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed. Cabinet confirmation of this build not yet recorded (the previous r26 build was cabinet verified).
 
-RBF: `blahm1d_cruisinusa_20260924.rbf`
+RBF: `blahm1d_cruisinusa_20260925.rbf`
 
-SHA-256: `56d70e253a245ba22237c53a557d976dfa09763225ee6cb853eea34f714a0b2f`
+SHA-256: `3eb932e65159fcf2bb4eca4b1bd9c88d8a440a26c6c27a1b12eb1e98666425ee`
 
 Games: Cruis'n USA (rev L4.4).
 

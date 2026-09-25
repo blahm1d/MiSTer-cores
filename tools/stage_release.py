@@ -129,7 +129,7 @@ def build_references(source_dir, seed):
             refs = [(root / line.strip()) for line in text.splitlines()
                     if line.strip() and not line.strip().startswith('#')]
         elif name.endswith(('.qsf', '.qip')):
-            base = root if name.endswith('.qsf') else path.parent
+            base = path.parent  # Quartus resolves QSF/QIP paths from the file's own directory
             for line in text.splitlines():
                 if line.lstrip().startswith('#'):
                     continue

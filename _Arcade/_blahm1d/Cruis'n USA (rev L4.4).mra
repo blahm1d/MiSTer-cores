@@ -11,7 +11,7 @@
         index 2 = dcs: the 8 sound ROMs u2..u9 packed (4 MiB, CRC-32 0x692a64fa), stored in DDR3 by cusa_dcs_subsystem.
       hps_io WIDE=1 (16-bit ioctl_dout, ioctl_addr steps by 2). Part names and CRCs are crusnusa44's.
     -->
-    <name>Cruisn USA (gm1)</name>
+    <name>Cruisn USA</name>
     <setname>crusnusa44</setname>
     <rbf>blahm1d_cruisinusa</rbf>
     <mameversion>0289</mameversion>

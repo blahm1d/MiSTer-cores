@@ -606,12 +606,12 @@
     {
       "id": "cruisinusa",
       "family": "Cruis'n USA",
-      "version": "r26 (whole game in FPGA)",
-      "date": "20260924",
-      "sha256": "56d70e253a245ba22237c53a557d976dfa09763225ee6cb853eea34f714a0b2f",
-      "status": "Beta; cabinet verified; timing passed (all corners)",
-      "notes": "Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed.",
-      "binary": "_Arcade/cores/blahm1d_cruisinusa_20260924.rbf",
+      "version": "09/25 release",
+      "date": "20260925",
+      "sha256": "3eb932e65159fcf2bb4eca4b1bd9c88d8a440a26c6c27a1b12eb1e98666425ee",
+      "status": "Beta; timing passed (all corners)",
+      "notes": "Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Fixes the repeating buzz during races (sound CPU at full speed) and a CPU instruction-timing bug; new default gamepad layout. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed. Cabinet confirmation not yet recorded.",
+      "binary": "_Arcade/cores/blahm1d_cruisinusa_20260925.rbf",
       "binding": "blahm1d_cruisinusa",
       "games": [
         {
@@ -619,15 +619,15 @@
           "setname": "crusnusa44",
           "mameversion": "0289",
           "path": "_Arcade/_blahm1d/Cruis'n USA (rev L4.4).mra",
-          "sha256": "f7b91e94079f7874fe14a20de9c8fac4673a21aef1ac74126394b5e31cff580f",
-          "original_sha256": "e88d38ebc12d5736f6f6904f4b7bc05359ec1af115315c72acf8705c07d0dd25",
+          "sha256": "d43e845cc3ad4f78bcddce8168986f855bfdb99ef7c5426495e4d9601ce541f6",
+          "original_sha256": "7693498cfdec666d319989bf7ff999ada5cb3f0b81f1606fca6b5b55ea0abe96",
           "rom_archives": [
             "crusnusa.zip",
             "crusnusa44.zip"
           ]
         }
       ],
-      "cabinet_verified": true
+      "cabinet_verified": false
     }
   ]
 }
