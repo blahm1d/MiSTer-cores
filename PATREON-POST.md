@@ -4,7 +4,7 @@ Download downloader_blahm1d.ini (right-click, Save link as):
 https://mister.blahm1d.com/downloader_blahm1d.ini
 
 Place it in your MiSTer's SD card root, then run Update_All.
-You'll find my cores under Arcade → blahm1d.
+You'll find the games in the Arcade menu.
 
 To get new releases and updates, run Update_All again.
 Leave Update_All's Arcade ROMs option enabled for ROM downloads.

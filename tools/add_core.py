@@ -2,7 +2,7 @@
 """Add a NEW core to the feed (stage_release.py updates existing ones).
 
 Copies the RBF to _Arcade/cores/<binding>_<date>.rbf, installs each MRA under
-_Arcade/_blahm1d/ (alternate versions: --alternative-of) with <rbf> pointed at the binding, archives the source
+_Arcade/ (alternate versions: --alternative-of) with <rbf> pointed at the binding, archives the source
 snapshot the RBF was built from (generated Quartus output excluded, GPL COPYING added
 if absent), adds catalog/releases.json and catalog/sources.json entries, and runs
 the publish validation.
@@ -76,7 +76,7 @@ def main():
         setname = re.search(r'<setname>([^<]+)', text).group(1).strip()
         mame = (re.search(r'<mameversion>([^<]+)', text) or [None, ''])[1].strip()
         zips = sorted({z for m in re.finditer(r'zip="([^"]+)"', text) for z in m.group(1).split('|')})
-        path = f'_Arcade/_blahm1d/_alternatives/_{a.alternative_of}/{title}.mra' if a.alternative_of else f'_Arcade/_blahm1d/{title}.mra'
+        path = f'_Arcade/_alternatives/_{a.alternative_of}/{title}.mra' if a.alternative_of else f'_Arcade/{title}.mra'
         games.append(dict(name=title, setname=setname, mameversion=mame, path=path, sha256=sr.sha256(data),
                           original_sha256=sr.sha256(original), rom_archives=zips))
         mra_writes.append((path, data))

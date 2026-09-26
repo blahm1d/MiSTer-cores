@@ -3,12 +3,11 @@
 1. Select the intended release artifact and its matching MRA files. Preserve its
    build/cabinet evidence and known issues. Do not select an RBF solely by its date.
 2. Put the RBF in `_Arcade/cores/` using its existing `blahm1d_<id>` prefix and a
-   new `_YYYYMMDD.rbf` suffix. Update the corresponding MRAs under
-   `_Arcade/_blahm1d/`. Keep the MRA game/profile/ROM layout matched to the core.
-   Main games sit flat in `_Arcade/_blahm1d/`; regional/revision variants of a main
-   game go in `_Arcade/_blahm1d/_alternatives/_<Game>/` (the jotego/meathax layout).
-   Every folder name starts with `_`: MiSTer's menu hides `_Arcade` subfolders
-   without it. Validation enforces this.
+   new `_YYYYMMDD.rbf` suffix. Update the corresponding MRAs. Main games sit
+   directly in `_Arcade/` (no per-author folder); regional/revision variants of a
+   main game go in `_Arcade/_alternatives/_<Game>/` (the jotego layout). Keep the
+   MRA game/profile/ROM layout matched to the core. Every folder name starts with
+   `_`: MiSTer's menu hides `_Arcade` subfolders without it. Validation enforces this.
 3. Update `catalog/releases.json` with the exact SHA-256 hashes, paths, build
    version, game list and status. Replace that core's previous downloadable RBF;
    Git history retains it for rollback. Update the matching source archive and
