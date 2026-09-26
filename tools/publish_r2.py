@@ -27,7 +27,7 @@ import build_db  # noqa: E402
 
 IMMUTABLE = 'public, max-age=31536000, immutable'
 FRESH = 'no-cache'
-TYPES = {'.zip': 'application/zip', '.json': 'application/json', '.ini': 'text/plain; charset=utf-8',
+TYPES = {'.zip': 'application/zip', '.json': 'application/json', '.ini': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8',
          '.mra': 'application/xml', '.rbf': 'application/octet-stream', '.nvm': 'application/octet-stream'}
 
 
@@ -112,6 +112,8 @@ def main():
     print('Database:')
     for name in ('db.json.zip', 'db.json', 'downloader_blahm1d.ini', 'downloader_blahm1d.zip'):
         put(wrangler, args.bucket, name, out / name, FRESH, args.dry_run)
+    # Human-readable release notes, linked from the README and the release post.
+    put(wrangler, args.bucket, 'RELEASES.md', ROOT / 'RELEASES.md', FRESH, args.dry_run)
     (out / 'published.json').write_text(json.dumps(dict(revision=revision, base_url=base), indent=2) + '\n')
     print(('Dry run: nothing uploaded. ' if args.dry_run else 'Published. ') +
           f'Users add to downloader.ini:\n\n[blahm1d]\ndb_url = {base}/db.json.zip\n')
