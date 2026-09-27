@@ -1,5 +1,6 @@
 <misterromdescription>
   <name>Catch-22</name>
+  <about author="blahm1d"/>
   <mameversion>0289</mameversion>
   <setname>catch22</setname>
   <year>1985</year>

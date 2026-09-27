@@ -19,7 +19,7 @@
           "setname": "gladiatr",
           "mameversion": "0280",
           "path": "_Arcade/Gladiator (US).mra",
-          "sha256": "3e2655d79fe7861794c7882b8c3545d4cfdb3ebec737deda353ae4e31701fdfe",
+          "sha256": "fa2e74397831d8215ad9c98df2855fd20357b696c5c81143a23a54e50847adf9",
           "original_sha256": "5050b0f0fe4c4fb78e411859bf97d146e32b805a4463f39725893e580bb99ee9",
           "rom_archives": [
             "gladiatr.zip"
@@ -30,7 +30,7 @@
           "setname": "ogonsiro",
           "mameversion": "0289",
           "path": "_Arcade/_alternatives/_Gladiator/Ougon no Shiro (Japan).mra",
-          "sha256": "d77598087c30308f53fa56eda8b993471b853a3fe6b697d64668cf69dff0e35e",
+          "sha256": "f1c0b95d472c6def7289ba0bd139b0e6200a5fe816941e1ee482b849b478d758",
           "original_sha256": "2fdfc73c5799627d588c2049a49cc26cd89bb952750c7c782e4a5d633ea638bd",
           "rom_archives": [
             "ogonsiro.zip",
@@ -56,7 +56,7 @@
           "setname": "lkagebl1",
           "mameversion": "0289",
           "path": "_Arcade/The Legend of Kage (bootleg set 1).mra",
-          "sha256": "12063310ab3b700b45bce36db06042e669902d4bb0f3381f2e84ff9c56155613",
+          "sha256": "aca0e457dda0dc87d8fb07fc8b40e17f75df7fd3ceef971971437aa3be13c182",
           "original_sha256": "f00b3e482c7c7d28f388ec5be5bada84f7e805f66f8082bc4b1d7d32200730c1",
           "rom_archives": [
             "lkage.zip",
@@ -301,7 +301,7 @@
           "setname": "revx",
           "mameversion": "0289",
           "path": "_Arcade/Revolution X.mra",
-          "sha256": "1b6fe1fac934f3878f859c5443d729f9cb2a97ea82ce30e9983e0e092cf0130a",
+          "sha256": "8ebd6e8b801651369785fbf831f16e35b6057b8a58373426bf7d44f690fe4e90",
           "original_sha256": "082f0f7e6a755cab672f911faba2900c04035ef3f4ca9f41bf85a9e3338b1283",
           "rom_archives": [
             "revx.zip"
@@ -326,7 +326,7 @@
           "setname": "catch22",
           "mameversion": "0289",
           "path": "_Arcade/Catch-22.mra",
-          "sha256": "18f634852424a8b34c00c9badc2ad2130a4f60a77ad382fca2b74f060a0f2307",
+          "sha256": "c29b719b87d716a4410565fb82c16f4df52620150c032df112f6729d7fc94737",
           "original_sha256": "18bf927bc6a4c4f5b01144ce9ead835b6e38a19afe0ac9a90aae6c34e09d009e",
           "rom_archives": [
             "catch22.zip",
@@ -338,7 +338,7 @@
           "setname": "cheyenne",
           "mameversion": "0289",
           "path": "_Arcade/Cheyenne.mra",
-          "sha256": "b29e35b553e72e5f7df0b79f4492ed5761837148ca400a24308c59550e52ae0b",
+          "sha256": "b99d592cc33c76379ee51105d87d608b377f5fba6a13faf87915da9a1c53872c",
           "original_sha256": "72b3a9c95ce87ab8d4f541e24145be58c319d2bae2bb425b64aa3f465b409a29",
           "rom_archives": [
             "cheyenne.zip"
@@ -349,7 +349,7 @@
           "setname": "chiller",
           "mameversion": "0289",
           "path": "_Arcade/Chiller.mra",
-          "sha256": "ebd216439b6bed3d12f75c119d43bb6ac85107b2c3401eb4c07018052fe6a5c4",
+          "sha256": "681a07734b60a07095ed98f3881b9c6b05aae1a9eb7ea8270a85f807ade0e3dc",
           "original_sha256": "f5bc94d91fee9cce4600c772e07a631d78519780e94dcb51f7211fd44196e8fc",
           "rom_archives": [
             "chiller.zip"
@@ -360,7 +360,7 @@
           "setname": "claypign",
           "mameversion": "0289",
           "path": "_Arcade/Clay Pigeon.mra",
-          "sha256": "34d0603f2acbbfc3f74725c8d0bf968bc9845643551931a32bbcb32867f785b2",
+          "sha256": "c232003c60c85530916ae41b7594dd9eaeff4bfe8e6c3304a5df299d20545eee",
           "original_sha256": "2f575c128bfb6e7c3ca13c3c750d39df1e5848b23b04b0e69841ee89f2c223a5",
           "rom_archives": [
             "claypign.zip"
@@ -371,7 +371,7 @@
           "setname": "combat",
           "mameversion": "0289",
           "path": "_Arcade/Combat.mra",
-          "sha256": "dfd3b91a6b9a26e46132ebeea324ff6ba44dbe8b7f849f0bd77c8776c1a429fb",
+          "sha256": "2efa1861b2d59d1e807bcce8cd75767eb20753b1a656c064a9ac565eb192535a",
           "original_sha256": "40a7917e99fe5fe00ce3b767246a2c4ef6acf44f2524b1bd5624c68b4e206824",
           "rom_archives": [
             "combat.zip"
@@ -382,7 +382,7 @@
           "setname": "cracksht",
           "mameversion": "0289",
           "path": "_Arcade/Crackshot.mra",
-          "sha256": "84a4f88598cb3ef1a3dc1b1542dcd8aa6a62f7f89931b432d1f161b102f48fef",
+          "sha256": "ecd795d9c8f596de4a9d98c2073c5bbf42d9a85f28a5b4b1234d8092581abd83",
           "original_sha256": "9d75420a331b64f6118221981d1fb75d5ee2c7924b76c77341468844e75ef579",
           "rom_archives": [
             "cracksht.zip"
@@ -393,7 +393,7 @@
           "setname": "crossbow",
           "mameversion": "0289",
           "path": "_Arcade/Crossbow.mra",
-          "sha256": "42168ce8292207d903675b78e7e555ea9e90a8da52606c7fd6569614af1e1009",
+          "sha256": "ec7fb6945378ef6023e946a597cf6e279b1a6581c14b8139d0a88f1ba2e2f392",
           "original_sha256": "354cfbc27e8b3e85e5e9f09f4614af0c13543296108b5fa69ccc958b7bc4232e",
           "rom_archives": [
             "crossbow.zip"
@@ -404,7 +404,7 @@
           "setname": "hitnmiss",
           "mameversion": "0289",
           "path": "_Arcade/Hit 'n Miss.mra",
-          "sha256": "76109069c6fb7a5d02a9c6fd20e8c2d3f4725e51d90056025ef543198bede15a",
+          "sha256": "3bd9b688a171617bd02ed7db7da28abeb786cdde326b0bf9909ba64f040d59a5",
           "original_sha256": "0c082b6bd0080ed19e5b854ebf216285164a968498738fbcdee4f724b85fb5c8",
           "rom_archives": [
             "hitnmiss.zip"
@@ -415,7 +415,7 @@
           "setname": "showdown",
           "mameversion": "0289",
           "path": "_Arcade/Showdown.mra",
-          "sha256": "e07d09e41878b0564856732766d8d78580f30bf517774bd1b40d49df61dcbf9c",
+          "sha256": "ce2e7aacc102e9e9fd173f60458153531f713034cecbdbef1cd97e33c53f5aba",
           "original_sha256": "4e7dd9163224421582a02a023cb0239e37f3e1f35f46786b7410d047a1fdc93c",
           "rom_archives": [
             "showdown.zip"
@@ -426,7 +426,7 @@
           "setname": "topsecex",
           "mameversion": "0289",
           "path": "_Arcade/Top Secret.mra",
-          "sha256": "4355b8f2336db3d22d45d67b9107895bec84cfa2a87afe7873806c60d3115a10",
+          "sha256": "6c2d9399ffee4e8333962a51d16f7a3a6bd1e34de831b52d69b2aea5922d0a14",
           "original_sha256": "8dc9cdee5c2d936ebff1c469337fc555fdf45f6be5cc124756a8ca0cec4b4870",
           "rom_archives": [
             "topsecex.zip"
@@ -437,7 +437,7 @@
           "setname": "whodunit",
           "mameversion": "0289",
           "path": "_Arcade/Who Dunit.mra",
-          "sha256": "68d0224b953dfc8c834eb2b70b76fc6bc52cb2d1d3d4437a3bddcd12eea8c6b8",
+          "sha256": "eeebc8a415d0b77fe192aea0f0bb248398a390a5537cb3dbcf5aac8bfe06b8aa",
           "original_sha256": "e136781c4f29e42638655c0ea17269959f02dbda6c68a445e8a5a6b90e0f7c96",
           "rom_archives": [
             "whodunit.zip"

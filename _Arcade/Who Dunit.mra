@@ -1,5 +1,6 @@
 <misterromdescription>
   <name>Who Dunit</name>
+  <about author="blahm1d"/>
   <mameversion>0289</mameversion>
   <setname>whodunit</setname>
   <year>1988</year>
