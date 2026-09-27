@@ -47,8 +47,11 @@ def validate():
     assert actual==set(expected),f'Unlisted/missing arcade files: {actual ^ set(expected)}'
     if (ROOT/'catalog/defaults.json').exists():
         for e in json.loads((ROOT/'catalog/defaults.json').read_text())['files']:
-            assert e['path'].startswith('config/nvram/') and e['path'].endswith('.nvm')
-            expected[e['path']]=(e['sha256'],['arcade','blahm1d',e['core'],'nvram'],[],False)
+            # Factory NVRAM defaults, or a core's mounted-image setting (config/<core>.s0). Never overwritten.
+            nvm=e['path'].startswith('config/nvram/') and e['path'].endswith('.nvm')
+            s0=re.fullmatch(r'config/[a-z0-9]+\.s[0-9]',e['path']) is not None
+            assert nvm or s0,e['path']
+            expected[e['path']]=(e['sha256'],['arcade','blahm1d',e['core'],'nvram' if nvm else 'config'],[],False)
     for p,(h,_,_,_) in expected.items():
         assert not PurePosixPath(p).is_absolute() and '..' not in PurePosixPath(p).parts
         data=(ROOT/p).read_bytes()

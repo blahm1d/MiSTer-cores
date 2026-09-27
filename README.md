@@ -28,7 +28,7 @@ up drop-in files, update it or add the INI's two lines to your existing
 | Exidy 440 | r6 family; eleven games |
 | NARC | v23 HUD-row fix (cabinet verified) |
 | Night Slashers | July 12 v1.4 sprite-fade fix; Japan, Korea and Over Sea |
-| Cruis'n USA | September 25 release: race buzz fix and new gamepad layout; the whole game in the FPGA at arcade speed |
+| V Unit | Cruis'n USA, Cruis'n World and Off Road Challenge (one core, r30) and War Gods (r14; bring your own disk image) |
 
 **These releases include beta cores.** Read [release status and known issues](RELEASES.md)
 before reporting a game issue. Most of the newer binaries still need cabinet

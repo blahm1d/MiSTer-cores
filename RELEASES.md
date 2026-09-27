@@ -1,6 +1,6 @@
-# Release status - 2026-09-25
+# Release status - 2026-09-26
 
-12 RBFs and 41 MRAs. September 22-25 updates: Wolf Unit, NARC, T Unit (ADPCM and DCS), Y Unit (both builds), and Cruis'n USA (new core; September 25 release).
+13 RBFs and 44 MRAs. September 22-26 updates: Wolf Unit, NARC, T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods).
 
 ## Gladiator - 2026-07-29 release
 
@@ -106,15 +106,29 @@ Games: Mortal Kombat II (rev L3.1).
 
 T Unit ADPCM moved from the S12 baseline to the September 22 R7E announcer-fix build; the S20/S22 builds rejected on the cabinet stay excluded. T Unit DCS moved to the September 23 sound-fix build. These builds still have documented limitations.
 
-## Cruis'n USA - September 25 release
+## V Unit - Cruis'n family r30
 
-Beta; timing passed at all corners. Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Fixes the repeating buzz during races (sound CPU at full speed) and a CPU instruction-timing bug; new default gamepad layout. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed. Cabinet confirmation of this build not yet recorded (the previous r26 build was cabinet verified).
+Beta; cabinet verified; timing passed at all corners. One core for Cruis'n USA, Cruis'n World and Off Road Challenge, the whole game in the FPGA at arcade speed. Full analog steering in Cruis'n World (map Test, then run Calibrate Controls once). New mappable Test, Service, Volume Up/Down and Nitro (Off Road) buttons, appended so saved button maps stay valid. OSD options for analog pedals on the right stick, pots on the DE10-Nano ADC header, and cabinet switches and steering motor via SNAC; with the defaults it plays the same as before. Includes the September 25 race-buzz and CPU timing fixes. The optional force-feedback wheel helper is not installed by this feed. Replaces the Cruis'n USA-only core; your Cruis'n USA saves are kept.
 
-RBF: `blahm1d_cruisinusa_20260925.rbf`
+RBF: `blahm1d_vunit_20260926.rbf`
 
-SHA-256: `3eb932e65159fcf2bb4eca4b1bd9c88d8a440a26c6c27a1b12eb1e98666425ee`
+SHA-256: `b768a364b8df4f3587ea0c447961eb90f3f3b09595094dc276c10456d796f307`
 
-Games: Cruis'n USA (rev L4.4).
+Games: Cruis'n USA (rev L4.4); Cruis'n World (rev L2.5); Off Road Challenge (rev 1.63).
+
+## V Unit - War Gods r14
+
+Beta; cabinet verified; timing waiver (misses only the slow -40C corner: setup -0.064 ns on the HDMI scaler clock, hold -0.009 ns). War Gods booting from its original hard disk, with full-speed DCS2 sound; fights run at about 98% of arcade speed. You supply the disk image: run `chdman extracthd -i <War Gods CHD> -o wargods.img` and put it in `games/wargods/`; the feed installs `config/wargods.s0` once to mount it. OSD Audio Gain (default +12 dB) and Dither options. Carries an invisible status mirror used for remote diagnostics.
+
+RBF: `blahm1d_wargods_20260926.rbf`
+
+SHA-256: `8c6eafbb8e426091a9ea6d7460c7f4a1e3c4429a435f7f5e5b93be43a8d42076`
+
+Games: War Gods (HD 10/09/1996 - Dual Resolution).
+
+## Saves after MRA renames
+
+MiSTer names a game's save by its MRA file name. Two MRAs were renamed for the cleaner menu: `RevX_09132026` is now `Revolution X`, and `Narc (rev 7.00) [v22 erase row]` is now `Narc (rev 7.00)`. To keep your settings and high scores, rename `config/nvram/RevX_09132026.nvm` to `Revolution X.nvm` (and the NARC file the same way) before first launching the new entry. Your old files are never deleted by Update_All.
 
 The newer Gladiator OSD and Legend of Kage CRT drafts have no corresponding binary; they are not represented as delivered features. Diagnostic Y Unit test-ROM and Wolf HUD-counter images are excluded. Wolf community-hack MRAs are excluded because their ROM sources are separate from the original MAME game sets.
 

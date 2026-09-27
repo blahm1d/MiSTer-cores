@@ -78,11 +78,18 @@
       "bytes": 752999
     },
     {
-      "id": "cruisinusa",
-      "archive": "sources/cruisinusa-20260925.zip",
-      "sha256": "0311f0a3d78f2973fd9c4cfe69be1b12595ba5faa609907d0aedccc78177c526",
+      "id": "vunit",
+      "archive": "sources/vunit-20260926.zip",
+      "sha256": "e2b2306a4d904b4d06e0e0e6cce19c2bfd3bf5d1a30bf700ad30538fcf64ffda",
       "file_count": 144,
-      "bytes": 481820
+      "bytes": 490089
+    },
+    {
+      "id": "wargods",
+      "archive": "sources/wargods-20260926.zip",
+      "sha256": "94b4c08e9ea1d3d76a1001ef5edd433fc7ee910446ce760c0af8d26ee3b0ae86",
+      "file_count": 141,
+      "bytes": 466227
     }
   ]
 }

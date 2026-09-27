@@ -13,6 +13,20 @@
       "sha256": "c732e09470a627aa4a1dba571e2bcc6cb955ac3fbf864fd8866504b711b7bd1e",
       "overwrite": false,
       "kind": "Generic factory/calibration default"
+    },
+    {
+      "core": "wargods",
+      "path": "config/wargods.s0",
+      "sha256": "4dda140f8329034ae36ec42280096599c8b8e793e8cc6e7ec50cdd93f98ff0a3",
+      "overwrite": false,
+      "kind": "Mounts games/wargods/wargods.img (user-supplied disk image)"
+    },
+    {
+      "core": "xunit",
+      "path": "config/nvram/Revolution X.nvm",
+      "sha256": "c732e09470a627aa4a1dba571e2bcc6cb955ac3fbf864fd8866504b711b7bd1e",
+      "overwrite": false,
+      "kind": "Generic factory/calibration default"
     }
   ]
 }

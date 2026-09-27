@@ -604,30 +604,77 @@
       "cabinet_verified": null
     },
     {
-      "id": "cruisinusa",
-      "family": "Cruis'n USA",
-      "version": "09/25 release",
-      "date": "20260925",
-      "sha256": "3eb932e65159fcf2bb4eca4b1bd9c88d8a440a26c6c27a1b12eb1e98666425ee",
-      "status": "Beta; timing passed (all corners)",
-      "notes": "Cruis'n USA (rev L4.4), the whole game in the FPGA at arcade speed. Fixes the repeating buzz during races (sound CPU at full speed) and a CPU instruction-timing bug; new default gamepad layout. Accepts crusnusa44.zip or the merged crusnusa.zip. The optional force-feedback wheel helper is not installed by this feed. Cabinet confirmation not yet recorded.",
-      "binary": "_Arcade/cores/blahm1d_cruisinusa_20260925.rbf",
-      "binding": "blahm1d_cruisinusa",
+      "id": "vunit",
+      "family": "Cruis'n (V Unit)",
+      "version": "r30 (Cruis'n USA, World, Off Road)",
+      "date": "20260926",
+      "sha256": "b768a364b8df4f3587ea0c447961eb90f3f3b09595094dc276c10456d796f307",
+      "status": "Beta; cabinet verified; timing passed (all corners)",
+      "notes": "One core for Cruis'n USA (rev L4.4), Cruis'n World (rev L2.5) and Off Road Challenge (rev 1.63), the whole game in the FPGA at arcade speed. Full analog steering in Cruis'n World (map Test, then run Calibrate Controls once). New mappable Test, Service, Volume Up/Down and Nitro (Off Road) buttons, appended so saved maps stay valid. OSD options for analog pedals on the right stick, pots on the DE10-Nano ADC header, and cabinet switches/steering motor via SNAC; defaults play the same as before. The optional force-feedback wheel helper is not installed by this feed.",
+      "binary": "_Arcade/cores/blahm1d_vunit_20260926.rbf",
+      "binding": "blahm1d_vunit",
       "games": [
         {
           "name": "Cruis'n USA (rev L4.4)",
           "setname": "crusnusa44",
           "mameversion": "0289",
           "path": "_Arcade/Cruis'n USA (rev L4.4).mra",
-          "sha256": "d43e845cc3ad4f78bcddce8168986f855bfdb99ef7c5426495e4d9601ce541f6",
-          "original_sha256": "7693498cfdec666d319989bf7ff999ada5cb3f0b81f1606fca6b5b55ea0abe96",
+          "sha256": "8b379850dc6c853ee2ac9920de409e4e0894dcf7edb1cfc629e2a04c01100f7b",
+          "original_sha256": "d0979439c666cf71cd05a826577117223a456318b22d12d7233f94c844fc91b8",
           "rom_archives": [
             "crusnusa.zip",
             "crusnusa44.zip"
           ]
+        },
+        {
+          "name": "Cruis'n World (rev L2.5)",
+          "setname": "crusnwld",
+          "mameversion": "0289",
+          "path": "_Arcade/Cruis'n World (rev L2.5).mra",
+          "sha256": "801753d41c3ae520eafe6545b2d3ca018e6edba8ddda43c19756e422eb08275c",
+          "original_sha256": "51f1537de5ef49899f3737ff97e148ad05b088441ab6de416f85bed70f4276ed",
+          "rom_archives": [
+            "crusnwld.zip"
+          ]
+        },
+        {
+          "name": "Off Road Challenge (rev 1.63)",
+          "setname": "offroadc",
+          "mameversion": "0289",
+          "path": "_Arcade/Off Road Challenge (rev 1.63).mra",
+          "sha256": "be082bdb2c95cfebab839b78f7dcf2f6c6a8f91026737ebd606da565c8977091",
+          "original_sha256": "72d1abcb0185d187112246d4cb035f8a36723f874e60c52fb9075a732708355c",
+          "rom_archives": [
+            "offroadc.zip"
+          ]
         }
       ],
-      "cabinet_verified": false
+      "cabinet_verified": true
+    },
+    {
+      "id": "wargods",
+      "family": "War Gods (V Unit)",
+      "version": "r14",
+      "date": "20260926",
+      "sha256": "8c6eafbb8e426091a9ea6d7460c7f4a1e3c4429a435f7f5e5b93be43a8d42076",
+      "status": "Beta; cabinet verified; timing waiver (slow -40C corner)",
+      "notes": "War Gods booting from its original hard disk, with full-speed DCS2 sound; fights run at about 98% of arcade speed. Needs your own disk image: run chdman extracthd -i <War Gods CHD> -o wargods.img and put it in games/wargods/ (config/wargods.s0, installed once, mounts it). OSD Audio Gain (default +12 dB) and Dither options. Timing misses only the slow -40C corner (setup -0.064 ns on the HDMI scaler clock, hold -0.009 ns). Carries an invisible status mirror used for remote diagnostics.",
+      "binary": "_Arcade/cores/blahm1d_wargods_20260926.rbf",
+      "binding": "blahm1d_wargods",
+      "games": [
+        {
+          "name": "War Gods (HD 10-09-1996 - Dual Resolution)",
+          "setname": "wargods",
+          "mameversion": "0289",
+          "path": "_Arcade/War Gods (HD 10-09-1996 - Dual Resolution).mra",
+          "sha256": "695c248aa2a41fc8930f0b433b246ded945264ecc285e167c175cb2d14dd82b1",
+          "original_sha256": "3b32c580e489d1376550c5331c33d3e94b647f907c325698250e626acd8a1a20",
+          "rom_archives": [
+            "wargods.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": true
     }
   ]
 }
