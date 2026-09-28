@@ -1,6 +1,6 @@
-# Release status - 2026-09-26
+# Release status - 2026-09-28
 
-13 RBFs and 44 MRAs. September 22-26 updates: Wolf Unit, NARC, T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods).
+13 RBFs and 44 MRAs. September 22-28 updates: Wolf Unit (save fix), NARC, T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods).
 
 ## Gladiator - 2026-07-29 release
 
@@ -22,13 +22,13 @@ SHA-256: `896a574d681f16d59e38fb2a163a40d7b3b1d3648e0af35ef64a17a6dc4ccb4e`
 
 Games: The Legend of Kage (bootleg set 1).
 
-## Wolf Unit - Flip fence + DCS sound fix
+## Wolf Unit - Save fix (power cycle)
 
-Beta; cabinet verified. Seven original Wolf Unit games. Page flip now waits only for the old page's DMA commands, fixing MK3/UMK3 Motaro/Kintaro/Shiva HUD and sprite flashing. DCS audio 16x polyphase output filter (hiss fix). Timing waiver: misses only the slow -40C corner by 0.041 ns on the HDMI scaler clock. Community hacks requiring separate ROM sources are not installed by this feed.
+Beta; cabinet verified; timing passed at all corners. Seven original Wolf Unit games. Settings and high scores now survive a power cycle (they were restored corrupted on every power-on; a reset kept them). MK3 and UMK3 always start at the default volume after a power cycle, as the original games do; the other five keep it. Includes the page-flip fix for MK3/UMK3 Motaro/Kintaro/Shiva HUD and sprite flashing, and the DCS 16x output filter (hiss fix). Community hacks requiring separate ROM sources are not installed by this feed.
 
-RBF: `blahm1d_wolfunit_20260924.rbf`
+RBF: `blahm1d_wolfunit_20260928.rbf`
 
-SHA-256: `024cc539ac9810545017268b9e75df81cb9706b0ab55e5a92304f64e9cc1d226`
+SHA-256: `30105f477f0f35a6fa080cda148994099c6b4be2fe8cdbee6481df9c071552dc`
 
 Games: Mortal Kombat 3 (rev 2.1); NBA Hangtime (L1.3 10/10/96); NBA Maximum Hangtime (L1.03 06/09/97); NHL Open Ice: 2 on 2 Challenge (rev 1.21); Rampage: World Tour (rev 1.3); Ultimate Mortal Kombat 3 (rev 1.2); WWF: WrestleMania (rev 1.30 08/10/95).
 

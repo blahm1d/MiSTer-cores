@@ -69,12 +69,12 @@
     {
       "id": "wolfunit",
       "family": "Wolf Unit",
-      "version": "Flip fence + DCS sound fix",
-      "date": "20260924",
-      "sha256": "024cc539ac9810545017268b9e75df81cb9706b0ab55e5a92304f64e9cc1d226",
-      "status": "Beta; cabinet verified; timing waiver (slow -40C corner)",
-      "notes": "Seven original Wolf Unit games. Page flip now waits only for the old page's DMA commands, fixing MK3/UMK3 Motaro/Kintaro/Shiva HUD and sprite flashing; DCS audio 16x polyphase output filter (hiss fix). Timing misses only the slow -40C corner by 0.041 ns on the HDMI scaler clock. Community hacks requiring separate ROM sources are not installed by this feed.",
-      "binary": "_Arcade/cores/blahm1d_wolfunit_20260924.rbf",
+      "version": "Save fix (power cycle)",
+      "date": "20260928",
+      "sha256": "30105f477f0f35a6fa080cda148994099c6b4be2fe8cdbee6481df9c071552dc",
+      "status": "Beta; cabinet verified; timing passed (all corners)",
+      "notes": "Seven original Wolf Unit games. Settings and high scores now survive a power cycle (they were restored corrupted on every power-on; a reset kept them). MK3 and UMK3 always start at the default volume after a power cycle, as the original games do; the other five keep it. Includes the page-flip fix for MK3/UMK3 Motaro/Kintaro/Shiva HUD and sprite flashing, and the DCS 16x output filter (hiss fix). Community hacks requiring separate ROM sources are not installed by this feed.",
+      "binary": "_Arcade/cores/blahm1d_wolfunit_20260928.rbf",
       "binding": "blahm1d_wolfunit",
       "games": [
         {
