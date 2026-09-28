@@ -154,6 +154,10 @@
         <part repeat="0x15">00</part>
     </rom>
 
+    <!-- CMOS persistence: the Z-unit's battery-backed 32 KiB CMOS as MAME's narc nvram image
+         (0x4000 little-endian u16 words, pages 0..3). OSD: Save NVRAM / Clear NVRAM. -->
+    <nvram index="4" size="32768"/>
+
     <!-- NARC is four-button, not the donor's two-button metadata. Order must
          match CONF_STR/joystick bits 4..11 exactly. -->
     <buttons names="Fire,Jump,Rocket Bomb,Crouch,Start,Coin,Vault,Service"

@@ -1,6 +1,6 @@
 # Release status - 2026-09-28
 
-13 RBFs and 44 MRAs. September 22-28 updates: Wolf Unit (save fix), NARC, T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods).
+13 RBFs and 44 MRAs. September 22-28 updates: Wolf Unit (save fix), NARC (v24 saves), T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods).
 
 ## Gladiator - 2026-07-29 release
 
@@ -72,13 +72,13 @@ SHA-256: `b56e3467b5863e48cd89a8256a3ab134f3df60c6f94b201f0663ae988da5e116`
 
 Games: Catch-22; Cheyenne; Chiller; Clay Pigeon; Combat; Crackshot; Crossbow; Hit 'n Miss; Showdown; Top Secret; Who Dunit.
 
-## NARC - v23 HUD row
+## NARC - v24 saves
 
-Beta; cabinet verified. NARC rev 7.00. The gameplay erase band now ends at row 229, removing the garbage row at the bottom of the top HUD. Timing passed at all corners.
+Beta; cabinet verified; timing passed at all corners. NARC rev 7.00. Now keeps high scores, operator adjustments (difficulty, lives, coinage, free play) and bookkeeping across power cycles; save with the OSD's Save NVRAM. Keeps the v23 fix for the garbage row at the bottom of the top HUD. NARC has no software volume (the original uses a hardware pot).
 
-RBF: `blahm1d_narc_20260923.rbf`
+RBF: `blahm1d_narc_20260928.rbf`
 
-SHA-256: `887cd88ed3175ebf3ca680130179ff664a3b260b903459b1d604177c1f19dccb`
+SHA-256: `bf2c532935152064ca8244397a3b4910c8cad089efecb14012aead2ff99fea64`
 
 Games: Narc (rev 7.00).
 

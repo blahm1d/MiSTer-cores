@@ -51,10 +51,10 @@
     },
     {
       "id": "narc",
-      "archive": "sources/narc-20260923.zip",
-      "sha256": "aff39bc7323da3e062d90ec690f7cab5f6dbbd2a07b868c1117df9ccb879a3e3",
-      "file_count": 435,
-      "bytes": 1416615
+      "archive": "sources/narc-20260928.zip",
+      "sha256": "c9309b8c1bbebbc1d4692cd3a148cf99812cff8162eebdbec0d102e71001fafc",
+      "file_count": 436,
+      "bytes": 1421831
     },
     {
       "id": "tunit",

@@ -449,12 +449,12 @@
     {
       "id": "narc",
       "family": "NARC",
-      "version": "v23 HUD row",
-      "date": "20260923",
-      "sha256": "887cd88ed3175ebf3ca680130179ff664a3b260b903459b1d604177c1f19dccb",
-      "status": "Beta; cabinet verified",
-      "notes": "NARC rev 7.00. Gameplay erase band now ends at row 229 (MAME autoerase disarm at HSINT line 257), removing the garbage row at the bottom of the top HUD. Cabinet verified.",
-      "binary": "_Arcade/cores/blahm1d_narc_20260923.rbf",
+      "version": "v24 saves",
+      "date": "20260928",
+      "sha256": "bf2c532935152064ca8244397a3b4910c8cad089efecb14012aead2ff99fea64",
+      "status": "Beta; cabinet verified; timing passed (all corners)",
+      "notes": "NARC rev 7.00. Now keeps high scores, operator adjustments (difficulty, lives, coinage, free play) and bookkeeping across power cycles; save with the OSD's Save NVRAM. Keeps the v23 HUD garbage-row fix. NARC has no software volume (the original uses a hardware pot).",
+      "binary": "_Arcade/cores/blahm1d_narc_20260928.rbf",
       "binding": "blahm1d_narc",
       "games": [
         {
@@ -462,8 +462,8 @@
           "setname": "narc",
           "mameversion": "0280",
           "path": "_Arcade/Narc (rev 7.00) [blahm1d].mra",
-          "sha256": "eb3ac1ca8c3e5647da65cdfc986a4349db27170f1d0ee5e4b8413405cf8b2d5c",
-          "original_sha256": "db52761f5fe132a59843393e777ac5c235677d9feec80d860658dedf0cea1935",
+          "sha256": "f08321838bfeb19fcc99e3d8f505fa64ccabf43228561bd9d8a26673a22f3fc8",
+          "original_sha256": "ce6e756c7f972319ac39d64f1d11860b742e58d1973cd4c1a0755c8b4e606a4b",
           "rom_archives": [
             "narc.zip"
           ]
