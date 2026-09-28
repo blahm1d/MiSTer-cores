@@ -128,7 +128,9 @@ Games: War Gods (HD 10/09/1996 - Dual Resolution).
 
 ## Saves after MRA renames
 
-MiSTer names a game's save by its MRA file name. Two MRAs were renamed for the cleaner menu: `RevX_09132026` is now `Revolution X`, and `Narc (rev 7.00) [v22 erase row]` is now `Narc (rev 7.00)`. To keep your settings and high scores, rename `config/nvram/RevX_09132026.nvm` to `Revolution X.nvm` (and the NARC file the same way) before first launching the new entry. Your old files are never deleted by Update_All.
+Every game now ends in ` [blahm1d]` (for example `Smash T.V. (rev 8.00) [blahm1d]`), so these games never collide with another collection's version of the same game. This is a one-time change.
+
+MiSTer names a game's save (`config/nvram/<name>.nvm`) and DIP settings (`config/dips/<name>.dip`) after the game's entry name. To keep your high scores, settings and DIP switches, rename those files to the new name before first launching the renamed entry, e.g. `Smash T.V. (rev 8.00).nvm` to `Smash T.V. (rev 8.00) [blahm1d].nvm`. Older entries renamed earlier follow the same rule: `RevX_09132026` became `Revolution X [blahm1d]`, and `Narc (rev 7.00) [v22 erase row]` became `Narc (rev 7.00) [blahm1d]`. Your old files are never deleted by Update_All; factory defaults are installed under the new names only where you have none.
 
 The newer Gladiator OSD and Legend of Kage CRT drafts have no corresponding binary; they are not represented as delivered features. Diagnostic Y Unit test-ROM and Wolf HUD-counter images are excluded. Wolf community-hack MRAs are excluded because their ROM sources are separate from the original MAME game sets.
 

@@ -69,6 +69,8 @@ def main():
     games, mra_writes = [], []
     for spec in a.mra:
         src, _, title = spec.partition('=')
+        if not title.endswith(' [blahm1d]'):
+            title += ' [blahm1d]'  # feed MRA tag; also names the game's .nvm/.dip files
         src = Path(src)
         original = src.read_bytes()
         data = sr.retarget_mra(original, binding, src)

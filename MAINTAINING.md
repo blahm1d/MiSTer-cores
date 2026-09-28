@@ -3,7 +3,10 @@
 1. Select the intended release artifact and its matching MRA files. Preserve its
    build/cabinet evidence and known issues. Do not select an RBF solely by its date.
 2. Put the RBF in `_Arcade/cores/` using its existing `blahm1d_<id>` prefix and a
-   new `_YYYYMMDD.rbf` suffix. Update the corresponding MRAs. Main games sit
+   new `_YYYYMMDD.rbf` suffix. Update the corresponding MRAs. Every MRA name ends
+   ` [blahm1d]` (so it never collides with another feed's MRA of the same game);
+   MiSTer names the game's `.nvm` save and `.dip` file after it, so do not rename a
+   shipped MRA without shipping its NVRAM default under the new name. Main games sit
    directly in `_Arcade/` (no per-author folder); regional/revision variants of a
    main game go in `_Arcade/_alternatives/_<Game>/` (the jotego layout). Keep the
    MRA game/profile/ROM layout matched to the core. Every folder name starts with

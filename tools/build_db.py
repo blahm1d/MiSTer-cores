@@ -34,6 +34,8 @@ def validate():
             p=g['path']
             # MRAs sit directly in _Arcade/ (alternates in _Arcade/_alternatives/); no per-author folder.
             assert p.startswith('_Arcade/') and p.endswith('.mra') and '_blahm1d' not in p,p
+            # ' [blahm1d]' tag (jlrh/baszet convention): never collides with another feed's MRA of the same game.
+            assert p.endswith(' [blahm1d].mra'),p+': feed MRA names end with " [blahm1d]"'
             # MiSTer's menu hides _Arcade subfolders whose names do not start with '_'.
             assert all(d.startswith('_') for d in PurePosixPath(p).parts[1:-1]),p+': every folder needs a leading _'
             assert p.casefold() not in paths,p
