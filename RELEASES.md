@@ -4,7 +4,7 @@
 
 ## Gladiator - 2026-07-29 release
 
-Existing public release. Gladiator (US) and Ougon no Shiro (Japan). The newer OSD contract source draft has no new binary.
+Cabinet verified; existing public release. Gladiator (US) and Ougon no Shiro (Japan). The newer OSD contract source draft has no new binary.
 
 RBF: `blahm1d_gladiator_20260729.rbf`
 
@@ -14,7 +14,7 @@ Games: Gladiator (US) [DIP CRT Guard 20260729]; Ougon no Shiro (Japan).
 
 ## The Legend of Kage - Water priority r2
 
-Beta; four-corner timing passed. Bootleg set 1. Water/sprite priority fix; cabinet verification pending. The later CRT geometry source draft is not in this binary.
+Beta; cabinet verified; four-corner timing passed. Bootleg set 1. Water/sprite priority fix. The later CRT geometry source draft is not in this binary.
 
 RBF: `blahm1d_legendofkage_20260830.rbf`
 
@@ -138,7 +138,7 @@ All published MRAs retain the original game profiles and ROM load definitions. O
 
 ## Night Slashers - v1.4 sprite fade fix
 
-v1.4 sprite/special-attack fade fix; DDR3 sprite graphics and audio updates. Custom MRA ROM layout preserved. Known issues: title-screen starfield animation and occasional sprite edge wrap. No new FPGA build or cabinet test performed for this distribution.
+Cabinet verified. v1.4 sprite/special-attack fade fix; DDR3 sprite graphics and audio updates. Custom MRA ROM layout preserved. Known issues: title-screen starfield animation and occasional sprite edge wrap.
 
 RBF: `blahm1d_nightslashers_20260712.rbf`
 

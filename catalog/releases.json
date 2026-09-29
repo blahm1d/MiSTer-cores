@@ -9,7 +9,7 @@
       "version": "2026-07-29 release",
       "date": "20260729",
       "sha256": "1857e3ca16709c2031a67b0bac6e6d0d1f89f23a37f71d082ee3271807ee5d04",
-      "status": "Existing public release",
+      "status": "Cabinet verified; existing public release",
       "notes": "Gladiator (US) and Ougon no Shiro (Japan). The newer OSD contract source draft has no new binary.",
       "binary": "_Arcade/cores/blahm1d_gladiator_20260729.rbf",
       "binding": "blahm1d_gladiator",
@@ -38,7 +38,7 @@
           ]
         }
       ],
-      "cabinet_verified": null
+      "cabinet_verified": true
     },
     {
       "id": "legendofkage",
@@ -46,8 +46,8 @@
       "version": "Water priority r2",
       "date": "20260830",
       "sha256": "896a574d681f16d59e38fb2a163a40d7b3b1d3648e0af35ef64a17a6dc4ccb4e",
-      "status": "Beta; four-corner timing passed",
-      "notes": "Bootleg set 1. Water/sprite priority fix; cabinet verification pending. The later CRT geometry source draft is not in this binary.",
+      "status": "Beta; cabinet verified; four-corner timing passed",
+      "notes": "Bootleg set 1. Water/sprite priority fix. The later CRT geometry source draft is not in this binary.",
       "binary": "_Arcade/cores/blahm1d_legendofkage_20260830.rbf",
       "binding": "blahm1d_legendofkage",
       "games": [
@@ -64,7 +64,7 @@
           ]
         }
       ],
-      "cabinet_verified": false
+      "cabinet_verified": true
     },
     {
       "id": "wolfunit",
@@ -560,8 +560,8 @@
       "version": "v1.4 sprite fade fix",
       "date": "20260712",
       "sha256": "935380e3cc8297154a6d758d50295a279f1db9aeb664d2aef7ee2078b40f4498",
-      "status": "Existing v1.4 release; known visual issues",
-      "notes": "v1.4 sprite/special-attack fade fix; DDR3 sprite graphics and audio updates. Custom MRA ROM layout preserved. Known issues: title-screen starfield animation and occasional sprite edge wrap. No new FPGA build or cabinet test performed for this distribution.",
+      "status": "Cabinet verified; v1.4 release; known visual issues",
+      "notes": "v1.4 sprite/special-attack fade fix; DDR3 sprite graphics and audio updates. Custom MRA ROM layout preserved. Known issues: title-screen starfield animation and occasional sprite edge wrap.",
       "binary": "_Arcade/cores/blahm1d_nightslashers_20260712.rbf",
       "binding": "blahm1d_nightslashers",
       "games": [
@@ -601,7 +601,7 @@
           ]
         }
       ],
-      "cabinet_verified": null
+      "cabinet_verified": true
     },
     {
       "id": "vunit",
