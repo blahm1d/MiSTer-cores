@@ -15,6 +15,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 AUTHOR = 'blahm1d'
+COFFEE = 'https://buymeacoffee.com/blahm1d'
 TAG = ' [blahm1d]'
 
 # Board families shown on the page, in order; catalog ids map onto them.
@@ -81,7 +82,8 @@ CSS = """
 main{max-width:980px;margin:0 auto;padding:32px 16px 64px}h1{font-size:2rem;margin:.2em 0}h2{margin-top:2.2em;border-bottom:1px solid var(--line);padding-bottom:.3em}
 h3{margin:.2em 0}a{color:var(--acc)}code{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:0 .3em;font-size:.92em}
 .lede{color:var(--mut);font-size:1.1rem}.install{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px}
-.install ol{margin:.4em 0 0;padding-left:1.3em}.btn{display:inline-block;background:var(--acc);color:#111;font-weight:600;text-decoration:none;padding:.5em 1em;border-radius:8px;margin:.6em 0}
+.install ol{margin:.4em 0 0;padding-left:1.3em}.btn{display:inline-block;background:var(--acc);color:#111;font-weight:600;text-decoration:none;padding:.5em 1em;border-radius:8px;margin:.6em .4em .6em 0}
+.btn.coffee{background:transparent;color:var(--fg);border:1px solid var(--acc)}
 .core{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:14px 0}
 .meta{color:var(--mut);font-size:.92rem}.badge{display:inline-block;font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:.05em .6em;margin-left:.4em;color:var(--mut)}
 .badge.ok{color:var(--ok);border-color:var(--ok)}table{border-collapse:collapse;width:100%;margin-top:.6em;font-size:.93rem}
@@ -160,6 +162,7 @@ def build(base, out):
 <li>Put it in the root of your MiSTer SD card (<code>/media/fat/</code>).</li>
 <li>Run <strong>Update_All</strong>. The games appear in the <strong>Arcade</strong> menu, each ending in <code>[blahm1d]</code>.</li></ol>
 <a class="btn" href="{base}/downloader_blahm1d.ini">Download the INI</a>
+<a class="btn coffee" href="{COFFEE}" rel="noopener">&#9749; Buy me a coffee</a>
 <div class="meta">Or add these two lines to your <code>downloader.ini</code>: <code>[blahm1d]</code> <code>db_url = {base}/db.json.zip</code></div></div>
 <p>These cores rebuild the original arcade boards in the FPGA: CPUs, graphics, sound boards and I/O. Some builds are
 beta; each core shows its build, test status and known issues. Full notes: <a href="{base}/releases.html">release notes</a>.
@@ -167,6 +170,7 @@ No ROMs are included.</p>
 {''.join(sections)}
 <h2 id="faq">FAQ</h2><dl>{''.join(f'<dt>{html.escape(q)}</dt><dd>{html.escape(a)}</dd>' for q, a in faq)}</dl>
 <footer>blahm1d &middot; cores released under the GPL &middot; source code linked from each core
+&middot; <a href="{COFFEE}" rel="noopener">&#9749; buy me a coffee</a>
 &middot; updated {today}</footer></main></body></html>
 """
     releases = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
