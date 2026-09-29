@@ -117,7 +117,8 @@ def main():
     put(wrangler, args.bucket, 'RELEASES.md', ROOT / 'RELEASES.md', FRESH, args.dry_run)
     # Public website (index, release notes, robots, sitemap, llms.txt), rebuilt from the catalog every publish.
     site = build_site.build(base, ROOT / 'dist' / 'site')
-    for page in sorted(site.iterdir()):
+    # site-static/: files that must stay at the site root verbatim (e.g. search-engine ownership verification).
+    for page in sorted(site.iterdir()) + sorted((ROOT / 'site-static').glob('*')):
         put(wrangler, args.bucket, page.name, page, FRESH, args.dry_run)
     (out / 'published.json').write_text(json.dumps(dict(revision=revision, base_url=base), indent=2) + '\n')
     print(('Dry run: nothing uploaded. ' if args.dry_run else 'Published. ') +
