@@ -654,12 +654,12 @@
     {
       "id": "wargods",
       "family": "War Gods (V Unit)",
-      "version": "r14",
-      "date": "20260926",
-      "sha256": "8c6eafbb8e426091a9ea6d7460c7f4a1e3c4429a435f7f5e5b93be43a8d42076",
-      "status": "Beta; cabinet verified; timing waiver (slow -40C corner)",
-      "notes": "War Gods booting from its original hard disk, with full-speed DCS2 sound; fights run at about 98% of arcade speed. Needs your own disk image: run chdman extracthd -i <War Gods CHD> -o wargods.img and put it in games/wargods/ (config/wargods.s0, installed once, mounts it). OSD Audio Gain (default +12 dB) and Dither options. Timing misses only the slow -40C corner (setup -0.064 ns on the HDMI scaler clock, hold -0.009 ns). Carries an invisible status mirror used for remote diagnostics.",
-      "binary": "_Arcade/cores/blahm1d_wargods_20260926.rbf",
+      "version": "r16",
+      "date": "20260929",
+      "sha256": "f3f2e6421179a3e8e8d27f93271800880b819ce5f4d8e7ca7a1b2a0ac66bb5ac",
+      "status": "Beta; cabinet verified; timing passed (all corners)",
+      "notes": "War Gods booting from its original hard disk, with full-speed DCS2 sound; fights run at about 98% of arcade speed. Fixes the POST error U28 VR ASIC failed polygon draw test (V+ DMA ASIC Error E2). Credits and master volume now survive a power cycle. New Volume Up / Volume Down buttons, appended so saved button maps stay valid. Needs your own disk image: run chdman extracthd -i <War Gods CHD> -o wargods.img and put it in games/wargods/ (config/wargods.s0, installed once, mounts it). OSD Audio Gain (default +12 dB) and Dither options.",
+      "binary": "_Arcade/cores/blahm1d_wargods_20260929.rbf",
       "binding": "blahm1d_wargods",
       "games": [
         {
@@ -667,8 +667,8 @@
           "setname": "wargods",
           "mameversion": "0289",
           "path": "_Arcade/War Gods (HD 10-09-1996 - Dual Resolution) [blahm1d].mra",
-          "sha256": "695c248aa2a41fc8930f0b433b246ded945264ecc285e167c175cb2d14dd82b1",
-          "original_sha256": "3b32c580e489d1376550c5331c33d3e94b647f907c325698250e626acd8a1a20",
+          "sha256": "21821f94448b627ddac010c48a02fecd973285ae742efa1a3136b6f5d1ae6885",
+          "original_sha256": "783b41d58449010f09847f1b6eefbb87d74a1d8272b72f2b8fe0fc2c334c5778",
           "rom_archives": [
             "wargods.zip"
           ]

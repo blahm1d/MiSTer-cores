@@ -1,6 +1,6 @@
-# Release status - 2026-09-28
+# Release status - 2026-09-29
 
-13 RBFs and 44 MRAs. September 22-28 updates: Wolf Unit (save fix), NARC (v24 saves), T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods).
+13 RBFs and 44 MRAs. September 22-29 updates: Wolf Unit (save fix), NARC (v24 saves), T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods r16).
 
 ## Gladiator - 2026-07-29 release
 
@@ -116,13 +116,13 @@ SHA-256: `b768a364b8df4f3587ea0c447961eb90f3f3b09595094dc276c10456d796f307`
 
 Games: Cruis'n USA (rev L4.4); Cruis'n World (rev L2.5); Off Road Challenge (rev 1.63).
 
-## V Unit - War Gods r14
+## V Unit - War Gods r16
 
-Beta; cabinet verified; timing waiver (misses only the slow -40C corner: setup -0.064 ns on the HDMI scaler clock, hold -0.009 ns). War Gods booting from its original hard disk, with full-speed DCS2 sound; fights run at about 98% of arcade speed. You supply the disk image: run `chdman extracthd -i <War Gods CHD> -o wargods.img` and put it in `games/wargods/`; the feed installs `config/wargods.s0` once to mount it. OSD Audio Gain (default +12 dB) and Dither options. Carries an invisible status mirror used for remote diagnostics.
+Beta; cabinet verified; timing passed at all corners. War Gods booting from its original hard disk, with full-speed DCS2 sound; fights run at about 98% of arcade speed. Fixes the power-on test error "U28 VR ASIC failed polygon draw test (V+ DMA ASIC Error E2)". Credits and master volume now survive a power cycle. New Volume Up / Volume Down buttons, appended so saved button maps stay valid. You supply the disk image: run `chdman extracthd -i <War Gods CHD> -o wargods.img` and put it in `games/wargods/`; the feed installs `config/wargods.s0` once to mount it. OSD Audio Gain (default +12 dB) and Dither options.
 
-RBF: `blahm1d_wargods_20260926.rbf`
+RBF: `blahm1d_wargods_20260929.rbf`
 
-SHA-256: `8c6eafbb8e426091a9ea6d7460c7f4a1e3c4429a435f7f5e5b93be43a8d42076`
+SHA-256: `f3f2e6421179a3e8e8d27f93271800880b819ce5f4d8e7ca7a1b2a0ac66bb5ac`
 
 Games: War Gods (HD 10/09/1996 - Dual Resolution).
 

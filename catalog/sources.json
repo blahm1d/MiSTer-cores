@@ -86,10 +86,10 @@
     },
     {
       "id": "wargods",
-      "archive": "sources/wargods-20260926.zip",
-      "sha256": "94b4c08e9ea1d3d76a1001ef5edd433fc7ee910446ce760c0af8d26ee3b0ae86",
+      "archive": "sources/wargods-20260929.zip",
+      "sha256": "6cb6abf0e83d9354be90bc863053e0b4853a7e015a8c9109e98c52a166715afa",
       "file_count": 141,
-      "bytes": 466227
+      "bytes": 470845
     }
   ]
 }
