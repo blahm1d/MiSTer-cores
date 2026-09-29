@@ -24,10 +24,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 import build_db  # noqa: E402
+import build_site  # noqa: E402
 
 IMMUTABLE = 'public, max-age=31536000, immutable'
 FRESH = 'no-cache'
-TYPES = {'.zip': 'application/zip', '.json': 'application/json', '.ini': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8',
+TYPES = {'.zip': 'application/zip', '.json': 'application/json', '.ini': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8', '.html': 'text/html; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml',
          '.mra': 'application/xml', '.rbf': 'application/octet-stream', '.nvm': 'application/octet-stream'}
 
 
@@ -114,6 +115,10 @@ def main():
         put(wrangler, args.bucket, name, out / name, FRESH, args.dry_run)
     # Human-readable release notes, linked from the README and the release post.
     put(wrangler, args.bucket, 'RELEASES.md', ROOT / 'RELEASES.md', FRESH, args.dry_run)
+    # Public website (index, release notes, robots, sitemap, llms.txt), rebuilt from the catalog every publish.
+    site = build_site.build(base, ROOT / 'dist' / 'site')
+    for page in sorted(site.iterdir()):
+        put(wrangler, args.bucket, page.name, page, FRESH, args.dry_run)
     (out / 'published.json').write_text(json.dumps(dict(revision=revision, base_url=base), indent=2) + '\n')
     print(('Dry run: nothing uploaded. ' if args.dry_run else 'Published. ') +
           f'Users add to downloader.ini:\n\n[blahm1d]\ndb_url = {base}/db.json.zip\n')
