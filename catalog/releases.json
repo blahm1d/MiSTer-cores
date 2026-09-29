@@ -291,8 +291,8 @@
       "version": "Revolution X mouse + sprite cache",
       "date": "20260918",
       "sha256": "8bd67839b1070c556eaaa331253daddc4c5c34d1753d70439ccbcceb2337d15c",
-      "status": "Beta; slow-corner setup waiver (-0.195/-0.171 ns), fast corners and hold pass",
-      "notes": "Revolution X. OSD Gun = Mouse now works (left Trigger, right Action). 128 KB sprite cache for the post-helicopter pan-down slowdown. Keeps Music/SFX volume controls. Cabinet verification pending.",
+      "status": "Beta; cabinet verified; slow-corner setup waiver (-0.195/-0.171 ns), fast corners and hold pass",
+      "notes": "Revolution X. OSD Gun = Mouse now works (left Trigger, right Action). 128 KB sprite cache for the post-helicopter pan-down slowdown. Keeps Music/SFX volume controls.",
       "binary": "_Arcade/cores/blahm1d_xunit_20260918.rbf",
       "binding": "blahm1d_xunit",
       "games": [
@@ -308,7 +308,7 @@
           ]
         }
       ],
-      "cabinet_verified": false
+      "cabinet_verified": true
     },
     {
       "id": "exidy440",
@@ -316,8 +316,8 @@
       "version": "Exidy 440 r6",
       "date": "20260907",
       "sha256": "b56e3467b5863e48cd89a8256a3ab134f3df60c6f94b201f0663ae988da5e116",
-      "status": "Beta; four-corner timing passed",
-      "notes": "Eleven Exidy 440 games. Core family bring-up; first cabinet validation pending.",
+      "status": "Beta; cabinet verified; four-corner timing passed",
+      "notes": "Eleven Exidy 440 games.",
       "binary": "_Arcade/cores/blahm1d_exidy440_20260907.rbf",
       "binding": "blahm1d_exidy440",
       "games": [
@@ -444,7 +444,7 @@
           ]
         }
       ],
-      "cabinet_verified": false
+      "cabinet_verified": true
     },
     {
       "id": "narc",

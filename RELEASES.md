@@ -54,7 +54,7 @@ Games: Mortal Kombat (rev 4.0 09/28/92, Y-Unit); Terminator 2 - Judgment Day (re
 
 ## X Unit - Revolution X mouse + sprite cache
 
-Beta; slow-corner setup waiver (-0.195/-0.171 ns), fast corners and hold pass. Revolution X. OSD Gun = Mouse now works (left Trigger, right Action). 128 KB sprite cache for the post-helicopter pan-down slowdown. Keeps Music/SFX volume controls. Cabinet verification pending.
+Beta; cabinet verified; slow-corner setup waiver (-0.195/-0.171 ns), fast corners and hold pass. Revolution X. OSD Gun = Mouse now works (left Trigger, right Action). 128 KB sprite cache for the post-helicopter pan-down slowdown. Keeps Music/SFX volume controls.
 
 RBF: `blahm1d_xunit_20260918.rbf`
 
@@ -64,7 +64,7 @@ Games: Revolution X.
 
 ## Exidy cores - Exidy 440 r6
 
-Beta; four-corner timing passed. Eleven Exidy 440 games. Core family bring-up; first cabinet validation pending.
+Beta; cabinet verified; four-corner timing passed. Eleven Exidy 440 games.
 
 RBF: `blahm1d_exidy440_20260907.rbf`
 
