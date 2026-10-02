@@ -20,6 +20,7 @@ TAG = ' [blahm1d]'
 
 # Board families shown on the page, in order; catalog ids map onto them.
 GROUPS = [
+    ('Mortal Kombat 4', 'Midway Zeus 1', ['mk4']),
     ('V Unit', 'Midway V Unit', ['vunit', 'wargods']),
     ('Wolf Unit', 'Midway Wolf Unit', ['wolfunit']),
     ('T Unit', 'Midway T Unit', ['tunit', 'tunitdcs']),
@@ -35,11 +36,12 @@ GROUPS = [
 FAQ = [
     ('How do I install the blahm1d MiSTer cores?',
      'Download downloader_blahm1d.ini from {base}/downloader_blahm1d.ini, put it in the root of your MiSTer SD card '
-     '(/media/fat/), and run Update_All. The games appear in the Arcade menu, each name ending in [blahm1d]. Run '
+     '(/media/fat/), and run Update_All. The games appear under Arcade > Blahm1d, each name ending in [blahm1d]. Run '
      'Update_All again any time to get new releases.'),
     ('Are ROMs included?',
-     'No. Keep Update_All\'s Arcade ROMs option enabled, or supply your own MAME ROM zips. Each game lists the ROM zip '
-     'names it needs.'),
+     'No. Enable ROM downloads in Update_All, or BYOR (bring your own ROMs). This feed supplies FPGA cores and MRA game '
+     'definitions. ROM compatibility has been tested with a MAME 0.289 merged set. Each game lists its compatible '
+     'ROM ZIP names. War Gods also requires your own disk image.'),
     ('Which hardware do the cores run on?',
      'MiSTer FPGA on a Terasic DE10-Nano (Intel Cyclone V). The games run in the FPGA as hardware, not software '
      'emulation.'),
@@ -144,7 +146,7 @@ def build(base, out):
                                              'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}]}
 
     desc = (f'blahm1d MiSTer FPGA arcade cores: {len(cat["cores"])} cores and {n_games} games, including the Midway '
-            f'V Unit (Cruis\'n USA, Cruis\'n World, Off Road Challenge, War Gods), Wolf Unit, T Unit, Y Unit, X Unit, '
+            f'Zeus 1 (Mortal Kombat 4), V Unit (Cruis\'n USA, Cruis\'n World, Off Road Challenge, War Gods), Wolf Unit, T Unit, Y Unit, X Unit, '
             f'NARC, Exidy 440, Night Slashers, Gladiator and The Legend of Kage. Install with one Update_All INI.')
     index = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -160,13 +162,19 @@ def build(base, out):
 <div class="install"><strong>Install</strong>
 <ol><li>Download <a href="{base}/downloader_blahm1d.ini">downloader_blahm1d.ini</a> (right-click, Save link as).</li>
 <li>Put it in the root of your MiSTer SD card (<code>/media/fat/</code>).</li>
-<li>Run <strong>Update_All</strong>. The games appear in the <strong>Arcade</strong> menu, each ending in <code>[blahm1d]</code>.</li></ol>
+<li>Run <strong>Update_All</strong>. The games appear under <strong>Arcade &gt; Blahm1d</strong>, each ending in <code>[blahm1d]</code>.</li></ol>
 <a class="btn" href="{base}/downloader_blahm1d.ini">Download the INI</a>
+<a href="{base}/downloader_blahm1d.zip">INI ZIP (extract first)</a>
 <a class="btn coffee" href="{COFFEE}" rel="noopener">&#9749; Buy me a coffee</a>
-<div class="meta">Or add these two lines to your <code>downloader.ini</code>: <code>[blahm1d]</code> <code>db_url = {base}/db.json.zip</code></div></div>
+<div class="meta">Or add these two lines to your <code>downloader.ini</code>:</div>
+<pre><code>[blahm1d]
+db_url = {base}/db.json.zip</code></pre></div>
 <p>These cores rebuild the original arcade boards in the FPGA: CPUs, graphics, sound boards and I/O. Some builds are
 beta; each core shows its build, test status and known issues. Full notes: <a href="{base}/releases.html">release notes</a>.
-No ROMs are included.</p>
+<strong>No ROMs are included.</strong> Enable ROM downloads in <strong>Update_All</strong>,
+or <strong>BYOR</strong> (bring your own ROMs).
+ROM compatibility has been tested with a MAME 0.289 merged set.
+War Gods also requires your own disk image.</p>
 {''.join(sections)}
 <h2 id="faq">FAQ</h2><dl>{''.join(f'<dt>{html.escape(q)}</dt><dd>{html.escape(a)}</dd>' for q, a in faq)}</dl>
 <footer>blahm1d &middot; cores released under the GPL &middot; source code linked from each core
@@ -188,7 +196,9 @@ No ROMs are included.</p>
                          for p in ('', 'releases.html')) + '</urlset>\n')
     llms = [f'# blahm1d MiSTer FPGA arcade cores', '', f'> {desc}', '',
             f'- Install: put {base}/downloader_blahm1d.ini in the MiSTer SD root and run Update_All.',
-            f'- Games show in the Arcade menu with names ending in [blahm1d]. No ROMs included.',
+            f'- Games show under Arcade > Blahm1d with names ending in [blahm1d]. Moving the entries does not rename saves or DIP settings.',
+            '- No ROMs are included. Enable ROM downloads in Update_All, or BYOR (bring your own ROMs). '
+            'ROM compatibility has been tested with a MAME 0.289 merged set. War Gods also requires your own disk image.',
             f'- Release notes: {base}/releases.html', f'- Source code (GPL): linked per core on {base}/', '', '## Cores', '']
     for name, board, ids in GROUPS:
         for cid in ids:

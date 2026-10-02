@@ -90,6 +90,13 @@
       "sha256": "6cb6abf0e83d9354be90bc863053e0b4853a7e015a8c9109e98c52a166715afa",
       "file_count": 141,
       "bytes": 470845
+    },
+    {
+      "id": "mk4",
+      "archive": "sources/mk4-20260930.zip",
+      "sha256": "bcb5647c3325083a9eb86b837d79235f94c7217baf0aab8faa7fc08134f7b5d7",
+      "file_count": 368,
+      "bytes": 1170907
     }
   ]
 }

@@ -1,5 +1,10 @@
 # Publishing an update
 
+Prepare and verify the exact release package and website draft first. Ask the
+owner for approval before committing, pushing, updating an upstream PR, or
+uploading to the live mirror. A request to prepare a release is not publication
+approval. Pushing to `main` triggers the database publication workflow.
+
 1. Select the intended release artifact and its matching MRA files. Preserve its
    build/cabinet evidence and known issues. Do not select an RBF solely by its date.
 2. Put the RBF in `_Arcade/cores/` using its existing `blahm1d_<id>` prefix and a
@@ -7,10 +12,12 @@
    ` [blahm1d]` (so it never collides with another feed's MRA of the same game);
    MiSTer names the game's `.nvm` save and `.dip` file after it, so do not rename a
    shipped MRA without shipping its NVRAM default under the new name. Main games sit
-   directly in `_Arcade/` (no per-author folder); regional/revision variants of a
-   main game go in `_Arcade/_alternatives/_<Game>/` (the jotego layout). Keep the
+   in `_Arcade/_Blahm1d/`, displayed as Arcade > Blahm1d; regional/revision variants of a
+   main game go in `_Arcade/_Blahm1d/_alternatives/_<Game>/`. Keep the
    MRA game/profile/ROM layout matched to the core. Every folder name starts with
    `_`: MiSTer's menu hides `_Arcade` subfolders without it. Validation enforces this.
+   Moving an MRA into this folder must preserve its filename and internal game name
+   so existing NVRAM and DIP filenames remain valid. RBFs remain in `_Arcade/cores/`.
 3. Update `catalog/releases.json` with the exact SHA-256 hashes, paths, build
    version, game list and status. Replace that core's previous downloadable RBF;
    Git history retains it for rollback. Update the matching source archive and
@@ -24,6 +31,14 @@
    `python tools/publish_r2.py --bucket blahm1d-mister --base-url https://mister.blahm1d.com`
    It uploads new payloads and source archives first, then the database and INI.
    Requires `wrangler login` on the publishing machine.
+
+Use `tools/add_core.py --dry-run` for a new core and
+`tools/stage_release.py --dry-run` for an existing core before staging its files.
+Review the source snapshot and MRA changes, then run without `--dry-run` only
+inside an isolated publishing checkout. `tools/publish_r2.py --dry-run` generates
+the database and website and lists proposed uploads without uploading them.
+After approved publication, run `tools/verify_mirror.py` against the public INI
+and verify a clean Downloader installation and preserved saves separately.
 
 The workflow publishes `db.json.zip` and the downloadable INI to the `db` branch.
 Every payload URL pins the source commit, so a database cannot silently mix old
@@ -59,7 +74,8 @@ installing an MRA does not automatically register its ROM requirements there.
    complete coverage merely from a successful generator exit.
 4. Verify maintainer acceptance, mirror synchronization, and live database entries
    before saying automatic ROM delivery is available. An open PR is pending work.
-   If core publication proceeds with gaps, name them explicitly in the handoff.
+   Record any pending registration or unresolved automatic coverage in the handoff.
+   Describe ROM provision as Update_All or BYOR; no ROM payloads are included.
 5. Verify the live core feed and a clean RBF/MRA download separately from ROM
    availability and cabinet behavior. No ROM payloads belong in this repository;
    a separate ROM-hosting/upload operation requires explicit authorization.

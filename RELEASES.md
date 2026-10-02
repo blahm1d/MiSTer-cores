@@ -1,6 +1,24 @@
-# Release status - 2026-09-29
+# Release status - 2026-10-01
 
-13 RBFs and 44 MRAs. September 22-29 updates: Wolf Unit (save fix), NARC (v24 saves), T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods r16).
+14 RBFs and 45 MRAs. This release adds the September 30 Mortal Kombat 4 v9 build with Lighting Toggle. September 22-29 updates: Wolf Unit (save fix), NARC (v24 saves), T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods r16).
+
+## Blahm1d folder - 2026-10-01
+
+The current collection's game entries now sit under Arcade > Blahm1d, with regional/revision alternatives inside that folder. All existing ` [blahm1d]` filenames, internal game names, ROM layouts and RBF bindings are unchanged. The folder move does not rename NVRAM saves or DIP settings. RBF binaries remain in `_Arcade/cores/`. The existing 13 binaries are unchanged; MK4 uses the cabinet-tested September 30 build. No FPGA rebuild is part of this release.
+
+No ROMs are included. Enable ROM downloads in Update_All, or BYOR (bring your own ROMs). ROM compatibility has been tested with a MAME 0.289 merged set. War Gods additionally requires your own disk image.
+
+## Mortal Kombat 4 (Zeus 1) - September 30 v9
+
+Beta; cabinet tested, confirmed by the owner. All 132 required timing checks passed with positive slack and zero TNS, without a timing waiver. Mortal Kombat 4 v3.0; ROM compatibility has been tested with a MAME 0.289 merged set.
+
+Experimental fighter-only /128 lighting, including fighters falling during Continue. Map Lighting Toggle to turn the effect off/on; it defaults on. Stages and UI bypass the effect. The material-bank filter is inferred from MK4 v3.0 captures; full roster, costume and other ROM revision coverage is not established. Includes the DCS circular-buffer mask and HDMI scaler divider/counter timing repairs.
+
+RBF: `blahm1d_mk4_20260930.rbf`
+
+SHA-256: `dceda52210d0bcf4941dc4df22f2c98bb5cad9eacd95bdcadf655ac6da0562d6`
+
+Source archive: `sources/mk4-20260930.zip`. Original MiSTer framework notices, donor provenance and GPL license terms are preserved. Game ROM interleaving, CRCs, DCS index 3 and the 32 KiB NVRAM layout are preserved. To carry over an existing MK4 save or DIP settings from another entry, copy it to the corresponding `Mortal Kombat 4 (version 3.0) [blahm1d]` filename before first launch. This package installs no factory save.
 
 ## Gladiator - 2026-07-29 release
 
@@ -151,5 +169,3 @@ Core by blahm1d, built on JTFRAME by Jose Tejada (jotego), with Amber CPU contri
 ## September 19 ROM-loading corrections
 
 Ougon no Shiro now uses the Japanese ROM CRCs, the required text/graphics order, and all four MCU ROMs. Its 0x6D440-byte stream matches the published source memory map. It accepts ogonsiro.zip or the merged gladiatr.zip. NBA Maximum Hangtime also accepts merged nbahangt.zip. Both parent archives are indexed by the upstream ROM database. RBFs are unchanged; these metadata fixes have not been cabinet-tested.
-
-Automatic ROM delivery still requires the upstream source registration and mirror sync: [PR #8](https://github.com/zakk4223/ArcadeROMsDB_MiSTer/pull/8). A merged source change alone is not a verified download.

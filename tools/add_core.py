@@ -2,7 +2,7 @@
 """Add a NEW core to the feed (stage_release.py updates existing ones).
 
 Copies the RBF to _Arcade/cores/<binding>_<date>.rbf, installs each MRA under
-_Arcade/ (alternate versions: --alternative-of) with <rbf> pointed at the binding, archives the source
+_Arcade/_Blahm1d/ (alternate versions: --alternative-of) with <rbf> pointed at the binding, archives the source
 snapshot the RBF was built from (generated Quartus output excluded, GPL COPYING added
 if absent), adds catalog/releases.json and catalog/sources.json entries, and runs
 the publish validation.
@@ -42,7 +42,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--id', required=True)
     ap.add_argument('--family', required=True)
-    ap.add_argument('--alternative-of', metavar='GAME', help='install these MRAs under _alternatives/_GAME/ (regional/revision variants of a main game)')
+    ap.add_argument('--alternative-of', metavar='GAME', help='install these MRAs under _Blahm1d/_alternatives/_GAME/ (regional/revision variants of a main game)')
     ap.add_argument('--rbf', type=Path, required=True)
     ap.add_argument('--mra', action='append', required=True, metavar='FILE=TITLE',
                     help='package MRA and the file title it is published under (repeatable)')
@@ -78,7 +78,7 @@ def main():
         setname = re.search(r'<setname>([^<]+)', text).group(1).strip()
         mame = (re.search(r'<mameversion>([^<]+)', text) or [None, ''])[1].strip()
         zips = sorted({z for m in re.finditer(r'zip="([^"]+)"', text) for z in m.group(1).split('|')})
-        path = f'_Arcade/_alternatives/_{a.alternative_of}/{title}.mra' if a.alternative_of else f'_Arcade/{title}.mra'
+        path = f'_Arcade/_Blahm1d/_alternatives/_{a.alternative_of}/{title}.mra' if a.alternative_of else f'_Arcade/_Blahm1d/{title}.mra'
         games.append(dict(name=title, setname=setname, mameversion=mame, path=path, sha256=sr.sha256(data),
                           original_sha256=sr.sha256(original), rom_archives=zips))
         mra_writes.append((path, data))

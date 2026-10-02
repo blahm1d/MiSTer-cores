@@ -28,8 +28,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'blahm1d'
+          git config user.email '310049768+blahm1d@users.noreply.github.com'
           if git ls-remote --exit-code --heads origin db >/dev/null 2>&1; then
             git fetch origin db
             git switch -C db FETCH_HEAD

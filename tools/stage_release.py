@@ -307,7 +307,8 @@ def main():
     build_db.validate()
     print('PASS: catalog, hashes, MRA bindings and source archive all validate.')
     print('\nNext:')
-    print('  git add -A _Arcade sources catalog')
+    print('  Review the diff and stage only the exact intended release paths.')
+    print('  Ask the owner for publication approval before committing or pushing.')
     print(f'  git commit -m "{core["family"]}: {a.version} ({date})"')
     print('  git push origin main')
 
