@@ -1,12 +1,12 @@
 {
   "v": 1,
   "db_id": "blahm1d",
-  "timestamp": 1790912518,
+  "timestamp": 1791064396,
   "files": {
     "_Arcade/_Blahm1d/Catch-22 [blahm1d].mra": {
       "hash": "b2feba01d8935fc8ff245216468ada13",
       "size": 2875,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Catch-22%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Catch-22%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -20,7 +20,7 @@
     "_Arcade/_Blahm1d/Cheyenne [blahm1d].mra": {
       "hash": "5be92bff918217ae8f25102214bc9f58",
       "size": 3310,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Cheyenne%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Cheyenne%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -34,7 +34,7 @@
     "_Arcade/_Blahm1d/Chiller [blahm1d].mra": {
       "hash": "6cc03ff54d96628399923e929b9eab8b",
       "size": 3168,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Chiller%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Chiller%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -48,7 +48,7 @@
     "_Arcade/_Blahm1d/Clay Pigeon [blahm1d].mra": {
       "hash": "2b9e4b322674ab93735ba0dc229a5f13",
       "size": 2373,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Clay%20Pigeon%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Clay%20Pigeon%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -62,7 +62,7 @@
     "_Arcade/_Blahm1d/Combat [blahm1d].mra": {
       "hash": "ee7cce415b8d7af1bfdc44cb9291ac39",
       "size": 2827,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Combat%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Combat%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -76,7 +76,7 @@
     "_Arcade/_Blahm1d/Crackshot [blahm1d].mra": {
       "hash": "fad32109f4dac315f60c8da3bb242bb9",
       "size": 2881,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Crackshot%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Crackshot%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -90,7 +90,7 @@
     "_Arcade/_Blahm1d/Crossbow [blahm1d].mra": {
       "hash": "005d16a6a5008e02f2bfc6fbe6f02b52",
       "size": 3375,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Crossbow%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Crossbow%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -104,7 +104,7 @@
     "_Arcade/_Blahm1d/Cruis'n USA (rev L4.4) [blahm1d].mra": {
       "hash": "40d31bdf5ffd009aeb9dde99a4cb4e3c",
       "size": 37380,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Cruis%27n%20USA%20%28rev%20L4.4%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Cruis%27n%20USA%20%28rev%20L4.4%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -118,7 +118,7 @@
     "_Arcade/_Blahm1d/Cruis'n World (rev L2.5) [blahm1d].mra": {
       "hash": "ba3a55b848a69df8814368459661d1d8",
       "size": 36879,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Cruis%27n%20World%20%28rev%20L2.5%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Cruis%27n%20World%20%28rev%20L2.5%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -132,7 +132,7 @@
     "_Arcade/_Blahm1d/Gladiator (US) [blahm1d].mra": {
       "hash": "a3b9d0090696497f81d7713f4ec0a097",
       "size": 3350,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Gladiator%20%28US%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Gladiator%20%28US%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -146,7 +146,7 @@
     "_Arcade/_Blahm1d/High Impact Football (rev LA5 02-15-91) [blahm1d].mra": {
       "hash": "8a720643f3b5d0ca5ef417787f64bc74",
       "size": 6861,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/High%20Impact%20Football%20%28rev%20LA5%2002-15-91%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/High%20Impact%20Football%20%28rev%20LA5%2002-15-91%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -160,7 +160,7 @@
     "_Arcade/_Blahm1d/Hit 'n Miss [blahm1d].mra": {
       "hash": "ea69f6d7beacae2c7648f7cac7f7c579",
       "size": 2952,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Hit%20%27n%20Miss%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Hit%20%27n%20Miss%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -171,10 +171,24 @@
         "blahm1d_exidy440"
       ]
     },
+    "_Arcade/_Blahm1d/Invasion - The Abductors (version 5.0) [blahm1d].mra": {
+      "hash": "ddda872be756f61ade9be9e17623cb27",
+      "size": 2714,
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Invasion%20-%20The%20Abductors%20%28version%205.0%29%20%5Bblahm1d%5D.mra",
+      "tags": [
+        "arcade",
+        "blahm1d",
+        "invasion",
+        "mra"
+      ],
+      "tangle": [
+        "blahm1d_invasion"
+      ]
+    },
     "_Arcade/_Blahm1d/Judge Dredd (rev TA1 7-12-92, location test) [blahm1d].mra": {
       "hash": "d2d7b91adef9ee95681dc6bd491e2aea",
       "size": 3550,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Judge%20Dredd%20%28rev%20TA1%207-12-92%2C%20location%20test%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Judge%20Dredd%20%28rev%20TA1%207-12-92%2C%20location%20test%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -188,7 +202,7 @@
     "_Arcade/_Blahm1d/Mortal Kombat (rev 4.0 09-28-92, Y-Unit) [blahm1d].mra": {
       "hash": "c3bf6483748c51ae50412ce656ccd84a",
       "size": 6041,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Mortal%20Kombat%20%28rev%204.0%2009-28-92%2C%20Y-Unit%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Mortal%20Kombat%20%28rev%204.0%2009-28-92%2C%20Y-Unit%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -202,7 +216,7 @@
     "_Arcade/_Blahm1d/Mortal Kombat (rev 5.0 T-Unit 03-19-93) [blahm1d].mra": {
       "hash": "4744263c6c5f8208d2fa26f1c200d1db",
       "size": 3524,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Mortal%20Kombat%20%28rev%205.0%20T-Unit%2003-19-93%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Mortal%20Kombat%20%28rev%205.0%20T-Unit%2003-19-93%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -216,7 +230,7 @@
     "_Arcade/_Blahm1d/Mortal Kombat 3 (rev 2.1) [blahm1d].mra": {
       "hash": "ed91c0ba26fd575053805cc1243c7365",
       "size": 3198,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Mortal%20Kombat%203%20%28rev%202.1%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Mortal%20Kombat%203%20%28rev%202.1%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -228,9 +242,9 @@
       ]
     },
     "_Arcade/_Blahm1d/Mortal Kombat 4 (version 3.0) [blahm1d].mra": {
-      "hash": "cdc607b6de0877f045f76268826e2d11",
-      "size": 2529,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Mortal%20Kombat%204%20%28version%203.0%29%20%5Bblahm1d%5D.mra",
+      "hash": "736f30bf3b26789a8b28bb936a285ff0",
+      "size": 2556,
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Mortal%20Kombat%204%20%28version%203.0%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -244,7 +258,7 @@
     "_Arcade/_Blahm1d/Mortal Kombat II (rev L3.1) [blahm1d].mra": {
       "hash": "31f136871416f10cfe00e410576fd7e5",
       "size": 3709,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Mortal%20Kombat%20II%20%28rev%20L3.1%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Mortal%20Kombat%20II%20%28rev%20L3.1%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -258,7 +272,7 @@
     "_Arcade/_Blahm1d/NBA Hangtime (L1.3) [blahm1d].mra": {
       "hash": "53f52513928e51fd074e4a76afddedaa",
       "size": 3071,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/NBA%20Hangtime%20%28L1.3%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/NBA%20Hangtime%20%28L1.3%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -272,7 +286,7 @@
     "_Arcade/_Blahm1d/NBA Jam (rev 3.01 4-07-93) [blahm1d].mra": {
       "hash": "9f2c524587b9f14f9490c3f3340b6402",
       "size": 3475,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/NBA%20Jam%20%28rev%203.01%204-07-93%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/NBA%20Jam%20%28rev%203.01%204-07-93%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -286,7 +300,7 @@
     "_Arcade/_Blahm1d/NBA Jam Tournament Edition (rev 4.0 3-23-94) [blahm1d].mra": {
       "hash": "feb6d30f71feb1f3ac46f7ad5070dafc",
       "size": 3729,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/NBA%20Jam%20Tournament%20Edition%20%28rev%204.0%203-23-94%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/NBA%20Jam%20Tournament%20Edition%20%28rev%204.0%203-23-94%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -300,7 +314,7 @@
     "_Arcade/_Blahm1d/NBA Maximum Hangtime (L1.03 06-09-97) [blahm1d].mra": {
       "hash": "1ed3f0626cd2824fef8436a09b4fdd7b",
       "size": 2573,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/NBA%20Maximum%20Hangtime%20%28L1.03%2006-09-97%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/NBA%20Maximum%20Hangtime%20%28L1.03%2006-09-97%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -314,7 +328,7 @@
     "_Arcade/_Blahm1d/NHL Open Ice - 2 on 2 Challenge (rev 1.21) [blahm1d].mra": {
       "hash": "ee4663120099750ed5af5d87b6a94c6b",
       "size": 2586,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/NHL%20Open%20Ice%20-%202%20on%202%20Challenge%20%28rev%201.21%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/NHL%20Open%20Ice%20-%202%20on%202%20Challenge%20%28rev%201.21%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -328,7 +342,7 @@
     "_Arcade/_Blahm1d/Narc (rev 7.00) [blahm1d].mra": {
       "hash": "7b59d924810543a90bdf5ca57301a6d1",
       "size": 10184,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Narc%20%28rev%207.00%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Narc%20%28rev%207.00%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -342,7 +356,7 @@
     "_Arcade/_Blahm1d/Night Slashers (Over Sea Rev 1.2, DE-0397-0 PCB) [blahm1d].mra": {
       "hash": "779b61418baabbc487ef3457dffc87f5",
       "size": 4235,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Night%20Slashers%20%28Over%20Sea%20Rev%201.2%2C%20DE-0397-0%20PCB%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Night%20Slashers%20%28Over%20Sea%20Rev%201.2%2C%20DE-0397-0%20PCB%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -356,7 +370,7 @@
     "_Arcade/_Blahm1d/Off Road Challenge (rev 1.63) [blahm1d].mra": {
       "hash": "b799af30c6eda8d2bc7f9ba7096639e9",
       "size": 2963,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Off%20Road%20Challenge%20%28rev%201.63%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Off%20Road%20Challenge%20%28rev%201.63%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -370,7 +384,7 @@
     "_Arcade/_Blahm1d/Rampage World Tour [blahm1d].mra": {
       "hash": "fbb4f0bcc1c60fbc32ff7b6ef3c3f4dd",
       "size": 4019,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Rampage%20World%20Tour%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Rampage%20World%20Tour%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -384,7 +398,7 @@
     "_Arcade/_Blahm1d/Revolution X [blahm1d].mra": {
       "hash": "79bb282ae45a26769edb5639764a7bcb",
       "size": 7124,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Revolution%20X%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Revolution%20X%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -398,7 +412,7 @@
     "_Arcade/_Blahm1d/Saurian Front (proto v5.0 08-07-90) [blahm1d].mra": {
       "hash": "efdabede7c5b43dd3e9e8dc8a58d6855",
       "size": 5810,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Saurian%20Front%20%28proto%20v5.0%2008-07-90%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Saurian%20Front%20%28proto%20v5.0%2008-07-90%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -412,7 +426,7 @@
     "_Arcade/_Blahm1d/Showdown [blahm1d].mra": {
       "hash": "69836b5fee7361622d3c78feacc9f760",
       "size": 3577,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Showdown%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Showdown%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -426,7 +440,7 @@
     "_Arcade/_Blahm1d/Smash T.V. (rev 8.00) [blahm1d].mra": {
       "hash": "efee18383177e2b5fb18cbf4f700f791",
       "size": 4581,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Smash%20T.V.%20%28rev%208.00%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Smash%20T.V.%20%28rev%208.00%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -440,7 +454,7 @@
     "_Arcade/_Blahm1d/Strike Force (rev 1 02-25-91) [blahm1d].mra": {
       "hash": "1bd6ee68133e4eefd98f48330e379b81",
       "size": 5016,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Strike%20Force%20%28rev%201%2002-25-91%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Strike%20Force%20%28rev%201%2002-25-91%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -454,7 +468,7 @@
     "_Arcade/_Blahm1d/Super High Impact (rev LA2 10-22-91) [blahm1d].mra": {
       "hash": "b6b9653585bf2969509922cb04fc06dc",
       "size": 6718,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Super%20High%20Impact%20%28rev%20LA2%2010-22-91%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Super%20High%20Impact%20%28rev%20LA2%2010-22-91%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -468,7 +482,7 @@
     "_Arcade/_Blahm1d/Terminator 2 - Judgment Day (rev LA4 08-03-92) [blahm1d].mra": {
       "hash": "4fb14eaa371ece75811ca3b983dc48db",
       "size": 7920,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Terminator%202%20-%20Judgment%20Day%20%28rev%20LA4%2008-03-92%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Terminator%202%20-%20Judgment%20Day%20%28rev%20LA4%2008-03-92%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -482,7 +496,7 @@
     "_Arcade/_Blahm1d/The Legend of Kage (bootleg set 1) [blahm1d].mra": {
       "hash": "b8c65270892bf35d600f6a33933d1509",
       "size": 1953,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/The%20Legend%20of%20Kage%20%28bootleg%20set%201%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/The%20Legend%20of%20Kage%20%28bootleg%20set%201%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -496,7 +510,7 @@
     "_Arcade/_Blahm1d/Top Secret [blahm1d].mra": {
       "hash": "e9af0a7360c26bb63d1d061920807aa6",
       "size": 3518,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Top%20Secret%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Top%20Secret%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -510,7 +524,7 @@
     "_Arcade/_Blahm1d/Total Carnage (rev LA1 03-10-92) [blahm1d].mra": {
       "hash": "eec6329051e06f4a7412f7ea081717f9",
       "size": 4935,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Total%20Carnage%20%28rev%20LA1%2003-10-92%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Total%20Carnage%20%28rev%20LA1%2003-10-92%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -524,7 +538,7 @@
     "_Arcade/_Blahm1d/Trog (rev LA5 3-29-91) [blahm1d].mra": {
       "hash": "9749696128463fff60d46d5894b22127",
       "size": 7681,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Trog%20%28rev%20LA5%203-29-91%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Trog%20%28rev%20LA5%203-29-91%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -538,7 +552,7 @@
     "_Arcade/_Blahm1d/Ultimate Mortal Kombat 3 [blahm1d].mra": {
       "hash": "def4b1bc222d7a99a2839acd90714407",
       "size": 4881,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Ultimate%20Mortal%20Kombat%203%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Ultimate%20Mortal%20Kombat%203%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -552,7 +566,7 @@
     "_Arcade/_Blahm1d/WWF WrestleMania (rev 1.30 08-10-95) [blahm1d].mra": {
       "hash": "f59e84afb89e56bb48fc14670d34fbc1",
       "size": 2608,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/WWF%20WrestleMania%20%28rev%201.30%2008-10-95%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/WWF%20WrestleMania%20%28rev%201.30%2008-10-95%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -566,7 +580,7 @@
     "_Arcade/_Blahm1d/War Gods (HD 10-09-1996 - Dual Resolution) [blahm1d].mra": {
       "hash": "795aab4b62ba616acfafbf5c34ba862a",
       "size": 545,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/War%20Gods%20%28HD%2010-09-1996%20-%20Dual%20Resolution%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/War%20Gods%20%28HD%2010-09-1996%20-%20Dual%20Resolution%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -580,7 +594,7 @@
     "_Arcade/_Blahm1d/Who Dunit [blahm1d].mra": {
       "hash": "8b2c73bce1bf70f67f37e1abc38046e8",
       "size": 3641,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/Who%20Dunit%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/Who%20Dunit%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -594,7 +608,7 @@
     "_Arcade/_Blahm1d/_alternatives/_Gladiator/Ougon no Shiro (Japan) [blahm1d].mra": {
       "hash": "10fae55a89cfc0b9c8050f26b5f774cb",
       "size": 2989,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/_alternatives/_Gladiator/Ougon%20no%20Shiro%20%28Japan%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/_alternatives/_Gladiator/Ougon%20no%20Shiro%20%28Japan%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -608,7 +622,7 @@
     "_Arcade/_Blahm1d/_alternatives/_Night Slashers/Night Slashers (Japan Rev 1.2, DE-0397-0 PCB) [blahm1d].mra": {
       "hash": "a26ed7dfeaad00da5ff98a118f46c3e1",
       "size": 4313,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/_alternatives/_Night%20Slashers/Night%20Slashers%20%28Japan%20Rev%201.2%2C%20DE-0397-0%20PCB%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/_alternatives/_Night%20Slashers/Night%20Slashers%20%28Japan%20Rev%201.2%2C%20DE-0397-0%20PCB%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -622,7 +636,7 @@
     "_Arcade/_Blahm1d/_alternatives/_Night Slashers/Night Slashers (Korea Rev 1.3, DE-0397-0 PCB) [blahm1d].mra": {
       "hash": "569eb6c1d579b06e2216366c769a8207",
       "size": 4221,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/_Blahm1d/_alternatives/_Night%20Slashers/Night%20Slashers%20%28Korea%20Rev%201.3%2C%20DE-0397-0%20PCB%29%20%5Bblahm1d%5D.mra",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/_Blahm1d/_alternatives/_Night%20Slashers/Night%20Slashers%20%28Korea%20Rev%201.3%2C%20DE-0397-0%20PCB%29%20%5Bblahm1d%5D.mra",
       "tags": [
         "arcade",
         "blahm1d",
@@ -636,7 +650,7 @@
     "_Arcade/cores/blahm1d_exidy440_20260907.rbf": {
       "hash": "41264530dadd08687e020de9e154e3ad",
       "size": 3685324,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_exidy440_20260907.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_exidy440_20260907.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -650,7 +664,7 @@
     "_Arcade/cores/blahm1d_gladiator_20260729.rbf": {
       "hash": "9ba193d3cbafae728f977bccba3be40a",
       "size": 3984808,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_gladiator_20260729.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_gladiator_20260729.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -661,10 +675,24 @@
         "blahm1d_gladiator"
       ]
     },
+    "_Arcade/cores/blahm1d_invasion_20260927.rbf": {
+      "hash": "556375911117839d1891f78296f44fef",
+      "size": 4616036,
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_invasion_20260927.rbf",
+      "tags": [
+        "arcade",
+        "blahm1d",
+        "invasion",
+        "rbf"
+      ],
+      "tangle": [
+        "blahm1d_invasion"
+      ]
+    },
     "_Arcade/cores/blahm1d_legendofkage_20260830.rbf": {
       "hash": "7ab755676360921770ddfde56c96a093",
       "size": 3680732,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_legendofkage_20260830.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_legendofkage_20260830.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -675,10 +703,10 @@
         "blahm1d_legendofkage"
       ]
     },
-    "_Arcade/cores/blahm1d_mk4_20260930.rbf": {
-      "hash": "0aede42d98ee65841035fed4e6e9dd45",
-      "size": 4628468,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_mk4_20260930.rbf",
+    "_Arcade/cores/blahm1d_mk4_20261003.rbf": {
+      "hash": "0f5d9dd7921ddcd3fcc275131cdcdd3a",
+      "size": 4644732,
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_mk4_20261003.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -692,7 +720,7 @@
     "_Arcade/cores/blahm1d_narc_20260928.rbf": {
       "hash": "f1facb07f0bbd517a95b7e280cf18208",
       "size": 3966252,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_narc_20260928.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_narc_20260928.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -706,7 +734,7 @@
     "_Arcade/cores/blahm1d_nightslashers_20260712.rbf": {
       "hash": "da7c58c2954b9a26173ba1ca7716deb6",
       "size": 3654624,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_nightslashers_20260712.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_nightslashers_20260712.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -720,7 +748,7 @@
     "_Arcade/cores/blahm1d_tunit_20260922.rbf": {
       "hash": "9688e9d8cf75605d0d96bbfaea9dda09",
       "size": 4069336,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_tunit_20260922.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_tunit_20260922.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -734,7 +762,7 @@
     "_Arcade/cores/blahm1d_tunitdcs_20260923.rbf": {
       "hash": "06496d84d01d7305235672305d58a255",
       "size": 4372228,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_tunitdcs_20260923.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_tunitdcs_20260923.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -748,7 +776,7 @@
     "_Arcade/cores/blahm1d_vunit_20260926.rbf": {
       "hash": "ae724b5d51f1fa00b6ee53852305c284",
       "size": 4269548,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_vunit_20260926.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_vunit_20260926.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -762,7 +790,7 @@
     "_Arcade/cores/blahm1d_wargods_20260929.rbf": {
       "hash": "a949491e7bb18367f2258ea2cd610211",
       "size": 4350688,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_wargods_20260929.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_wargods_20260929.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -776,7 +804,7 @@
     "_Arcade/cores/blahm1d_wolfunit_20260928.rbf": {
       "hash": "61f0bdf5b63cd254772f70d9528a83e3",
       "size": 4263244,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_wolfunit_20260928.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_wolfunit_20260928.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -790,7 +818,7 @@
     "_Arcade/cores/blahm1d_xunit_20260918.rbf": {
       "hash": "16d0eee4b7277818e4c196cdf414dbd5",
       "size": 4583508,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_xunit_20260918.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_xunit_20260918.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -804,7 +832,7 @@
     "_Arcade/cores/blahm1d_yunit_20260922.rbf": {
       "hash": "2148e8ca18188c3c388925abcdbb65cd",
       "size": 4328716,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_yunit_20260922.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_yunit_20260922.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -818,7 +846,7 @@
     "_Arcade/cores/blahm1d_yunitadpcm_20260922.rbf": {
       "hash": "84356e788928bba4c0906bb49676d644",
       "size": 3976136,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/_Arcade/cores/blahm1d_yunitadpcm_20260922.rbf",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/_Arcade/cores/blahm1d_yunitadpcm_20260922.rbf",
       "tags": [
         "arcade",
         "blahm1d",
@@ -832,7 +860,7 @@
     "config/nvram/RevX_09132026.nvm": {
       "hash": "557eff02cac01477a831fd034eceb4d7",
       "size": 8192,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/config/nvram/RevX_09132026.nvm",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/config/nvram/RevX_09132026.nvm",
       "tags": [
         "arcade",
         "blahm1d",
@@ -844,7 +872,7 @@
     "config/nvram/Revolution X [blahm1d].nvm": {
       "hash": "557eff02cac01477a831fd034eceb4d7",
       "size": 8192,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/config/nvram/Revolution%20X%20%5Bblahm1d%5D.nvm",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/config/nvram/Revolution%20X%20%5Bblahm1d%5D.nvm",
       "tags": [
         "arcade",
         "blahm1d",
@@ -856,7 +884,7 @@
     "config/nvram/Revolution X.nvm": {
       "hash": "557eff02cac01477a831fd034eceb4d7",
       "size": 8192,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/config/nvram/Revolution%20X.nvm",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/config/nvram/Revolution%20X.nvm",
       "tags": [
         "arcade",
         "blahm1d",
@@ -868,7 +896,7 @@
     "config/nvram/Total Carnage (rev LA1 03-10-92) [blahm1d].nvm": {
       "hash": "8d1b5f3f76835e68c128d6f5b5261af1",
       "size": 32768,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/config/nvram/Total%20Carnage%20%28rev%20LA1%2003-10-92%29%20%5Bblahm1d%5D.nvm",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/config/nvram/Total%20Carnage%20%28rev%20LA1%2003-10-92%29%20%5Bblahm1d%5D.nvm",
       "tags": [
         "arcade",
         "blahm1d",
@@ -880,7 +908,7 @@
     "config/nvram/Total Carnage (rev LA1 03-10-92).nvm": {
       "hash": "8d1b5f3f76835e68c128d6f5b5261af1",
       "size": 32768,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/config/nvram/Total%20Carnage%20%28rev%20LA1%2003-10-92%29.nvm",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/config/nvram/Total%20Carnage%20%28rev%20LA1%2003-10-92%29.nvm",
       "tags": [
         "arcade",
         "blahm1d",
@@ -892,7 +920,7 @@
     "config/wargods.s0": {
       "hash": "dac5050f172f9570abe390ab3b78942a",
       "size": 1024,
-      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/1901a03551721ea9303d0c3a6344139226ccdaeb/config/wargods.s0",
+      "url": "https://raw.githubusercontent.com/blahm1d/MiSTer-cores/095ba10bd2f16cf49b4d37386d1d1d38f946833d/config/wargods.s0",
       "tags": [
         "arcade",
         "blahm1d",
