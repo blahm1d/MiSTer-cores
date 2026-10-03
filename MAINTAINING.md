@@ -53,6 +53,36 @@ assembly and cabinet qualification happen in the core's development workflow.
 Do not add ROMs, CHDs, keys, private saves, personal configuration or development
 logs to this distribution repository.
 
+## Game pages and search discovery
+
+`tools/build_site.py` generates a page for every catalog game and core, plus the
+developer profile, homepage, release notes, sitemap and `llms.txt`. Page URLs use
+the stable MRA title, so different hardware profiles and game revisions remain
+distinct. Visible attribution and structured data identify blahm1d as the FPGA
+core developer/publisher while preserving original arcade and source credits.
+Release status and known issues come directly from the catalog.
+
+Preview and validate locally before approval:
+
+```text
+python tools/build_site.py --out dist/search-preview
+python tools/verify_site.py --local-dir dist/search-preview
+python tools/publish_r2.py --bucket blahm1d-mister --base-url https://mister.blahm1d.com --site-only --dry-run
+```
+
+After the owner approves publication, commit the website source changes, push,
+then use the same command without `--dry-run`. `--site-only` publishes the site
+without changing the RBF/MRA database. Both website-only and full publication
+generate all current pages and automatically verify live page coverage,
+attribution, structured data, links and sitemap after uploading. Obsolete local
+preview files are excluded from uploads.
+
+Google Search Console needs the site property verified and `sitemap.xml`
+submitted once. New page URLs are added to that sitemap automatically on each
+publication; users do not need to submit every game URL. Search Console access,
+Google indexing and appearance in AI Overviews are separate from deployment.
+No AI-summary placement or indexing guarantee is claimed.
+
 The feed format follows the official [custom database specification](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/custom-databases.md).
 
 ## Required ROM-download coverage check

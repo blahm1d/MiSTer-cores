@@ -74,6 +74,17 @@ def put(wrangler, bucket, key, path, cache, dry):
                    cwd=ROOT, check=True)
 
 
+def publish_site(wrangler, args, base):
+    site = build_site.build(base, ROOT / 'dist' / 'site')
+    entry_points = {'index.html', 'sitemap.xml', 'llms.txt'}
+    pages = build_site.generated_files(site) + sorted((ROOT / 'site-static').glob('*'))
+    for page in sorted(pages, key=lambda p: (p.name in entry_points, p.name)):
+        put(wrangler, args.bucket, page.name, page, FRESH, args.dry_run)
+    if not args.dry_run:
+        subprocess.run([sys.executable, str(ROOT / 'tools' / 'verify_site.py'), base],
+                       cwd=ROOT, check=True)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--bucket', required=True)
@@ -81,15 +92,26 @@ def main():
     ap.add_argument('--dry-run', action='store_true', help='build and list uploads without writing')
     ap.add_argument('--payloads-only', action='store_true',
                     help='upload payloads and source archives but not the database (payload keys do not depend on the URL)')
+    ap.add_argument('--site-only', action='store_true',
+                    help='generate, publish and verify website pages without republishing the core database')
     args = ap.parse_args()
+    if args.site_only and args.payloads_only:
+        ap.error('--site-only and --payloads-only are mutually exclusive')
     base = args.base_url.rstrip('/')
     if not base.startswith('https://'):
         sys.exit('--base-url must be https://')
     if git('status', '--porcelain', '--', '_Arcade', 'catalog', 'sources'):
         sys.exit('Release files have uncommitted changes; commit first so the database pins a real commit.')
+    if not args.dry_run and git('status', '--porcelain', '--', 'tools/build_site.py', 'tools/publish_r2.py', 'tools/verify_site.py', 'site-static'):
+        sys.exit('Website sources have uncommitted changes; commit the approved update first.')
     wrangler = wrangler_cmd()
     if not wrangler and not args.dry_run:
         sys.exit('wrangler not found on PATH')
+    if args.site_only:
+        build_db.validate()
+        publish_site(wrangler, args, base)
+        print('Dry run: nothing uploaded.' if args.dry_run else 'Website published and verified.')
+        return
 
     revision = git('rev-parse', 'HEAD')
     timestamp = int(git('show', '-s', '--format=%ct', revision))
@@ -116,10 +138,7 @@ def main():
     # Human-readable release notes, linked from the README and the release post.
     put(wrangler, args.bucket, 'RELEASES.md', ROOT / 'RELEASES.md', FRESH, args.dry_run)
     # Public website (index, release notes, robots, sitemap, llms.txt), rebuilt from the catalog every publish.
-    site = build_site.build(base, ROOT / 'dist' / 'site')
-    # site-static/: files that must stay at the site root verbatim (e.g. search-engine ownership verification).
-    for page in sorted(site.iterdir()) + sorted((ROOT / 'site-static').glob('*')):
-        put(wrangler, args.bucket, page.name, page, FRESH, args.dry_run)
+    publish_site(wrangler, args, base)
     (out / 'published.json').write_text(json.dumps(dict(revision=revision, base_url=base), indent=2) + '\n')
     print(('Dry run: nothing uploaded. ' if args.dry_run else 'Published. ') +
           f'Users add to downloader.ini:\n\n[blahm1d]\ndb_url = {base}/db.json.zip\n')

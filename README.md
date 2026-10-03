@@ -52,5 +52,10 @@ Revolution X guns may need calibration for your display.
 Source archives and original license notices are in [sources](sources/).
 The exact RBF/MRA hashes and game list are in [catalog/releases.json](catalog/releases.json).
 
+The [release website](https://mister.blahm1d.com/) has a dedicated page for every
+published game and core, with blahm1d attribution, installation instructions,
+source links, current status and known issues. These pages and the sitemap are
+generated from the release catalog on every approved mirror publication.
+
 To publish future updates, follow [MAINTAINING.md](MAINTAINING.md). Pushing a
 validated update to `main` automatically refreshes the downloader database.
