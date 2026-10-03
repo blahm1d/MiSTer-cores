@@ -1,0 +1,62 @@
+{
+  "publisher": "blahm1d",
+  "game": "Mortal Kombat 4 (version 3.0)",
+  "version": "v16",
+  "date": "2026-10-03",
+  "rbf_sha256": "6bfbc384e3748bf0fa65ea33661c09fe9207265ab905b4973315508434f85fab",
+  "rbf_bytes": 4644732,
+  "qualification": "Timing-closed beta; installed and launched for owner cabinet verification; gameplay acceptance pending",
+  "timing": {
+    "required_checks": 132,
+    "passed": 132,
+    "tns_ns": 0,
+    "worst_setup_ns": 0.268,
+    "worst_hold_ns": 0.057,
+    "coefficient_routes": 80,
+    "waiver": false,
+    "scope": "Existing project constraints; inherited unconstrained external interfaces unchanged"
+  },
+  "resources": [
+    "Logic utilization (in ALMs) : 39,558 / 41,910 ( 94 % )",
+    "Total registers : 41467",
+    "Total RAM Blocks : 553 / 553 ( 100 % )",
+    "Total DSP Blocks : 81 / 112 ( 72 % )"
+  ],
+  "toggle": {
+    "label": "Lighting Toggle",
+    "joystick_bit": 16,
+    "players": [
+      1,
+      2
+    ],
+    "default": "on",
+    "held_repeat": false,
+    "simultaneous_press_toggles": 1,
+    "reset": "on"
+  },
+  "source_archive": "blahm1d-mk4-v16-20261003-source.zip",
+  "source_sha256": "7b9eb2f5c91a1bcf7f1e8a0bcbbefc1dc9247cfdd27244f0402b23f64dfefe06",
+  "build_source_manifest_sha256": "4b911992c9ea069d48fba0912419cb4b67abd39adb135647c9fa7c7496b4e597",
+  "simulation": {
+    "cases": 24,
+    "on_off_runs": 48,
+    "frame_views": 144,
+    "toggle_checks": 117,
+    "scope": "Bounded captured scenes and synthetic fallback tests; not exhaustive roster or cabinet evidence"
+  },
+  "cabinet": {
+    "installed_hash_verified": true,
+    "launched": true,
+    "gameplay_verified": false
+  },
+  "roms_included": false,
+  "automatic_rom_delivery": "Not asserted by this manual package",
+  "known_limits": [
+    "Experimental lighting response; exact original hardware equation remains unresolved.",
+    "Background contrast and response saturation still need work in some scenes; this package does not include new changes from the background sweep.",
+    "Not every character, costume, pose or other ROM revision is validated."
+  ],
+  "assembler_warnings": [
+    "Two existing references to missing rtl/pll.qip via sys/pll_q17.qip; successful assembled build and timing gates are recorded."
+  ]
+}

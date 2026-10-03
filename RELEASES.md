@@ -1,6 +1,34 @@
-# Release status - 2026-10-01
+# Release status - 2026-10-03
 
-14 RBFs and 45 MRAs. This release adds the September 30 Mortal Kombat 4 v9 build with Lighting Toggle. September 22-29 updates: Wolf Unit (save fix), NARC (v24 saves), T Unit (ADPCM and DCS), Y Unit (both builds), and the V Unit collection (Cruis'n USA, Cruis'n World, Off Road Challenge, War Gods r16).
+15 RBFs and 46 MRAs. This update replaces MK4 v9 with the October 3 v16 lighting rebuild and adds the existing September 27 Invasion inv9 release. Both games use separate RBFs and matching MRAs. Existing game names, saves and DIP settings are preserved. No FPGA rebuild or cabinet deployment is part of this publication.
+
+## Mortal Kombat 4 (Zeus 1) - October 3 v16
+
+Material-relative directional fighter shading improves darker materials, including Kai and Shinnok. Fights and the falling Continue scene share the same response. Map Lighting Toggle to a spare button; lighting starts ON. Experimental lighting: the exact original hardware equation remains unresolved, background contrast is still under study, and not every character, costume, pose or ROM revision has been validated.
+
+All 132 required timing checks under the existing project constraints passed with zero TNS and no waiver. Inherited unconstrained external interfaces are unchanged. The exact v16 was installed and launched for owner verification; cabinet gameplay acceptance remains pending.
+
+RBF: `blahm1d_mk4_20261003.rbf`
+
+SHA-256: `6bfbc384e3748bf0fa65ea33661c09fe9207265ab905b4973315508434f85fab`
+
+Source: `sources/blahm1d-mk4-v16-20261003-source.zip`. Build details: `release-info/mk4-v16-20261003.json`. Existing MK4 v3.0 ROM interleaving, CRCs, DCS layout, NVRAM and save identity are preserved.
+
+## Invasion: The Abductors (Zeus 1) - September 27 inv9
+
+Existing inv9 sound fixes and lightgun controls for version 5.0. This is a separate game profile and does not inherit MK4 v16 lighting. Beta engineering release with the preserved historical timing waiver: 129 of 132 checks pass, three setup checks fail, and worst setup slack is -0.206 ns. This build is not timing closed; no new cabinet retest is claimed.
+
+RBF: `blahm1d_invasion_20260927.rbf`
+
+SHA-256: `136b3fc8438ab46de6ff2f43539744a2217af30d799f6a93993eae10868c0413`
+
+Source: `sources/blahm1d-invasion-inv9-20260927-source.zip`. Build details: `release-info/invasion-inv9-20260927.json`. Requires compatible `invasnab.zip`; original ROM layout, CRCs and NVRAM are preserved. The website entry uses the existing package's ` [blahm1d]` save identity, separate from other channels. No save is overwritten or renamed.
+
+## Update_All ROM downloads - October 3 coverage check
+
+Users obtain ROMs through the Arcade ROMs setting in Update_All, or supply their own. No ROM payloads are included or hosted here. Both `mk4.zip` and `invasnab.zip` resolve in the current upstream fallback hash index. The live Arcade ROMs database currently contains neither ZIP; source registration PR 8 remains open pending maintainer acceptance and mirror synchronization. Automatic ROM availability for these two entries is therefore not yet confirmed. ZIP index resolution does not establish remote contents, successful ROM downloads or actual game loading.
+
+Registration: [Arcade ROMs PR 8](https://github.com/zakk4223/ArcadeROMsDB_MiSTer/pull/8).
 
 ## Blahm1d folder - 2026-10-01
 

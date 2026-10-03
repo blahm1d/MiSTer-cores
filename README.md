@@ -21,7 +21,8 @@ up drop-in files, update it or add the INI's two lines to your existing
 
 | Family | Included build |
 | --- | --- |
-| Mortal Kombat 4 (Zeus 1) | September 30 v9 fighter lighting and Lighting Toggle; cabinet verified; all 132 timing checks passed |
+| Mortal Kombat 4 (Zeus 1) | October 3 v16 directional fighter lighting and Lighting Toggle; all 132 required timing checks passed; cabinet gameplay verification pending |
+| Invasion: The Abductors (Zeus 1) | September 27 inv9 sound fixes and lightgun controls; beta engineering release with historical timing waiver |
 | Gladiator | July 29 release; US and Japan |
 | The Legend of Kage | August 30 water-priority fix; bootleg set 1 |
 | Wolf Unit | September 28 power-cycle save fix, flip fence and DCS sound fix; seven original games |

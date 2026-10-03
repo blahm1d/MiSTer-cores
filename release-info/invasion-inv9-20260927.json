@@ -1,0 +1,52 @@
+{
+  "publisher": "blahm1d",
+  "game": "Invasion: The Abductors (version 5.0)",
+  "version": "inv9",
+  "build_date": "2026-09-27",
+  "rbf_sha256": "136b3fc8438ab46de6ff2f43539744a2217af30d799f6a93993eae10868c0413",
+  "rbf_bytes": 4616036,
+  "source_commit": "555fb64eea44d76387547a333bf2e5eac38f9c27",
+  "source_archive": "blahm1d-invasion-inv9-20260927-source.zip",
+  "source_sha256": "afa29202554eafb34e27a5efd7ac8e062e69d9e02ab47182d0fb658409571c8c",
+  "qualification": "Existing timing-waived engineering build. Not timing-closed.",
+  "timing": {
+    "checks": 132,
+    "passed": 129,
+    "failed": [
+      {
+        "check": "Slow 1100mV 100C Model Setup 'pll_hdmi|pll_hdmi_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'",
+        "slack_ns": -0.12,
+        "tns_ns": -0.146
+      },
+      {
+        "check": "Slow 1100mV -40C Model Setup 'pll_hdmi|pll_hdmi_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'",
+        "slack_ns": -0.206,
+        "tns_ns": -0.428
+      },
+      {
+        "check": "Slow 1100mV -40C Model Setup 'emu|pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'",
+        "slack_ns": -0.048,
+        "tns_ns": -0.088
+      }
+    ],
+    "worst_slack_ns": -0.206,
+    "waiver": "Preserved historical test waiver; no new timing qualification."
+  },
+  "profile": [
+    "ZK4_DCS_FABRIC=1",
+    "ZK4_CPU_NOBTB=1",
+    "ZK4_GAME_INVASION=1"
+  ],
+  "resources": {
+    "ALMs": 39614,
+    "RAM_blocks": 553,
+    "DSP_blocks": 77
+  },
+  "contents": "Existing inv9 sound fixes and lightgun controls. Separate game profile from MK4; no MK4 v16 lighting patch.",
+  "cabinet_retested": false,
+  "roms_included": false,
+  "channel": "website",
+  "binding": "blahm1d_invasion",
+  "mra_sha256": "456174e91dc3b200dd1419cb6c18725fd05155a0d0c373c2ab93288ea75bc5a2",
+  "mra_path": "_Arcade/_Blahm1d/Invasion - The Abductors (version 5.0) [blahm1d].mra"
+}

@@ -93,10 +93,17 @@
     },
     {
       "id": "mk4",
-      "archive": "sources/mk4-20260930.zip",
-      "sha256": "bcb5647c3325083a9eb86b837d79235f94c7217baf0aab8faa7fc08134f7b5d7",
-      "file_count": 368,
-      "bytes": 1170907
+      "archive": "sources/blahm1d-mk4-v16-20261003-source.zip",
+      "sha256": "7b9eb2f5c91a1bcf7f1e8a0bcbbefc1dc9247cfdd27244f0402b23f64dfefe06",
+      "file_count": 370,
+      "bytes": 1195578
+    },
+    {
+      "id": "invasion",
+      "archive": "sources/blahm1d-invasion-inv9-20260927-source.zip",
+      "sha256": "afa29202554eafb34e27a5efd7ac8e062e69d9e02ab47182d0fb658409571c8c",
+      "file_count": 362,
+      "bytes": 1183487
     }
   ]
 }

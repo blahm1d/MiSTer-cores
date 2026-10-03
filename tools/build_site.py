@@ -21,6 +21,7 @@ TAG = ' [blahm1d]'
 # Board families shown on the page, in order; catalog ids map onto them.
 GROUPS = [
     ('Mortal Kombat 4', 'Midway Zeus 1', ['mk4']),
+    ('Invasion: The Abductors', 'Midway Zeus 1', ['invasion']),
     ('V Unit', 'Midway V Unit', ['vunit', 'wargods']),
     ('Wolf Unit', 'Midway Wolf Unit', ['wolfunit']),
     ('T Unit', 'Midway T Unit', ['tunit', 'tunitdcs']),

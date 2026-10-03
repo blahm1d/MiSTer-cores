@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "released": "2026-10-01",
+  "released": "2026-10-03",
   "roms_included": false,
   "cores": [
     {
@@ -679,12 +679,12 @@
     {
       "id": "mk4",
       "family": "Mortal Kombat 4 (Zeus 1)",
-      "version": "v9 fighter lighting and timing closure",
-      "date": "20260930",
-      "sha256": "dceda52210d0bcf4941dc4df22f2c98bb5cad9eacd95bdcadf655ac6da0562d6",
-      "status": "Beta; cabinet verified; all 132 timing checks passed",
-      "notes": "Mortal Kombat 4 v3.0. Experimental fighter-only lighting with a mappable Lighting Toggle (default on), including fighters falling during Continue; stages and UI bypass the effect. Includes DCS circular-buffer mask and HDMI scaler timing repairs. The fighter material-bank filter is inferred from MK4 v3.0 captures; full roster, costume and other ROM revision coverage is not established. Cabinet tested, confirmed by the owner. No ROMs are included; tested ROM compatibility uses MAME 0.289 merged.",
-      "binary": "_Arcade/cores/blahm1d_mk4_20260930.rbf",
+      "version": "v16 material-relative directional lighting",
+      "date": "20261003",
+      "sha256": "6bfbc384e3748bf0fa65ea33661c09fe9207265ab905b4973315508434f85fab",
+      "status": "Beta; timing closed; cabinet verification pending",
+      "notes": "Shared material-relative fighter response in fights and Continue; reviewed well depth, environment and particle response; mappable Lighting Toggle default ON. All 132 required timing checks passed with zero TNS. Exact v16 installed and launched for owner verification; gameplay acceptance pending. Experimental lighting; background contrast remains under study. No ROMs included. Existing MK4 v3.0 / MAME 0.289 recipe unchanged.",
+      "binary": "_Arcade/cores/blahm1d_mk4_20261003.rbf",
       "binding": "blahm1d_mk4",
       "games": [
         {
@@ -692,14 +692,37 @@
           "setname": "mk4",
           "mameversion": "0289",
           "path": "_Arcade/_Blahm1d/Mortal Kombat 4 (version 3.0) [blahm1d].mra",
-          "sha256": "644d67858e189403c5e1846f94123e884b10d3a08c3fe564315bdb9483d0b591",
-          "original_sha256": "8709ceb8fa76e1753e963ad4d43711dd5de8c58f86e1b85ba0bd3a60a924cbd8",
+          "sha256": "0dc4a7e01029f47faaeca4cd49865b77242dce5dce9ab4125ed84070a61f6964",
           "rom_archives": [
             "mk4.zip"
           ]
         }
       ],
-      "cabinet_verified": true
+      "cabinet_verified": false
+    },
+    {
+      "id": "invasion",
+      "family": "Invasion: The Abductors (Zeus 1)",
+      "version": "inv9 sound and lightgun controls",
+      "date": "20260927",
+      "sha256": "136b3fc8438ab46de6ff2f43539744a2217af30d799f6a93993eae10868c0413",
+      "status": "Beta engineering release; historical timing waiver; cabinet retest pending",
+      "notes": "Invasion: The Abductors v5.0. Existing inv9 sound fixes and lightgun controls; separate game profile from MK4. Preserved September 27 build: 129 of 132 timing checks pass; three setup failures, worst slack -0.206 ns. Historical test waiver; not timing closed. No new cabinet retest. No ROMs included; requires compatible invasnab.zip. Automatic Arcade ROMs integration is pending upstream acceptance and live coverage.",
+      "binary": "_Arcade/cores/blahm1d_invasion_20260927.rbf",
+      "binding": "blahm1d_invasion",
+      "games": [
+        {
+          "name": "Invasion: The Abductors (version 5.0) [blahm1d]",
+          "setname": "invasnab",
+          "mameversion": "0289",
+          "path": "_Arcade/_Blahm1d/Invasion - The Abductors (version 5.0) [blahm1d].mra",
+          "sha256": "456174e91dc3b200dd1419cb6c18725fd05155a0d0c373c2ab93288ea75bc5a2",
+          "rom_archives": [
+            "invasnab.zip"
+          ]
+        }
+      ],
+      "cabinet_verified": false
     }
   ]
 }
