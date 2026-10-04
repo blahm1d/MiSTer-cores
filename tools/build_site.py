@@ -80,8 +80,7 @@ def core_page_name(core):
 
 def person(base):
     return {'@type': 'Person', '@id': f'{base}/about.html#blahm1d',
-            'name': AUTHOR, 'url': f'{base}/about.html',
-            'sameAs': ['https://github.com/blahm1d']}
+            'name': AUTHOR, 'url': f'{base}/about.html'}
 
 
 def application(base, core, source, games, url):
@@ -94,8 +93,7 @@ def application(base, core, source, games, url):
             'isAccessibleForFree': True, 'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'USD'},
             'license': 'https://www.gnu.org/licenses/gpl-3.0.html',
             'downloadUrl': f'{base}/downloader_blahm1d.ini', 'description': core['notes'],
-            'subjectOf': {'@type': 'SoftwareSourceCode', 'url': f'{base}/{source}',
-                          'codeRepository': 'https://github.com/blahm1d/MiSTer-cores'},
+            'subjectOf': {'@type': 'SoftwareSourceCode', 'url': f'{base}/{source}'},
             'about': [{'@type': 'VideoGame', 'name': mra_facts(g['path'])['title']} for g in games]}
 
 
@@ -129,7 +127,30 @@ def install_html(base, title=None):
 <p>Keep your existing save and DIP filenames. Downloader preserves existing save defaults.</p></div>'''
 
 
-def build_detail_pages(base, cores, srcs):
+def extras_html(base, extras, core_id):
+    """Extra downloads hosted on the mirror (catalog/extras.json), e.g. a PC build of MAME."""
+    out = ''
+    for ex in (e for e in extras if e['core'] == core_id):
+        buttons = ''.join(f'<a class="btn" href="{base}/{f["key"]}">{html.escape(f["label"])} '
+                          f'({f["bytes"] / 1048576:.0f} MB)</a>' for f in ex['files'] if f.get('button'))
+        buttons += f'<a class="btn coffee" href="{COFFEE}" rel="noopener">&#9749; Buy me a coffee</a>'
+        items = ''
+        for f in ex['files']:
+            link = '' if f.get('button') else f'<a href="{base}/{f["key"]}">{html.escape(f["label"])}</a> '
+            items += (f'<li>{link}<code>{PurePosixPath(f["key"]).name}</code> ({f["bytes"] / 1048576:.0f} MB)<br>'
+                      f'SHA-256 <code>{f["sha256"]}</code></li>')
+        out += (f'<h2>{html.escape(ex["title"])}</h2><p>{html.escape(ex["description"])}</p>'
+                f'<div class="install"><h2>Install</h2><p>{html.escape(ex["install"])}</p>{buttons}</div>'
+                f'<h3>Files</h3><ul>{items}</ul>')
+        if ex.get('media'):
+            imgs = ''.join(f'<figure><img src="{base}/{m["key"]}" alt="{html.escape(m["alt"])}" loading="lazy" '
+                           f'style="max-width:100%;height:auto"><figcaption>{html.escape(m["alt"])}</figcaption></figure>'
+                           for m in ex['media'])
+            out += f'<h3>{html.escape(ex["media_title"])}</h3><p>{html.escape(ex["media_note"])}</p>{imgs}'
+    return out
+
+
+def build_detail_pages(base, cores, srcs, extras=()):
     pages = {}
     for core in cores.values():
         cp = core_page_name(core)
@@ -141,11 +162,11 @@ def build_detail_pages(base, cores, srcs):
                    '<p>These statements describe the published core build. They do not establish that every supported game has passed every cabinet test.</p>')
         credits = (f'<h2>Source and credits</h2><p>FPGA core development and publication: <a href="about.html">blahm1d</a>. '
                    f'<a href="{base}/{srcs[core["id"]]}">Download the corresponding source archive and license notices</a>. '
-                   'Original authors, donor projects and third-party copyright notices are preserved in the source.</p>'
-                   '<p><a href="https://github.com/blahm1d/MiSTer-cores">GitHub release repository</a></p>')
+                   'Original authors, donor projects and third-party copyright notices are preserved in the source.</p>')
         title = f'{core["family"]} MiSTer FPGA Core | {core["version"]} | blahm1d'
         desc = f'blahm1d develops and publishes this {core["family"]} MiSTer FPGA core for DE10-Nano. Supported games, installation, source and release status.'
-        body = f'<h1>{html.escape(core["family"])} MiSTer FPGA core</h1><p class="lede">{html.escape(desc)}</p><h2>Supported games</h2><ul>{game_links}</ul>' + release + install_html(base) + credits
+        extra = extras_html(base, extras, core['id'])
+        body = f'<h1>{html.escape(core["family"])} MiSTer FPGA core</h1><p class="lede">{html.escape(desc)}</p><h2>Supported games</h2><ul>{game_links}</ul>' + release + install_html(base) + extra + credits
         pages[cp] = detail_document(base, cp, title, desc, body, [application(base, core, srcs[core['id']], games, f'{base}/{cp}')])
         for g in games:
             gp = game_page_name(g); assert gp not in pages, f'Duplicate game page: {gp}'
@@ -162,7 +183,7 @@ def build_detail_pages(base, cores, srcs):
                    ('Where do I download it?', f'Download downloader_blahm1d.ini from {base}/downloader_blahm1d.ini, put it in the MiSTer SD root and run Update_All. Launch the game under Arcade > Blahm1d.'),
                    ('What hardware does it use?', 'MiSTer FPGA on a Terasic DE10-Nano. This is an arcade FPGA core; its current release limitations are listed above.')]
             faqs = '<h2>Questions</h2><dl>' + ''.join(f'<dt>{html.escape(q)}</dt><dd>{html.escape(a)}</dd>' for q,a in faq) + '</dl>'
-            body = f'<h1>{html.escape(name)} on MiSTer FPGA</h1><p class="lede">{html.escape(desc)}</p>' + about + release + install_html(base, name) + credits + faqs
+            body = f'<h1>{html.escape(name)} on MiSTer FPGA</h1><p class="lede">{html.escape(desc)}</p>' + about + release + install_html(base, name) + extra + credits + faqs
             if peers: body += '<h2>Other games and revisions on this core</h2><ul>' + peers + '</ul>'
             pages[gp] = detail_document(base, gp, f'{name} MiSTer FPGA Core | blahm1d', desc, body,
                 [application(base, core, srcs[core['id']], [g], f'{base}/{gp}'),
@@ -172,8 +193,7 @@ def build_detail_pages(base, cores, srcs):
         '<h1>blahm1d MiSTer FPGA arcade cores</h1><p>blahm1d develops and publishes the MiSTer FPGA arcade cores in this collection. '
         'The release site documents supported games, current builds, installation instructions, corresponding source and known issues.</p>'
         '<p>The original arcade games belong to their original creators. Third-party framework, CPU, sound and other source contributors retain their copyright and license notices in each source archive.</p>'
-        '<p><a href="index.html">Browse all supported games and cores</a> &middot; '
-        '<a href="https://github.com/blahm1d/MiSTer-cores">GitHub release repository</a></p>', [])
+        '<p><a href="index.html">Browse all supported games and cores</a></p>', [])
     return pages
 
 
@@ -231,7 +251,10 @@ def build(base, out):
     today = datetime.date.today().isoformat()
     n_games = sum(len(c['games']) for c in cat['cores'])
     all_titles = []
-    detail_pages = build_detail_pages(base, cores, srcs)
+    extras_path = ROOT / 'catalog/extras.json'
+    extras = json.loads(extras_path.read_text(encoding='utf-8'))['extras'] if extras_path.is_file() else []
+    assert {e['core'] for e in extras} <= set(cores), 'extras reference a missing core'
+    detail_pages = build_detail_pages(base, cores, srcs, extras)
     assert len(detail_pages) == n_games + len(cores) + 1, 'every game and core needs a distinct page'
 
     sections, apps = [], []

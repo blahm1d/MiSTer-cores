@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "note": "Large downloads and media hosted only on the R2 mirror (not in git). Uploaded with tools/publish_extras.py.",
+  "extras": [
+    {
+      "core": "mk4",
+      "title": "Play on PC: MAME forked from 0.289 with Mortal Kombat 4 lighting",
+      "description": "A Windows 64-bit MAME forked from MAME 0.289 (master cfc4760a, 2026-10-03) with experimental per-vertex lighting for the Midway Zeus 1 video driver and a crash fix for quads clipped to three vertices. It is not made or supported by the MAME team; please do not report problems with it to MAMEdev. No ROMs are included.",
+      "install": "Unzip archive, put mk4.zip and tms320c32.zip in the roms folder, then double-click Play MK4 (lighting).bat.",
+      "files": [
+        {
+          "label": "Download MAME for Windows",
+          "button": true,
+          "key": "mame/mame-mk4-lighting-win64-20261004.zip",
+          "bytes": 110682229,
+          "sha256": "713538cb823cafc72f9a02b0c0b534c72c0ed0f0ceaf9f4a8e6c25defebab320"
+        },
+        {
+          "label": "Complete source code (GPL)",
+          "key": "mame/mame-mk4-lighting-src-20261004.zip",
+          "bytes": 232512104,
+          "sha256": "04ff8aa47725d8c2b2fd8082941f1eeeedd09d100ac18374ac1d36db1a184934"
+        }
+      ],
+      "media_title": "Lighting on the MiSTer core (v16)",
+      "media_note": "Captured from the MK4 MiSTer FPGA core v16 with its Lighting Toggle. The MAME fork uses the same light and normal data without the core's MK4-specific tuning, so it does not look identical.",
+      "media": [
+        {
+          "key": "media/mk4-v16-character-bios-before-after.gif",
+          "alt": "Mortal Kombat 4 character bios, lighting off and on",
+          "bytes": 1288773,
+          "sha256": "34929945b370d774349d1142fc429c047f78a5603c8b44f33b78aa2fc46037ea"
+        },
+        {
+          "key": "media/mk4-v16-continue-on-off.gif",
+          "alt": "Mortal Kombat 4 continue screen, lighting off and on",
+          "bytes": 846200,
+          "sha256": "032dff0f9734132284b775dc91a052b1106b4be932525cd94235c97df914e75b"
+        },
+        {
+          "key": "media/mk4-v16-fighters-on-off.gif",
+          "alt": "Mortal Kombat 4 fighters, lighting off and on",
+          "bytes": 2088699,
+          "sha256": "d4613d641f94502a2ccb48f8c99b6c2c778d4533192980dd0e447263b7ea14da"
+        }
+      ]
+    }
+  ]
+}

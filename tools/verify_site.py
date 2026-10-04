@@ -51,6 +51,16 @@ def verify(base, local_dir=None):
     catalog = json.loads((ROOT / 'catalog/releases.json').read_text(encoding='utf-8'))
     sources = json.loads((ROOT / 'catalog/sources.json').read_text())['sources']
     source_paths = {s['archive'] for s in sources}
+    extras_path = ROOT / 'catalog/extras.json'
+    extra_files = [f for e in json.loads(extras_path.read_text(encoding='utf-8'))['extras']
+                   for f in e['files'] + e.get('media', [])] if extras_path.is_file() else []
+    source_paths |= {f['key'] for f in extra_files}
+    if not local_dir:
+        for f in extra_files:  # extra downloads live only on the mirror: check they are there at the catalogued size
+            req = urllib.request.Request(f'{base}/{f["key"]}?probe=1', method='HEAD',
+                                         headers={'User-Agent': 'Mozilla/5.0 (blahm1d website verification)'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                assert r.status == 200 and int(r.headers['Content-Length']) == f['bytes'], f['key']
     cores = catalog['cores']
     names = {'index.html', 'releases.html', 'about.html'}
     names.update(build_site.core_page_name(c) for c in cores)

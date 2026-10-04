@@ -28,7 +28,7 @@ import build_site  # noqa: E402
 
 IMMUTABLE = 'public, max-age=31536000, immutable'
 FRESH = 'no-cache'
-TYPES = {'.zip': 'application/zip', '.json': 'application/json', '.ini': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8', '.html': 'text/html; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml',
+TYPES = {'.zip': 'application/zip', '.gif': 'image/gif', '.json': 'application/json', '.ini': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8', '.html': 'text/html; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml',
          '.mra': 'application/xml', '.rbf': 'application/octet-stream', '.nvm': 'application/octet-stream'}
 
 
