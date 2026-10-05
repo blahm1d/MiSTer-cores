@@ -69,12 +69,12 @@
     {
       "id": "wolfunit",
       "family": "Wolf Unit",
-      "version": "Save fix (power cycle)",
-      "date": "20260928",
-      "sha256": "30105f477f0f35a6fa080cda148994099c6b4be2fe8cdbee6481df9c071552dc",
-      "status": "Beta; cabinet verified; timing passed (all corners)",
-      "notes": "Seven original Wolf Unit games. Settings and high scores now survive a power cycle (they were restored corrupted on every power-on; a reset kept them). MK3 and UMK3 always start at the default volume after a power cycle, as the original games do; the other five keep it. Includes the page-flip fix for MK3/UMK3 Motaro/Kintaro/Shiva HUD and sprite flashing, and the DCS 16x output filter (hiss fix). Community hacks requiring separate ROM sources are not installed by this feed.",
-      "binary": "_Arcade/cores/blahm1d_wolfunit_20260928.rbf",
+      "version": "HUD flash fix (page flip waits for drawing)",
+      "date": "20261005",
+      "sha256": "6e08b9d5147b6dc243740ca360b9d463a62bed77c3c968ea999b8216ca0b8c74",
+      "status": "Beta; timing passed (all corners); cabinet test pending",
+      "notes": "Seven original Wolf Unit games. Fixed: MK3/UMK3 name bars and HUD flashing in heavy fights (Motaro, Kintaro, Shiva) -- the screen now switches to a new frame only after everything queued for it has been drawn. Settings and high scores survive a power cycle. Service-menu adjustments, including volume, are saved with Save NVRAM; on MK3/UMK3 the coin-door Volume Up/Down buttons change volume for the current session only, as in MAME. DCS 16x output filter (hiss fix). Community hacks requiring separate ROM sources are not installed by this feed.",
+      "binary": "_Arcade/cores/blahm1d_wolfunit_20261005.rbf",
       "binding": "blahm1d_wolfunit",
       "games": [
         {
@@ -83,7 +83,7 @@
           "mameversion": "0280",
           "path": "_Arcade/_Blahm1d/Mortal Kombat 3 (rev 2.1) [blahm1d].mra",
           "sha256": "45fbc81eaeb578a460b8321313c8fbd6bc75ad17eaed977b4597837ef128b341",
-          "original_sha256": "21c8779981e1f3787bd60b106c35fbf8db418827525c405dd474ee5424b03ba7",
+          "original_sha256": "45fbc81eaeb578a460b8321313c8fbd6bc75ad17eaed977b4597837ef128b341",
           "rom_archives": [
             "mk3.zip"
           ]
@@ -94,7 +94,7 @@
           "mameversion": "0280",
           "path": "_Arcade/_Blahm1d/NBA Hangtime (L1.3) [blahm1d].mra",
           "sha256": "a592e57885855d94b29fe46f409176183b834bc324bc300bc7ee36e5d08de3b6",
-          "original_sha256": "17c91523b54da24addc102577524b9bf39d2e007a357201fa5018c7450222f66",
+          "original_sha256": "a592e57885855d94b29fe46f409176183b834bc324bc300bc7ee36e5d08de3b6",
           "rom_archives": [
             "nbahangt.zip"
           ]
@@ -105,7 +105,7 @@
           "mameversion": "0280",
           "path": "_Arcade/_Blahm1d/NBA Maximum Hangtime (L1.03 06-09-97) [blahm1d].mra",
           "sha256": "5b32d42ab2683a5ce160cb85f36d9b96fb0e49db149d2051720a5a3a32722b1b",
-          "original_sha256": "e73cbb9d6e4309dee60ae2bb1100177fa2c17ed47ffc7fff059e23513e7a9d0c",
+          "original_sha256": "5b32d42ab2683a5ce160cb85f36d9b96fb0e49db149d2051720a5a3a32722b1b",
           "rom_archives": [
             "nbamht.zip",
             "nbahangt.zip"
@@ -117,7 +117,7 @@
           "mameversion": "0280",
           "path": "_Arcade/_Blahm1d/NHL Open Ice - 2 on 2 Challenge (rev 1.21) [blahm1d].mra",
           "sha256": "ad305e81c2008e7d140cf421ecf43ffc65ea37ac2072b17b7660b14b4a19e1f2",
-          "original_sha256": "239f11b57832b81f2fa063ec8bcce235782e94107ca97331d2b62e0e27f235db",
+          "original_sha256": "ad305e81c2008e7d140cf421ecf43ffc65ea37ac2072b17b7660b14b4a19e1f2",
           "rom_archives": [
             "openice.zip"
           ]
@@ -128,7 +128,7 @@
           "mameversion": "0280",
           "path": "_Arcade/_Blahm1d/Rampage World Tour [blahm1d].mra",
           "sha256": "802c1be0fc2d5f92c856aefb55c5aa723ef5c40265ae783bbd17d36072059d7c",
-          "original_sha256": "9cf9bdf86f4a93b790cad32b65148fde6c8791adf61af36cff14b616f926e2f5",
+          "original_sha256": "802c1be0fc2d5f92c856aefb55c5aa723ef5c40265ae783bbd17d36072059d7c",
           "rom_archives": [
             "rmpgwt.zip"
           ]
@@ -139,7 +139,7 @@
           "mameversion": "0280",
           "path": "_Arcade/_Blahm1d/Ultimate Mortal Kombat 3 [blahm1d].mra",
           "sha256": "64140f69380836854294ffa7a3f0920aaa1eff5f9d9874be55f7a8da00d3f560",
-          "original_sha256": "1be1a78ecc80f7b09d2b4db116a72bbd7e4d85c9b8cc721d2340a134ea5ed767",
+          "original_sha256": "64140f69380836854294ffa7a3f0920aaa1eff5f9d9874be55f7a8da00d3f560",
           "rom_archives": [
             "umk3.zip"
           ]
@@ -150,13 +150,13 @@
           "mameversion": "0280",
           "path": "_Arcade/_Blahm1d/WWF WrestleMania (rev 1.30 08-10-95) [blahm1d].mra",
           "sha256": "a8c7fca764b85f4cfb6958a285d7917d5beb5f354d4e9b3fd21927313a1465ac",
-          "original_sha256": "c5bae9cc40ede093d0d197c59e7c908a87b4ee44bf478b45b2b7a57f90586f3b",
+          "original_sha256": "a8c7fca764b85f4cfb6958a285d7917d5beb5f354d4e9b3fd21927313a1465ac",
           "rom_archives": [
             "wwfmania.zip"
           ]
         }
       ],
-      "cabinet_verified": true
+      "cabinet_verified": false
     },
     {
       "id": "yunit",

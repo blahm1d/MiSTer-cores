@@ -16,10 +16,10 @@
     },
     {
       "id": "wolfunit",
-      "archive": "sources/wolfunit-20260928.zip",
-      "sha256": "c79b9fbc79e64820c9c14cffaa8aba600b0ce872218a69b821dfc180821c0257",
+      "archive": "sources/wolfunit-20261005.zip",
+      "sha256": "d04c5948d72598e39db82ba4cd7d7fa49598c7615b2fb9886cbdf53cc43e30ea",
       "file_count": 525,
-      "bytes": 1461291
+      "bytes": 1461779
     },
     {
       "id": "yunit",
