@@ -4,44 +4,40 @@
   "extras": [
     {
       "core": "mk4",
-      "title": "Play on PC: MAME forked from 0.289 with Mortal Kombat 4 lighting",
-      "description": "A Windows 64-bit MAME forked from MAME 0.289 (master cfc4760a, 2026-10-03) with experimental per-vertex lighting for the Midway Zeus 1 video driver and a crash fix for quads clipped to three vertices. It is not made or supported by the MAME team; please do not report problems with it to MAMEdev. No ROMs are included.",
-      "install": "Unzip archive, put mk4.zip and tms320c32.zip in the roms folder, then double-click Play MK4 (lighting).bat.",
+      "title": "Play on PC: MK4 v17 lighting in a Windows MAME fork",
+      "description": "Updated 9 October 2026: MAME 0.289 development snapshot a025aba9 with the MK4 v17 RTL material-response and blend changes ported to the mk4 version 3.0 driver. The calibration is empirical; original Zeus lighting microcode has not been recovered and visual differences remain. This fork is not made or supported by the MAME team. No ROMs are included.",
+      "install": "Extract the archive, keep your existing nvram and cfg folders when upgrading, put your own mk4.zip and tms320c32.zip in roms, then run Play MK4 (lighting).bat.",
       "files": [
         {
-          "label": "Download MAME for Windows",
+          "label": "Download MAME v17 for Windows",
           "button": true,
-          "key": "mame/mame-mk4-lighting-win64-20261004.zip",
-          "bytes": 110682229,
-          "sha256": "713538cb823cafc72f9a02b0c0b534c72c0ed0f0ceaf9f4a8e6c25defebab320"
+          "key": "mame/blahm1d-mame-mk4-v17-win64-20261009.zip",
+          "bytes": 114326216,
+          "sha256": "6d30cbf040987797bd7cbfc7c9a7ec2e006c524d96ae9ad975132eb2c4a5f020"
         },
         {
-          "label": "Complete source code (GPL)",
-          "key": "mame/mame-mk4-lighting-src-20261004.zip",
-          "bytes": 232512104,
-          "sha256": "04ff8aa47725d8c2b2fd8082941f1eeeedd09d100ac18374ac1d36db1a184934"
+          "label": "Complete corresponding source (GPL)",
+          "button": false,
+          "key": "mame/blahm1d-mame-mk4-v17-source-20261009.zip",
+          "bytes": 235320734,
+          "sha256": "2cbac400b3ccd8be93a7dd4335ca912a391d7cb4169740f7eeef2cb8a10eeecb"
+        },
+        {
+          "label": "PCB comparison images, method and validation",
+          "button": false,
+          "key": "mame/blahm1d-mk4-v17-pcb-evidence-20261009.zip",
+          "bytes": 22899959,
+          "sha256": "2cf2b55ce620346aec1da00953c4f294990d5d5c2bbabf2bad8b54c025af6326"
         }
       ],
-      "media_title": "Lighting on the MiSTer core (v16)",
-      "media_note": "Captured from the MK4 MiSTer FPGA core v16 with its Lighting Toggle. The MAME fork uses the same light and normal data without the core's MK4-specific tuning, so it does not look identical.",
+      "media_title": "Original PCB capture versus v17 RTL",
+      "media_note": "All nine arenas. PCB frames use one fixed white/black calibration from Kombat Kode text and blank-frame black. The comparison side is actual v17 RTL replay, not cabinet or MAME footage. Poses and effect phases differ. The MAME port matches 433,844 vertex results and 5,243,616 pixel operations checked against that RTL; separate executable captures from all nine arenas are included in the evidence download. These checks do not prove a pixel-perfect PCB match.",
       "media": [
         {
-          "key": "media/mk4-v16-character-bios-before-after.gif",
-          "alt": "Mortal Kombat 4 character bios, lighting off and on",
-          "bytes": 1288773,
-          "sha256": "34929945b370d774349d1142fc429c047f78a5603c8b44f33b78aa2fc46037ea"
-        },
-        {
-          "key": "media/mk4-v16-continue-on-off.gif",
-          "alt": "Mortal Kombat 4 continue screen, lighting off and on",
-          "bytes": 846200,
-          "sha256": "032dff0f9734132284b775dc91a052b1106b4be932525cd94235c97df914e75b"
-        },
-        {
-          "key": "media/mk4-v16-fighters-on-off.gif",
-          "alt": "Mortal Kombat 4 fighters, lighting off and on",
-          "bytes": 2088699,
-          "sha256": "d4613d641f94502a2ccb48f8c99b6c2c778d4533192980dd0e447263b7ea14da"
+          "key": "media/mk4-pcb-v17-nine-arenas.gif",
+          "alt": "Nine MK4 arenas alternating calibrated original PCB capture and v17 RTL rendering",
+          "bytes": 2829951,
+          "sha256": "f9f329f9f9ea3ef87f7585f467f45029338dd3c123fa2ff012a9ea5d953ac9a7"
         }
       ]
     }
