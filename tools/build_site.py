@@ -143,9 +143,17 @@ def extras_html(base, extras, core_id):
                 f'<div class="install"><h2>Install</h2><p>{html.escape(ex["install"])}</p>{buttons}</div>'
                 f'<h3>Files</h3><ul>{items}</ul>')
         if ex.get('media'):
-            imgs = ''.join(f'<figure><img src="{base}/{m["key"]}" alt="{html.escape(m["alt"])}" loading="lazy" '
-                           f'style="max-width:100%;height:auto"><figcaption>{html.escape(m["alt"])}</figcaption></figure>'
-                           for m in ex['media'])
+            imgs = ''
+            for m in ex['media']:
+                url = f'{base}/{m["key"]}'
+                animated = m['key'].lower().endswith('.gif')
+                anchor = f' id="{html.escape(m["id"], quote=True)}"' if m.get('id') else ''
+                heading = f'<h4{anchor}>{html.escape(m["title"])}</h4>' if m.get('title') else ''
+                dimensions = f' width="{int(m["width"])}" height="{int(m["height"])}"' if m.get('width') and m.get('height') else ''
+                loading = 'eager' if animated else 'lazy'
+                link = f'<p><a href="{url}">Open animated GIF directly</a></p>' if animated else ''
+                imgs += (f'{heading}{link}<figure><img src="{url}" alt="{html.escape(m["alt"])}" loading="{loading}"{dimensions} '
+                         f'style="max-width:100%;height:auto"><figcaption>{html.escape(m["alt"])}</figcaption></figure>')
             out += f'<h3>{html.escape(ex["media_title"])}</h3><p>{html.escape(ex["media_note"])}</p>{imgs}'
     return out
 

@@ -68,7 +68,10 @@
           "key": "media/mk4-tanya-jax-vulkan-4x-polygons-20261011.png",
           "alt": "Tanya versus Jax in The Well: Vulkan 4x polygon rendering with original textures.",
           "bytes": 1456218,
-          "sha256": "45fb0bb4090a9795ff734588441ff78921ff8596d7096f7efc92582ea97ab263"
+          "sha256": "45fb0bb4090a9795ff734588441ff78921ff8596d7096f7efc92582ea97ab263",
+          "title": "Still screenshot (full resolution)",
+          "width": 1600,
+          "height": 1016
         }
       ]
     },
@@ -99,13 +102,20 @@
           "key": "media/mk4-tanya-jax-vulkan-4x-polygons-2x-textures-20261011.png",
           "alt": "Tanya versus Jax in The Well: Vulkan 4x polygons with the published 2x remastered texture preview.",
           "bytes": 1813014,
-          "sha256": "bbe5f3840dab070b79af76b600c17c2612cd7c96c970bd60034e1e643e91f8fa"
+          "sha256": "bbe5f3840dab070b79af76b600c17c2612cd7c96c970bd60034e1e643e91f8fa",
+          "title": "Still screenshot (full resolution)",
+          "width": 1600,
+          "height": 1016
         },
         {
           "key": "media/mk4-tanya-jax-nine-arenas-v17-vulkan-remaster-20261011.gif",
-          "alt": "Tanya versus Jax across all nine arenas: base MAME v17, Vulkan 4x polygons, then Vulkan 4x polygons plus 2x remastered textures.",
+          "alt": "Animated 45-second loop: Tanya versus Jax in nine arenas. Changes every 1.5 to 2 seconds: base MAME v17, Vulkan 4x polygons, then Vulkan 4x polygons plus 2x textures.",
           "bytes": 13288449,
-          "sha256": "d5730051f12faa18d2c7c2ef6ac0c33bfb4800e0f8d9a4aa254aa51f9ace37cb"
+          "sha256": "d5730051f12faa18d2c7c2ef6ac0c33bfb4800e0f8d9a4aa254aa51f9ace37cb",
+          "id": "vulkan-comparison",
+          "title": "Animated comparison: all nine arenas, three rendering modes",
+          "width": 1200,
+          "height": 860
         }
       ]
     }
