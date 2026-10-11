@@ -61,6 +61,27 @@
           "sha256": "1c3835808a8045c9bfa8326bd3310977e1b261305e2655944cc5cd01d5e20baf"
         }
       ]
+    },
+    {
+      "core": "mk4",
+      "title": "Play on PC: 4x polygons + 2x remastered textures (preview)",
+      "description": "Preview dated 11 October 2026. Windows 64-bit Vulkan build with 4x internal polygon rendering and a bundled 2x GenAI texture pack. Includes the executable, textures and launch BAT files. Textures use half the width and height of the earlier 4x artwork, reducing their decoded pixel storage by 75%. Includes quieter surfaces across all nine arenas and most fighter/versus artwork. Coverage is incomplete: two versus portraits, one fighter sheet and other artwork remain unfinished. Original model topology and experimental v17 lighting remain. Requires a Vulkan-capable GPU; occasional long frames remain and performance varies. Unofficial modified MAME build. No game ROMs or personal saves included.",
+      "install": "Extract into a new writable folder. Put your own MK4 version 3.0 mk4.zip and tms320c32.zip in roms, keeping both zipped. Run Play MK4 4x Polygons 2x Textures.bat. Press Tab to configure controls. Use the bundled executable because older builds require 4x textures. Settings and saves stay under user. A second BAT plays with original textures. Include the source archive below when sharing the binary.",
+      "files": [
+        {
+          "label": "Download 4x polygons + 2x textures preview for Windows",
+          "button": true,
+          "key": "mame/blahm1d-mk4-vulkan-4x-textures-2x-win64-preview-20261011.zip",
+          "bytes": 197236803,
+          "sha256": "bf57d0f6e7795da2748b58e99bada28e2c77bad5d122ec2a4dcc59a1e4bd6a1d"
+        },
+        {
+          "label": "Complete corresponding source and licenses",
+          "key": "mame/blahm1d-mk4-vulkan-4x-textures-2x-source-20261011.zip",
+          "bytes": 250336790,
+          "sha256": "f5465ab6bbafd87dd5a567b23a55987affe1da7cb2c2e9200ab9b180abf296d8"
+        }
+      ]
     }
   ]
 }
