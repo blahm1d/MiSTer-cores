@@ -60,6 +60,16 @@
           "bytes": 250327183,
           "sha256": "1c3835808a8045c9bfa8326bd3310977e1b261305e2655944cc5cd01d5e20baf"
         }
+      ],
+      "media_title": "4x polygon rendering in action",
+      "media_note": "Actual emulator screenshot with original textures and v17 lighting. Tanya versus Jax in The Well; internal capture resolution 1600 x 1016. Original model topology is preserved.",
+      "media": [
+        {
+          "key": "media/mk4-tanya-jax-vulkan-4x-polygons-20261011.png",
+          "alt": "Tanya versus Jax in The Well: Vulkan 4x polygon rendering with original textures.",
+          "bytes": 1456218,
+          "sha256": "45fb0bb4090a9795ff734588441ff78921ff8596d7096f7efc92582ea97ab263"
+        }
       ]
     },
     {
@@ -80,6 +90,22 @@
           "key": "mame/blahm1d-mk4-vulkan-4x-textures-2x-source-20261011.zip",
           "bytes": 250336790,
           "sha256": "f5465ab6bbafd87dd5a567b23a55987affe1da7cb2c2e9200ab9b180abf296d8"
+        }
+      ],
+      "media_title": "Texture preview and nine-arena comparison",
+      "media_note": "Actual emulator captures of Tanya versus Jax. The 45-second GIF cycles through base MAME v17, Vulkan 4x polygons with original textures, and Vulkan 4x polygons with the published 2x texture pack in each of the nine arenas. Each arena uses the same checkpoint, controller inputs and capture frame. Base MAME is captured at 400 x 254 and enlarged with nearest-neighbor scaling; Vulkan captures are 1600 x 1016. GIF frames are resized and use a shared 256-color palette. The screenshots retain full resolution and color. Artwork coverage remains incomplete as described above.",
+      "media": [
+        {
+          "key": "media/mk4-tanya-jax-vulkan-4x-polygons-2x-textures-20261011.png",
+          "alt": "Tanya versus Jax in The Well: Vulkan 4x polygons with the published 2x remastered texture preview.",
+          "bytes": 1813014,
+          "sha256": "bbe5f3840dab070b79af76b600c17c2612cd7c96c970bd60034e1e643e91f8fa"
+        },
+        {
+          "key": "media/mk4-tanya-jax-nine-arenas-v17-vulkan-remaster-20261011.gif",
+          "alt": "Tanya versus Jax across all nine arenas: base MAME v17, Vulkan 4x polygons, then Vulkan 4x polygons plus 2x remastered textures.",
+          "bytes": 13288449,
+          "sha256": "d5730051f12faa18d2c7c2ef6ac0c33bfb4800e0f8d9a4aa254aa51f9ace37cb"
         }
       ]
     }
