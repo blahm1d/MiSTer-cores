@@ -40,6 +40,27 @@
           "sha256": "f9f329f9f9ea3ef87f7585f467f45029338dd3c123fa2ff012a9ea5d953ac9a7"
         }
       ]
+    },
+    {
+      "core": "mk4",
+      "title": "Play on PC: Vulkan 4x polygon rendering",
+      "description": "Windows 64-bit build dated 11 October 2026. Render MK4 polygons at 4x internal resolution for smoother edges, using the original game textures and models. Includes the existing experimental v17 lighting. Requires a Vulkan-capable GPU and its vendor driver. Performance depends on hardware and scene. This is an unofficial modified MAME build. No remastered texture pack, game ROMs or saved games are included.",
+      "install": "Extract the entire ZIP into a writable folder. Put your own compatible MK4 version 3.0 mk4.zip and tms320c32.zip in roms, then run Play MK4 4x.bat. Press Tab to configure controls. This portable copy stores settings and saves under user. Include the source archive below when sharing the binary.",
+      "files": [
+        {
+          "label": "Download Vulkan 4x for Windows",
+          "button": true,
+          "key": "mame/blahm1d-mk4-vulkan-4x-win64-20261011.zip",
+          "bytes": 122791169,
+          "sha256": "5f72a1d976235d09db920003c35ddcca8532561eb8e4766be0f3f5f339106c47"
+        },
+        {
+          "label": "Complete corresponding source and licenses",
+          "key": "mame/blahm1d-mk4-vulkan-4x-source-20261011.zip",
+          "bytes": 250327183,
+          "sha256": "1c3835808a8045c9bfa8326bd3310977e1b261305e2655944cc5cd01d5e20baf"
+        }
+      ]
     }
   ]
 }
